@@ -1,0 +1,72 @@
+/*_typography.scss*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:400,700|Raleway:400,100,200,300,600,500,700,800,900');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+
+h1 {
+	font-size: $h1;
+	font-weight: $fontweightbold;
+}
+
+h2 {
+	font-size: $h2; /* 24px */
+	font-weight: $fontweightheavy;
+}
+
+h3 {
+	font-size: $h3;
+	font-weight: $fontweightmedium;
+}
+
+h4 {
+	font-size: $h4;
+	font-weight: $fontweightnormal;
+}
+
+h5 {
+	font-size: $h5;
+	font-weight: $fontweightnormal;
+}
+
+h6 {
+	font-size: $h6;
+	font-weight: $fontweightnormal;
+}
+
+.lato {
+	font-family: "Lato", sans-serif;
+	* {
+		font-family: "Lato", sans-serif;
+	}
+}
+
+.mont {
+	font-family: "Montserrat", sans-serif;
+	* {
+		font-family: "Montserrat", sans-serif;
+	}
+}
+.rale {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	* {
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+}
+
+
+
+p {
+	font-weight: $fontweightmedium;
+	font-size: $base-font-size;
+	line-height: 1.2em;
+  margin: .75em 0;
+	text-rendering: optimizelegibility;
+}
+
+ul li {
+	font-weight: $fontweightnormal;
+}
+
+.small {
+	font-size: .9em;
+}

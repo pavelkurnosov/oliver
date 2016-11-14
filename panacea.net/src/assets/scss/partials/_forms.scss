@@ -1,0 +1,62 @@
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+
+@import "variables";
+
+form input {
+	border: solid 2px #ccc;
+	height: $input-height-base;
+	padding: $gutter/2 $gutter;
+	border-radius: $border-radius-base;
+	background: none;
+	line-height: 1.5;
+	font-size: 14px;
+
+	&:focus {
+		background-color: $input-bg !important;
+	}
+
+	&.input-sm {
+		height: $input-height-base;
+		width: 50px;
+		margin-top: 0;
+	}
+
+}
+
+label input {
+	margin-left: $gutter/2;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+input[type="radio"], input[type="checkbox"] {
+	height: 1em;
+	margin-right: $gutter/2;
+}
+
+input:-webkit-autofill {
+	&::focus, &:hover {
+		background-color: $input-bg !important;
+	}
+	
+}
+
+// INpout with icons
+input {
+	&.user {
+		position: relative;
+		&:before {
+			content: "-";
+			position: absolute;
+			height:100%;
+			width: $gutter * 2;
+			left:0;
+			background-color: #ececec;
+		}
+	}
+}

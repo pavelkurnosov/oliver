@@ -1,0 +1,143 @@
+// ==========================================================================
+// Button
+// ==========================================================================
+@import "variables";
+a.button,
+.button,
+button {
+  background: none;
+  
+  &:hover {
+    background-color: #fff;
+    color: $dark-blue;
+  }
+  &.mont {
+    @extend .mont;
+  }
+  &.rale {
+    @extend .rale;
+    font-weight: 700;
+  }
+  &.lato {
+    @extend .lato;
+  }
+}
+
+.button,
+a.button,
+button,
+input[type="button"],
+input[type="submit"],
+.fc-state-default {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: auto;
+  cursor: pointer;
+  overflow: visible;
+  padding: 7px 10px;
+  border-width: 1px;
+  border-style: solid;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: $fontweightnormal;
+  font-family: $base;
+}
+
+.button {
+  font-size: $base-font-size;
+  min-height: 15px;
+  color: #fff;
+  &.blue-orange {
+    background: $darkblue;
+    font-weight: $fontweightheavy;
+    &:hover {
+      background: $orange;
+      color: #fff;
+    }
+  }
+  &.blue-light {
+    background: $darkblue;
+    font-weight: $fontweightheavy;
+    &:hover {
+      background: $lightblue;
+      color: #fff;
+    }
+  }
+  &.blue-dark {
+    background: $blue;
+    font-weight: $fontweightheavy;
+    &:hover {
+      background: $darkblue;
+      color: #fff;
+    }
+  }
+  &.blue-green {
+    background: $blue;
+    font-weight: $fontweightheavy;
+    &:hover {
+      background: $green;
+      color: #fff;
+    }
+  }
+  &.orange {
+    background: $orange;
+    &:hover {
+      background: $lightorange;
+      color: #fff;
+    }
+  }
+  &.orange-dark {
+    background: $orange;
+    &:hover {
+      background: $darkorange;
+      color: #fff;
+    }
+  }
+  &.grey {
+    background: $grey;
+    &:hover {
+      background: $darkgrey;
+      color: #fff;
+    }
+  }
+  &.grey-light {
+    background: $grey;
+    &:hover {
+      background: $lightgrey;
+      color: #fff;
+    }
+  }
+  &.green {
+    background: $green;
+    &:hover {
+      background: $darkgreen;
+      color: #fff;
+    }
+  }
+  &.green-light {
+    background: $green;
+    &:hover {
+      background: $lightgreen;
+      color: #fff;
+    }
+  }
+  &.round {
+    background: $green;
+    font-family: "Open Sans";
+    border-radius: 20px;
+    &:hover {
+      background: $lightgreen;
+      color: #fff;
+    }
+  }
+  
+  &.submit {
+    padding: 5px 30px;
+    border: none;
+  }
+}
+
+

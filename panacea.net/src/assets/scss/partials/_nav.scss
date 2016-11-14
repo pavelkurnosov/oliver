@@ -1,0 +1,114 @@
+header nav {
+    margin-top: $gutter;
+    ul {
+        list-style:none;
+        li {
+            float: left;
+            background: inherit;
+            width: auto;   
+            text-align: left;      
+            position: relative;
+
+            &.has-dropdown {
+                &:after {
+                  content: '\2023';
+                  font-size: 20px;
+                  position: absolute;
+                  top: $menu-item-vertical-padding + ($menu-font-size / 4);
+                  transform: rotate(90deg);
+                  right: 0px;
+                  color: $header-linkcolor;
+                  height: $menu-font-size;
+                  width: $menu-font-size;
+                  line-height: $menu-font-size;
+                  overflow: hidden;
+                }
+
+            }
+
+            ul {
+                overflow: hidden;
+                width: 550px;
+                padding: 30px 10px;
+                list-style: none;
+                padding: 10px 10px;
+                margin: 0;
+                top: $menu-font-size + $menu-item-vertical-padding;
+                z-index: 30;
+                overflow: visible !important;
+                height: auto;
+                min-height:40px;
+                max-height:3000px;                
+                display: inherit;
+                visibility: hidden;
+                overflow: hidden;
+                position: absolute;
+                left: -10px;
+                border: none;
+                border-radius: 0;
+                border-bottom: 4px solid $primary-color;
+
+                &.show {
+                    transform: translate(2px , $menu-item-vertical-padding);
+                }
+                li {
+                  float: left;
+                  width: 50%;
+                  border-right: solid 1px $header-linkcolor;
+                  &:nth-child(even) {
+                    border-right: solid 0px;
+                  }
+                  &:nth-child(odd) {
+                    clear: left;
+                  }
+                  a {
+                    white-space: normal;
+                  }
+                  ul {
+                    width: auto;
+                    width: 100%;
+                    li {
+                      float: none;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+
+            a {
+                font-size   : $menu-font-size;
+                line-height : 1em;  
+                padding: $menu-item-vertical-padding $menu-item-horizontal-padding;
+                display: block;
+                text-decoration: none;
+                font-size: $menu-font-size;
+                font-weight: bold;
+                text-transform: uppercase; 
+                background-color: transparent;
+                &:link, &:visited {color: $header-linkcolor;}
+                &:hover, &:active {color: $header-linkcolor-hover;}
+            }
+
+            &.active a {
+                &:link, &:visited {color: $header-linkcolor-hover;}
+                &:hover, &:active {color: $header-linkcolor-hover;}
+            }
+            
+            &.drop-left ul.menu-dropdown,
+            &.dropleft ul.menu-dropdown { 
+                right: 0;
+                left: inherit;
+            }
+            &.drop-right ul.menu-dropdown { //Default anyway
+                left: 0;
+            }
+            &.drop-mid ul.menu-dropdown { 
+                left: -130%;
+            }
+            &.drop-mid.two_column ul.menu-dropdown { 
+                left: -225px;
+            }
+        }
+    }
+}
+

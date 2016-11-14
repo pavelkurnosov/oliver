@@ -1,0 +1,58 @@
+<div id="registrationMast" class="col-sm-6 center">
+    <article class="entry">
+        <div class="row">
+            <div class="col-md-3">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="">
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="text" name="ci_firstName" id="ci_firstName" placeholder="First Name" ng-model="vm.newAccount.firstName">
+                            <input type="text" class="input-sm" name="ci_middleInitial" id="ci_middleInitial" placeholder="MI" ng-model="vm.newAccount.middleInitial">
+                            <input type="text" name="ci_lastName" id="ci_lastName" placeholder="Last Name" ng-model="vm.newAccount.lastName">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-12">
+                            Gender:
+                            <label><input type="radio" name="gender" ng-model="vm.newAccount.gender" value="male">Male</label>
+                            <label><input type="radio" name="gender" ng-model="vm.newAccount.gender" value="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <input type="email" name="ci_email" id="ci_email" class="validate" placeholder="Email" ng-model="vm.newAccount.emailAddress">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <select class="form-control">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea name="comments" id="ci_comments" class="form-control outer-b" cols="30" rows="5" placeholder="comments"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="button green submit" type="button" ng-click="vm.registerUser()">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+</div>

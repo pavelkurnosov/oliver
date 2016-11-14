@@ -1,0 +1,13 @@
+/*_keystrokes.scss*/
+
+@keyframes letter {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes colorChange {
+  0%{fill: #fff;}
+  30%,70% {fill: #c0e093;}
+  100% {fill: #98c559;}
+}

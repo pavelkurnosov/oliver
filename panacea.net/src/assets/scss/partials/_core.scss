@@ -1,0 +1,51 @@
+.bold {
+	font-weight: bold;
+}
+
+
+// Animation / visibility classes
+.none {
+	display:none;
+}
+.hide {
+	// display:none;
+	opacity:0;
+}
+
+// Links
+
+a {
+  text-decoration: none;
+	font-weight: $fontweightmedium;
+	font-family: $base;
+  &:hover, a:active {
+    color: $orange;
+    outline: 0;
+  }
+  &.underline {
+    font-weight: $fontweightlight;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.dark-bg {
+  	color: #fff;
+
+  	&:hover {
+  		color: #fff; //$link-hover-color;
+  	}
+  }
+}
+
+
+
+
+
+
+// browser overrides
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+

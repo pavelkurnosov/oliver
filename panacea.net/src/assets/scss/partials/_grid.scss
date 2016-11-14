@@ -1,0 +1,26 @@
+@import "variables";
+// Grid addons
+
+.row {
+  &.outer-b {
+    margin-bottom: 10px;
+  }
+
+  &.inner-tb {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
+}
+
+.inner-t {
+	padding-top: $gutter;
+}
+
+.outer-b {
+  margin-bottom: $gutter;
+}
+
+.center {
+    float: none;
+    margin: 0 auto;
+}

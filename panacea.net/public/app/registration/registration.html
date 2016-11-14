@@ -1,0 +1,63 @@
+<section id="landingMast" class="landing-masthead">
+    <form action="./" method="post" class="col-md-5 center well">
+
+        <h1>Sign Up</h1>
+
+        <div class="col-md-12 center">
+            <div class="form-group" ng-if="vm.currentView === 'country'">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <label>Select Country:</label>
+                        <select ng-model="vm.newAccount.countryCode" ng-options="c.code as c.name for c in vm.countries" ng-change="vm.countrySelected()"></select>
+                    </div>
+                    <i class="fa fa-spinner" aria-hidden="true" ng-if="vm.loadingCountry"></i>
+                </div>
+                <div class="col-md-4">
+                    <label ng-if="vm.newAccount.countryCode">
+                        Select State:
+                        <select ng-model="vm.newAccount.state" ng-options="s.abbreviation as s.name for s in vm.states"></select>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group" ng-if="vm.currentView === 'personDetails'">
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text" name="ci_firstName" id="ci_firstName" placeholder="First Name" ng-model="vm.newAccount.firstName">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="input-sm" name="ci_middleInitial" id="ci_middleInitial" placeholder="MI" ng-model="vm.newAccount.middleInitial">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" name="ci_lastName" id="ci_lastName" placeholder="Last Name" ng-model="vm.newAccount.lastName">
+                    </div>
+                </div>
+                <br/>
+                <div class="row pad">
+                    <div class="col-sm-12">
+                        Gender:
+                        <label>Male: <input type="radio" name="gender" ng-model="vm.newAccount.gender" value="male"></label>
+                        <label>Female: <input type="radio" name="gender" ng-model="vm.newAccount.gender" value="female"></label>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="email" name="ci_email" id="ci_email" class="validate" placeholder="Email" ng-model="vm.newAccount.emailAddress">
+                    </div>
+                </div>
+            </div>
+            <div class="login-actions cf">
+                <button ng-if="vm.currentView === 'personDetails'" class="button green submit" type="button" ng-click="vm.registerUser()">submit</button>
+                <div ng-if="vm.newAccount.state">
+                    <input type="checkbox" ng-checked="vm.agreedToToS">I agree to Terms of Service
+                    <button type="button" class="button white sign-in pull-right" ng-disabled="!vm.agreedToToS" ng-click="vm.enterPersonDetails()">Next</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<div class="row col-md-5 center" ng-if="vm.newAccount.countryCode === 'US'">
+    <p>This is the panacea health terms of service</p>
+</div>
+
