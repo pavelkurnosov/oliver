@@ -4,6 +4,28 @@
 @import "variables";
 
 .style-guide {
+  .grids-content {
+    .row {
+      div {
+        text-align: center;
+        border:1px solid white;
+        padding:20px 0 20px 0;
+        background: $light-blue;
+        div{
+          border:0;
+        }
+      }
+    }
+  }
+  
+  .color-item-content {
+    width: 100%;
+    height: 150px;
+  }
+  .color-item-value {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
   .section {
     margin-bottom: $gutter*2;
