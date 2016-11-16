@@ -4,12 +4,56 @@
 @import "variables";
 
 .style-guide {
-  /*#labels {
-    label {
-      font-family: $lato!important;
-      font-size:15px!important;
+  .navbar-top {
+    background-color: $navy-blue;
+    border-color: $navy-blue;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    li > a {
+      color: $white;
     }
-  }*/
+    .navbar-brand {
+      color: $white;
+      font-family: "Glasgow";
+      font-weight: bolder;
+      font-size: x-large;
+    }
+  }
+  .sidebar {
+    li {
+      margin-top: 0;
+      &.active {
+        a {
+          background: $light-blue;
+
+        }
+      }
+      a:hover {
+        background: $light-blue2;
+      }
+      a {
+        background: $navy-blue;
+        color: $white;
+      }
+    }
+    ul {
+      border-right: 1px solid #304770;
+      padding: 1px 0 0 0;
+      margin: 0 15px 0 -15px;
+      a {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+    }
+  }
+  #labels {
+    .row {
+      margin-left: 0;
+    }
+  }
   #text_boxes {
     .row {
       padding-top: 10px;
@@ -30,7 +74,7 @@
         padding: 20px 0 20px 0;
         background: $light-grey2;
         color: $black;
-        font-weight:bold;
+        font-weight: bold;
         div {
           border: 0;
         }

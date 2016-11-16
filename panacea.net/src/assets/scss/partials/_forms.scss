@@ -4,7 +4,7 @@
 @import "variables";
 
 input, textarea, select {
-  font-family:$font-family-base;
+  font-family: $font-family-base;
   &:focus {
     outline: 0 !important;
   }
@@ -16,6 +16,25 @@ input, textarea, select {
     border-radius: 6px;
     &:focus {
       border-color: $blue2;
+    }
+  }
+}
+
+form {
+  label {
+    font-family: $lato;
+    font-size: 15px;
+  }
+
+  &.form-inline {
+    label {
+      padding: 6px 0 0 10px;
+    }
+  }
+  .form-group {
+    margin-left: 10px;
+    label {
+      padding: 0 0 0 10px;
     }
   }
 }
