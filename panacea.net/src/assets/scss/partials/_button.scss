@@ -2,11 +2,62 @@
 // Button
 // ==========================================================================
 @import "variables";
+
+.btn {
+  font-family: "Open Sans";
+  border: 1px solid $light-grey2;
+  background: $light-grey3;
+  &:hover {
+    background: $light-grey;
+  }
+  &:focus {
+    outline: 0 !important;
+  }
+  &.btn-navy-blue {
+    background: $navy-blue;
+    color: $white;
+  }
+  &.btn-light-grey {
+    background: $light-grey2;
+    color: $black;
+  }
+  &.btn-medium-grey {
+    background: $medium-grey;
+    color: $black;
+  }
+
+  &.btn-over-lightblue {
+    &:hover {
+      background: $light-blue;
+    }
+  }
+  &.btn-over-green {
+    &:hover {
+      background: $green;
+    }
+  }
+  &.btn-over-red {
+    &:hover {
+      background: $red;
+    }
+  }
+  &.btn-over-orange {
+    &:hover {
+      background: $orange;
+    }
+  }
+  &.btn-pill {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+}
+
 a.button,
 .button,
 button {
   background: none;
-  
+
   &:hover {
     background-color: #fff;
     color: $dark-blue;
@@ -44,6 +95,12 @@ input[type="submit"],
   border-radius: 5px;
   font-weight: $fontweightnormal;
   font-family: $base;
+}
+
+.btn {
+  .btn-blue-small {
+    background: red;
+  }
 }
 
 .button {
@@ -124,16 +181,7 @@ input[type="submit"],
       color: #fff;
     }
   }
-  &.round {
-    background: $green;
-    font-family: "Open Sans";
-    border-radius: 20px;
-    &:hover {
-      background: $lightgreen;
-      color: #fff;
-    }
-  }
-  
+
   &.submit {
     padding: 5px 30px;
     border: none;

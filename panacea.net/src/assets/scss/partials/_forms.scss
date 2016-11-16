@@ -1,62 +1,77 @@
 // ==========================================================================
 // Forms
 // ==========================================================================
-
-
 @import "variables";
 
+input, textarea, select {
+  font-family:$font-family-base;
+  &:focus {
+    outline: 0 !important;
+  }
+  &.text-rounded-border {
+    padding: 6px 6px 6px 12px;
+    border: 2px solid $grey1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 6px;
+    &:focus {
+      border-color: $blue2;
+    }
+  }
+}
+
 form input {
-	border: solid 2px #ccc;
-	height: $input-height-base;
-	padding: $gutter/2 $gutter;
-	border-radius: $border-radius-base;
-	background: none;
-	line-height: 1.5;
-	font-size: 14px;
+  border: solid 2px #ccc;
+  height: $input-height-base;
+  padding: $gutter/2 $gutter;
+  border-radius: $border-radius-base;
+  background: none;
+  line-height: 1.5;
+  font-size: 14px;
 
-	&:focus {
-		background-color: $input-bg !important;
-	}
+  &:focus {
+    background-color: $input-bg !important;
+  }
 
-	&.input-sm {
-		height: $input-height-base;
-		width: 50px;
-		margin-top: 0;
-	}
+  &.input-sm {
+    height: $input-height-base;
+    width: 50px;
+    margin-top: 0;
+  }
 
 }
 
 label input {
-	margin-left: $gutter/2;
+  margin-left: $gutter/2;
 
-	&:first-child {
-		margin-left: 0;
-	}
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 input[type="radio"], input[type="checkbox"] {
-	height: 1em;
-	margin-right: $gutter/2;
+  height: 1em;
+  margin-right: $gutter/2;
 }
 
 input:-webkit-autofill {
-	&::focus, &:hover {
-		background-color: $input-bg !important;
-	}
-	
+  &::focus, &:hover {
+    background-color: $input-bg !important;
+  }
+
 }
 
 // INpout with icons
 input {
-	&.user {
-		position: relative;
-		&:before {
-			content: "-";
-			position: absolute;
-			height:100%;
-			width: $gutter * 2;
-			left:0;
-			background-color: #ececec;
-		}
-	}
+  &.user {
+    position: relative;
+    &:before {
+      content: "-";
+      position: absolute;
+      height: 100%;
+      width: $gutter * 2;
+      left: 0;
+      background-color: #ececec;
+    }
+  }
 }

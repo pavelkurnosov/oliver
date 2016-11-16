@@ -4,20 +4,40 @@
 @import "variables";
 
 .style-guide {
+  /*#labels {
+    label {
+      font-family: $lato!important;
+      font-size:15px!important;
+    }
+  }*/
+  #text_boxes {
+    .row {
+      padding-top: 10px;
+    }
+  }
+
+  label {
+    font-weight: normal;
+  }
+  .fldTitle {
+    padding-top: 4px;
+  }
   .grids-content {
     .row {
       div {
         text-align: center;
-        border:1px solid white;
-        padding:20px 0 20px 0;
-        background: $light-blue;
-        div{
-          border:0;
+        border: 1px solid white;
+        padding: 20px 0 20px 0;
+        background: $light-grey2;
+        color: $black;
+        font-weight:bold;
+        div {
+          border: 0;
         }
       }
     }
   }
-  
+
   .color-item-content {
     width: 100%;
     height: 150px;
@@ -267,8 +287,8 @@
     position: relative;
   }
   input {
-    -webkit-appearance: none;
-    box-shadow: none !important;
+    //-webkit-appearance: none;
+    //box-shadow: none !important;
   }
   :-webkit-autofill {
     color: #fff !important;
@@ -311,7 +331,7 @@
       position: relative;
       border-radius: 6px;
     }
-    input {
+    /*input {
       font-family: Montserrat, sans-serif;
       font-size: 14px;
       font-weight: normal;
@@ -336,7 +356,7 @@
       &[type="email"].validate::-webkit-input-placeholder {
         color: #FF5065;
       }
-    }
+    }*/
     select {
       font-family: $base;
       font-size: 14px;

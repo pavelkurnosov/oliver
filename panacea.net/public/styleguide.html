@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../src/assets/css/plugins/select2.css">
     <link rel="stylesheet" href="../src/assets/css/plugins/bootstrap-multiselect.css">
     <link rel="stylesheet" href="../src/assets/css/plugins/typeahead.css">
+    <link rel="stylesheet" href="../src/assets/css/plugins/iphone-style-checkboxes.css">
+    <link rel="stylesheet" href="../src/assets/css/plugins/jquery-switch.css">
+    <link rel="stylesheet" href="../src/assets/css/plugins/slide-to-top.css">
 </head>
 
 <body class="style-guide">
@@ -44,38 +47,38 @@
         <li class="active"><a href="#colors" data-toggle="pill">Colors</a></li>
         <li><a data-toggle="pill" href="#typography">Typography</a></li>
         <li><a data-toggle="pill" href="#font_color">Font Color</a></li>
-        <li><a data-toggle="pill" href="#paragraphs">Paragraphs</a></li>
         <li><a data-toggle="pill" href="#grid">Grid</a></li>
+        <li><a data-toggle="pill" href="#paragraphs">Paragraphs</a></li>
         <li><a data-toggle="pill" href="#buttons">Buttons</a></li>
-        <li><a data-toggle="pill" href="#grid">Text Boxes</a></li>
-        <li><a data-toggle="pill" href="#grid">Labels</a></li>
-        <li><a data-toggle="pill" href="#grid">Forms</a></li>
-        <li><a data-toggle="pill" href="#grid">Special Forms</a></li>
-        <li><a data-toggle="pill" href="#grid">Wizard</a></li>
-        <li><a data-toggle="pill" href="#grid">Tables</a></li>
-        <li><a data-toggle="pill" href="#grid">Pagination</a></li>
-        <li><a data-toggle="pill" href="#grid">Modals</a></li>
-        <li><a data-toggle="pill" href="#grid">Breadcrumbs</a></li>
-        <li><a data-toggle="pill" href="#grid">FAQ</a></li>
-        <li><a data-toggle="pill" href="#grid">Notifications</a></li>
-        <li><a data-toggle="pill" href="#grid">Search Results</a></li>
-        <li><a data-toggle="pill" href="#grid">Progress</a></li>
-        <li><a data-toggle="pill" href="#grid">Text Editor</a></li>
-        <li><a data-toggle="pill" href="#grid">Landing Header</a></li>
-        <li><a data-toggle="pill" href="#grid">Landing Nav</a></li>
-        <li><a data-toggle="pill" href="#grid">Landing Buttons</a></li>
-        <li><a data-toggle="pill" href="#grid">Registration</a></li>
-        <li><a data-toggle="pill" href="#grid">Profile Header</a></li>
-        <li><a data-toggle="pill" href="#grid">Profile Sub-Header</a></li>
-        <li><a data-toggle="pill" href="#grid">Profile Side Nav</a></li>
-        <li><a data-toggle="pill" href="#grid">Profile Colors</a></li>
-        <li><a data-toggle="pill" href="#grid">Landing Header</a></li>
-        <li><a data-toggle="pill" href="#grid">Profile Avatars</a></li>
+        <li><a data-toggle="pill" href="#text_boxes">Text Boxes</a></li>
+        <li><a data-toggle="pill" href="#labels">Labels</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Forms</a></li>
+        <li><a data-toggle="pill" href="#grdid">Special Forms</a></li>
+        <li><a data-toggle="pill" href="#grdid">Wizard</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Tables</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Pagination</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Modals</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Breadcrumbs</a></li>
+        <li><a data-toggle="pill" href="#gdrid">FAQ</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Notifications</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Search Results</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Progress</a></li>
+        <li><a data-toggle="pill" href="#dgrid">Text Editor</a></li>
+        <li><a data-toggle="pill" href="#grdid">Landing Header</a></li>
+        <li><a data-toggle="pill" href="#grdid">Landing Nav</a></li>
+        <li><a data-toggle="pill" href="#grdid">Landing Buttons</a></li>
+        <li><a data-toggle="pill" href="#grdid">Registration</a></li>
+        <li><a data-toggle="pill" href="#grdid">Profile Header</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Profile Sub-Header</a></li>
+        <li><a data-toggle="pill" href="#gdrid">Profile Side Nav</a></li>
+        <li><a data-toggle="pill" href="#grdid">Profile Colors</a></li>
+        <li><a data-toggle="pill" href="#grdid">Landing Header</a></li>
+        <li><a data-toggle="pill" href="#gridd">Profile Avatars</a></li>
     </ul>
 
     <div class="tab-content  col-xs-12 col-sm-9 col-md-10 col-lg-10">
         <!-- Colors Start -->
-        <div class="tab-pane active" id="colors">
+        <div class="tab-pane" id="colors">
             <h2>Colors</h2>
             <hr>
             <h4>Medicus</h4>
@@ -301,15 +304,6 @@
         </div>
         <!-- Font Color End -->
 
-        <!-- Paragraphs Start -->
-        <div class="tab-pane" id="paragraphs">
-            <h2>Paragraphs</h2>
-            <div class="row">
-                Here is part of the paragraph.
-            </div>
-        </div>
-        <!-- Paragraphs End -->
-
         <!-- Grid Start -->
         <div class="tab-pane" id="grid">
             <h2>Grid</h2>
@@ -414,53 +408,216 @@
         </div>
         <!-- Grid End -->
 
+        <!-- Paragraphs Start -->
+        <div class="tab-pane" id="paragraphs">
+            <h2>Paragraphs</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="p-line-30">Header line height: 30px – Please use "p-line-30" to apply this style on &lt;p&gt; tag.</p>
+                    <p class="p-line-22">Paragraph line height: 22 px – Please use "p-line-22" to apply this style on &lt;p&gt; tag.</p>
+                    <p class="p-padding-5">Form Padding: 5px – Please use "p-padding-5" to apply this style on &lt;p&gt; tag.</p>
+                    <p class="p-margin">Margin – Please use "p-margin" to apply this style on &lt;p&gt; tag.</p>
+                    <p class="p-border">Border – Please use "p-border" to apply this style on &lt;p&gt; tag.</p>
+                    <p class="p-padding">Padding – Please use "p-padding" to apply this style on &lt;p&gt; tag.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Paragraphs End -->
+
         <!-- Button Start -->
         <div class="tab-pane" id="buttons">
             <h2>Buttons</h2>
             <div class="row">
-                <div class="col-xs-7">
-                    <!-- Start Buttons -->
-                    <div class="col-md-6">
-                        <p><a href="#" class="button lato blue-orange">Lato Darkblue - Orange</a></p>
+                <div class="col-md-6">
+                    <p>
+                        <button class="btn btn-navy-blue btn-over-lightblue">.btn-navy-blue .btn-over-lightblue</button>
+                    </p>
+                    <p>
+                        <button class="btn btn-medium-grey btn-over-orange btn-xs">.btn-medium-grey .btn-over-orange .btn-xs</button>
+                    </p>
+                    <p>
+                        <button class="btn btn-light-grey btn-over-lightblue btn-lg">.btn-light-grey .btn-over-lightblue .btn-lg</button>
+                    </p>
+                    <p>
+                        <button class="btn btn-navy-blue btn-over-green">.btn-navy-blue .btn-over-green</button>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <button class="btn btn-navy-blue btn-over-red">.btn-navy-blue .btn-over-red</button>
+                    </p>
+                    <p>
+                        <button class="btn btn-navy-blue btn-over-red btn-pill">.btn-navy-blue .btn-over-red .btn-pill</button>
+                    </p>
+                    <p>
+                        <button class="btn btn-light-grey btn-over-lightblue btn-pill">.btn-light-grey .btn-over-lightblue .btn-pill</button>
+                    </p>
+                    <p>
+                        <button class="btn btn-light-grey btn-over-lightblue btn-pill">Test Button</button>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <h2>Check Boxes and Radio Buttons</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="col-md-4 control-label">Stacked Radio Buttons: </label>
+                    <div class="col-md-8">
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios1" value="option1">
+                            Option 1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios1" value="option2" checked>
+                            Option 2
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios1" value="option3" disabled>
+                            Option 3
+                        </label>
                     </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button lato blue-light">Lato Darkblue - Lightblue</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button blue-dark">OpenSans Blue - Darkblue</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button blue-green">OpenSans Blue - Green</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="clearfix hidden-sm-up"></div>
-                        <p><a href="#" class="button orange mont">Montserrat Orange - Lightorange</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button orange-dark mont">Montserrat Orange - Darkorange</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button grey rale">Button Grey - darkgrey</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button grey-light rale">Button Grey - lightgrey</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button green">Button Green - Darkgreen</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <p><a href="#" class="button green-light">Button Green - lightgrey</a></p>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="background-styleguide">
-                            <p><a href="#" class="button white">Button White - White BG</a></p>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Inline Radio Buttons: </label>
+                        <div class="col-md-8">
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios2" value="option1">
+                                Option 1
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios2" value="option2" checked>
+                                Option 2
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optionsRadios2" value="option3" disabled>
+                                Option 3
+                            </label>
                         </div>
-
                     </div>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-4 control-label">Stacked Checkbox: </label>
+                    <div class="col-md-8">
+                        <label class="checkbox">
+                            <input type="checkbox" value=""> Checkbox 1
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="" disabled> Checkbox 2
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-4 control-label">Inline Checkbox: </label>
+                    <div class="col-md-8">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value=""> Checkbox 1
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="" disabled> Checkbox 2
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h2>Radio Button Sliders</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="col-md-2 fldTitle">Radio1</label>
+                    <div class="col-md-10 field switch fieldwrap">
+                        <label class="cb-enable selected"><span>Enable</span></label>
+                        <label class="cb-disable"><span>Disable</span></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="col-md-2 fldTitle">Radio2</label>
+                    <div class="col-md-10 on_off fieldwrap">
+                        <input type="checkbox" checked="checked" id="on_off_on"/>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h2>Special Buttons</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    To Top Button: please see the right-bottom corner.
+                    <a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
                 </div>
             </div>
         </div>
         <!-- Button End -->
+
+        <!-- Text Box Start -->
+        <div class="tab-pane" id="text_boxes">
+            <h2>Text Boxes</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="text-rounded-border" name="ci_name" id="ci_name" placeholder="your name">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="text-rounded-border" name="ci_email" id="ci_email" class="validate" placeholder="your email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="text-rounded-border" name="arrive" id="arrive" class="datepicker hasDatepicker" placeholder="arrival">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="text-rounded-border" name="depart" id="depart" class="datepicker hasDatepicker" placeholder="departure">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="wrapper-select">
+                        <select class="text-rounded-border">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wrapper-select">
+                        <select class="text-rounded-border">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea class="text-rounded-border" name="comments" id="ci_comments" cols="30" rows="10" placeholder="comments"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- Text Box End -->
+
+        <!-- Labels Start -->
+        <div class="tab-pane active" id="labels">
+            <h2>Labels</h2>
+            <div class="row">
+                <form class="form-inline">
+                    <div class="col-md-6 form-group">
+                        <label for="input1" class="col-md-4">Left Label</label>
+                        <input type="text" id="input1" class="text-rounded-border col-md-8 form-control">
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="row">
+                <form class="form-group">
+                    <div class="col-md-6 form-group">
+                        <label for="input2">Top Label</label>
+                        <input type="text" id="input2" class="text-rounded-border form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Labels End -->
 
         <!-- Grid Start -->
         <div class="tab-pane" id="grid">
@@ -487,6 +644,28 @@
 <script src="../public/assets/js/vendor.js"></script>
 <script>
     $(document).ready(function () {
+        // Start switch Checkboxes
+        $(".cb-enable").click(function () {
+            var parent = $(this).parents('.switch');
+            $('.cb-disable', parent).removeClass('selected');
+            $(this).addClass('selected');
+            $('.checkbox', parent).attr('checked', true);
+        });
+
+        $(".cb-disable").click(function () {
+            var parent = $(this).parents('.switch');
+            $('.cb-enable', parent).removeClass('selected');
+            $(this).addClass('selected');
+            $('.checkbox', parent).attr('checked', false);
+        });
+        // End switch Checkboxes
+
+        // Start iPhone Checkboxes
+        $('.on_off :checkbox').iphoneStyle();
+        $('.disabled :checkbox').iphoneStyle();
+        $('.long_tiny :checkbox').iphoneStyle({checkedLabel: 'Very Long Text', uncheckedLabel: 'Tiny'});
+        // End iPhone Checkboxes
+
 
         $('#autocomplete-example').typeahead({
             name: 'autocomplete-example',
@@ -494,6 +673,7 @@
                 'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
             ]
         });
+
 
         $('#tags2').tagsInput({width: 'auto'});
         $('#tags3').tagsInput({width: 'auto'});
