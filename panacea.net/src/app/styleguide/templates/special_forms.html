@@ -1,0 +1,22 @@
+<div class="tab-pane" id="special_forms_pane">
+    <h2>Special Forms</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Date Picker</h4>
+            <p class="input-group">
+                <input type="text" class="form-control"
+                       uib-datepicker-popup
+                       ng-model="dt"
+                       is-open="vm.popup2.opened"
+                       datepicker-options="vm.dateOptions"
+                       ng-required="true"
+                       close-text="Close"/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-open-calendar" ng-click="vm.open2()">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                    </button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>

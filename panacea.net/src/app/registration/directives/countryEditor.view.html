@@ -1,0 +1,15 @@
+
+<div class="row form-group">
+    <div class="col-md-8">
+        <div>Select Country:</div>
+        <select class="form-control" ng-model="vm.newAccount.country" ng-options="c.name as c.name for c in vm.countries" ng-change="vm.countrySelected()"></select>
+    </div>
+</div>
+
+<div class="row form-group" ng-if="vm.newAccount.country === 'United States'">
+    <div class="col-md-4">
+        <div>Select State:</div>
+        <select class="form-control" ng-model="vm.newAccount.state" ng-options="s.abbreviation as s.name for s in vm.states"></select>
+    </div>
+</div>
+

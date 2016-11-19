@@ -6,13 +6,15 @@
 	angular.module('landing')
 		.controller('landingPageController', landingPageController);
 
-	landingPageController.$inject = ['$location'];
-
-	function landingPageController($location){
+	function landingPageController($location, $uibModal){
 		var vm = this;
 
 		vm.doPatientRegistration = function(){
-            $location.path('/registration');
+            $uibModal.open({
+                templateUrl: '/app/registration/registration.html',
+                controller: 'registrationController',
+                controllerAs: 'vm'
+            });
         };
 	}
 	

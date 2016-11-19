@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Panacea Health</title>
-    <link rel="stylesheet" href="assets/css/lib.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-</head>
-<body ng-app="panacea" class="landing">
-<div ng-controller="mainCtrl">
-    <div class="container-fluid">
-        <header class="row cf">
-            <div class="col-md-6"><h1>Panacea Health</h1></div>
-            <div class="col-md-6 text-right">
-                <nav>
-                    <ul class="menu main_menu hover-menu">
-                        <li class="active"><a title="Home" href="/#/">Home</a></li>
-                        <li><a title="ABOUT US" href="./about-us.html">About</a></li>
-                        <li><a title="SERVICES" href="./services.html">Faq</a></li>
-                        <li class="has-dropdown two-column drop-left"><a title="more" href="#">More </a>
-                            <ul class="menu-dropdown">
-                                <li><a title="HEALTH LIBRARY" href="./knowledgebase.html">HEALTH LIBRARY</a></li>
-                                <li><a title="Filterable PORTFOLIO grid" href="./portfolio.html">Filterable Media grid</a></li>
-                                <li><a title="Article" href="./knowledgebase-article.html">Health Article </a></li>
-                                <li><a title="Team Member" href="./team-member-bio.html">Doctor Single CV </a></li>
-                                <li><a title="Blog Compact" href="./blog-compact.html">Blog Compact </a></li>
-                                <li><a title="Blog Boxed" href="./blog-boxed.html">Blog Boxed Masonry</a></li>
-                                <li><a title="Blog Post" href="./single.html">Blog Post</a></li>
-                                <li><a title="Design Elements" href="./design-elements.html">DESIGN ELEMENTS <span class="label label-danger">MUST see</span> </a></li>
-                                <li><a title="All Demos" href="./all-demos.html" class="linkify">All Demos Page <span class="label label-success">New</span> </a></li>
-                                <li><a title="Documentation" target="_blank" href="http://doc.plethorathemes.com/medicus-html/">DOCUMENTATION</a></li>
-                                <li><a title="404" href="./404.html">Error 404 Page </a></li>
-                                <li><a title="Support" target="_blank" href="http://plethorathemes.com/support/"><i class="fa fa-life-ring"></i> SUPPORT</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <title>Panacea Health</title>
+        <link rel="stylesheet" href="assets/css/lib.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+    </head>
+    <body ng-app="panacea" class="landing">
+        <div ng-controller="mainCtrl">
+            <div class="container-fluid">
+                <header class="row cf">
+                    <div class="col-md-6">
+                        <h1 class="logo-text">Panacea Health</h1>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <nav>
+                            <ul class="menu main_menu hover-menu">
+                              <li class="active"><a title="Home" href="/#/">Home</a></li>
+                              <li><a title="ABOUT US" href="./about-us.html">About</a></li>
+                              <li><a title="SERVICES" href="./services.html">Faq</a></li>
+                              <li class="has-dropdown two-column drop-left"><a title="more" href="#">More </a>
+                                <ul class="menu-dropdown"> 
+                                  <li><a title="HEALTH LIBRARY" href="./knowledgebase.html">HEALTH LIBRARY</a></li>
+                                  <li><a title="Filterable PORTFOLIO grid" href="./portfolio.html">Filterable Media grid</a></li>
+                                  <li><a title="Article" href="./knowledgebase-article.html">Health Article  </a></li>
+                                  <li><a title="Team Member" href="./team-member-bio.html">Doctor Single CV  </a></li>
+                                  <li><a title="Blog Compact" href="./blog-compact.html">Blog Compact </a></li>
+                                  <li><a title="Blog Boxed" href="./blog-boxed.html">Blog Boxed Masonry</a></li>
+                                  <li><a title="Blog Post" href="./single.html">Blog Post</a></li>
+                                  <li><a title="Design Elements" href="./design-elements.html">DESIGN ELEMENTS <span class="label label-danger">MUST see</span> </a></li>
+                                  <li><a title="All Demos" href="./all-demos.html" class="linkify">All Demos Page <span class="label label-success">New</span>    </a></li>
+                                  <li><a title="Documentation" target="_blank" href="http://doc.plethorathemes.com/medicus-html/">DOCUMENTATION</a></li>
+                                  <li><a title="404" href="./404.html">Error 404 Page          </a></li>
+                                  <li><a title="Support" target="_blank" href="http://plethorathemes.com/support/"><i class="fa fa-life-ring"></i> SUPPORT</a></li>
+                                </ul>
+                              </li>
                             </ul>
-                        </li>
-                    </ul>
-                </nav>
+                        </nav>
+                    </div>
+                </header>
+
+
+                <div class="row" ng-view=""></div>
             </div>
-        </header>
+        </div>
 
+    </body>
 
-        <div class="row" ng-view=""></div>
-    </div>
-</div>
-
-</body>
-
-<!-- all JS in lib folder -->
-<script src="assets/js/vendor.js"></script>
+    <!-- all JS in lib folder -->
+    <script src="assets/js/vendor.js"></script>
 <!--     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script> -->
 
-<!-- env: prod -->
-<!-- <script src="assets/js/vendor.min.js"></script> -->
+    <!-- env: prod -->
+    <!-- <script src="assets/js/vendor.min.js"></script> -->
 
+    <!-- Custom Extensions -->
+    <script src="app/prototype.extensions.js"></script>
 
-<!-- Load modules -->
-<script src="app/modals/modals.module.js"></script>
-<script src="app/modals/infoModalService.js"></script>
-<script src="app/landing/landing.module.js"></script>
-<script src="app/landing/landingPageController.js"></script>
+    <!-- Load modules -->
+    <script src="app/modals/modals.module.js"></script>
+    <script src="app/modals/infoModalService.js"></script>
 
-<script src="app/registration/registration.module.js"></script>
-<script src="app/registration/registrationService.js"></script>
-<script src="app/registration/registrationController.js"></script>
+    <script src="app/landing/landing.module.js"></script>
+    <script src="app/landing/landingPageController.js"></script>
 
-<script src="app/styleguide/styleguideController.js"></script>
+    <script src="app/services/services.module.js"></script>
+    <script src="app/services/userService.js"></script>
 
-<script src="app/app.js"></script>
+    <script src="app/registration/registration.module.js"></script>
+
+    <script src="app/services/yearGenerator.js"></script>
+
+    <script src="app/registration/directives/listItemEditor.directive.js"></script>
+    <script src="app/registration/directives/countryEditor.directive.js"></script>
+    <script src="app/registration/directives/personDetails.directive.js"></script>
+
+    <script src="app/registration/registrationService.js"></script>
+    <script src="app/registration/registrationController.js"></script>
+
+    <script src="app/profileManagement/profileManagement.module.js"></script>
+    <script src="app/profileManagement/aboutMe.controller.js"></script>
+
+    <script src="app/profileManagement/profileManagement.controller.js"></script>
+
+    <script src="app/styleguide/styleguide.module.js"></script>
+    <script src="app/styleguide/styleguideController.js"></script>
+
+    <script src="app/app.js"></script>
 </html>

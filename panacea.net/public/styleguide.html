@@ -5,21 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Panacea Health</title>
-    <link rel="stylesheet" href="../public/assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/lib.css">
 
-    <link rel="stylesheet" href="../src/assets/css/plugins/tagsinput.css">
-    <link rel="stylesheet" href="../src/assets/css/plugins/select2.css">
-    <link rel="stylesheet" href="../src/assets/css/plugins/bootstrap-multiselect.css">
-    <link rel="stylesheet" href="../src/assets/css/plugins/typeahead.css">
-    <link rel="stylesheet" href="../src/assets/css/plugins/iphone-style-checkboxes.css">
-    <link rel="stylesheet" href="../src/assets/css/plugins/jquery-switch.css">
-    <link rel="stylesheet" href="../src/assets/css/plugins/slide-to-top.css">
+
 </head>
 
 <body class="style-guide">
 
 <!-- Static navbar -->
-<nav class="navbar navbar-inverse navbar-top">
+<div class="navbar navbar-inverse navbar-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,46 +34,45 @@
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
-</nav>
-
-
+</div>
 <div class="container-fluid sidebar">
-    <ul class="nav nav-pills nav-stacked col-xs-12 col-sm-3 col-md-2 col-lg-2">
-        <li class="active"><a href="#colors" data-toggle="pill">Colors</a></li>
-        <li><a data-toggle="pill" href="#typography">Typography</a></li>
-        <li><a data-toggle="pill" href="#font_color">Font Color</a></li>
-        <li><a data-toggle="pill" href="#grid">Grid</a></li>
-        <li><a data-toggle="pill" href="#paragraphs">Paragraphs</a></li>
-        <li><a data-toggle="pill" href="#buttons">Buttons</a></li>
-        <li><a data-toggle="pill" href="#text_boxes">Text Boxes</a></li>
-        <li><a data-toggle="pill" href="#labels">Labels</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Forms</a></li>
-        <li><a data-toggle="pill" href="#grdid">Special Forms</a></li>
-        <li><a data-toggle="pill" href="#grdid">Wizard</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Tables</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Pagination</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Modals</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Breadcrumbs</a></li>
-        <li><a data-toggle="pill" href="#gdrid">FAQ</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Notifications</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Search Results</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Progress</a></li>
-        <li><a data-toggle="pill" href="#dgrid">Text Editor</a></li>
-        <li><a data-toggle="pill" href="#grdid">Landing Header</a></li>
-        <li><a data-toggle="pill" href="#grdid">Landing Nav</a></li>
-        <li><a data-toggle="pill" href="#grdid">Landing Buttons</a></li>
-        <li><a data-toggle="pill" href="#grdid">Registration</a></li>
-        <li><a data-toggle="pill" href="#grdid">Profile Header</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Profile Sub-Header</a></li>
-        <li><a data-toggle="pill" href="#gdrid">Profile Side Nav</a></li>
-        <li><a data-toggle="pill" href="#grdid">Profile Colors</a></li>
-        <li><a data-toggle="pill" href="#grdid">Landing Header</a></li>
-        <li><a data-toggle="pill" href="#gridd">Profile Avatars</a></li>
+    <ul class="items nav nav-pills nav-stacked col-xs-12 col-sm-3 col-md-2 col-lg-2">
+        <li class="item active"><a data-toggle="pill" href="#colors_pane">Colors</a></li>
+        <li class="item"><a data-toggle="pill" href="#typography_pane">Typography</a></li>
+        <li class="item"><a data-toggle="pill" href="#font_color_pane">Font Color</a></li>
+        <li class="item"><a data-toggle="pill" href="#grid_pane">Grid</a></li>
+        <li class="item"><a data-toggle="pill" href="#paragraphs_pane">Paragraphs</a></li>
+        <li class="item"><a data-toggle="pill" href="#buttons_pane">Buttons</a></li>
+        <li class="item"><a data-toggle="pill" href="#text_boxes_pane">Text Boxes</a></li>
+        <li class="item"><a data-toggle="pill" href="#labels_pane">Labels</a></li>
+        <li class="item"><a data-toggle="pill" href="#forms_pane">Forms</a></li>
+        <li class="item"><a data-toggle="pill" href="#special_forms_pane">Special Forms</a></li>
+        <li class="item"><a data-toggle="pill" href="#wizard_pane">Wizard</a></li>
+        <li class="item"><a data-toggle="pill" href="#tooltip_pane">Tooltip</a></li>
+        <li class="item"><a data-toggle="pill" href="#tables_pane">Tables</a></li>
+        <li class="item"><a data-toggle="pill" href="#pagination_pane">Pagination</a></li>
+        <li class="item"><a data-toggle="pill" href="#modals_pane">Modals</a></li>
+        <li class="item"><a data-toggle="pill" href="#breadcrumbs_pane">Breadcrumbs</a></li>
+        <li class="item"><a data-toggle="pill" href="#faq_pane">FAQ</a></li>
+        <li class="item"><a data-toggle="pill" href="#notifications_pane">Notifications</a></li>
+        <li class="item"><a data-toggle="pill" href="#search_results_pane">Search Results</a></li>
+        <li class="item"><a data-toggle="pill" href="#progress_pane">Progress</a></li>
+        <li class="item"><a data-toggle="pill" href="#text_editor_pane">Text Editor</a></li>
+        <li class="item"><a data-toggle="pill" href="#ads_pane">Landing Header</a></li>
+        <li class="item"><a data-toggle="pill" href="#landing_header_pane">Landing Header</a></li>
+        <li class="item"><a data-toggle="pill" href="#landing_nav_pane">Landing Nav</a></li>
+        <li class="item"><a data-toggle="pill" href="#landing_buttons_pane">Landing Buttons</a></li>
+        <li class="item"><a data-toggle="pill" href="#registration_pane">Registration</a></li>
+        <li class="item"><a data-toggle="pill" href="#profile_header_pane">Profile Header</a></li>
+        <li class="item"><a data-toggle="pill" href="#profile_subheader_pane">Profile Sub-Header</a></li>
+        <li class="item"><a data-toggle="pill" href="#profile_side_nav_pane">Profile Side Nav</a></li>
+        <li class="item"><a data-toggle="pill" href="#profile_colors_pane">Profile Colors</a></li>
+        <li class="item"><a data-toggle="pill" href="#profile_avatars_pane">Profile Avatars</a></li>
     </ul>
 
     <div class="tab-content  col-xs-12 col-sm-9 col-md-10 col-lg-10">
         <!-- Colors Start -->
-        <div class="tab-pane" id="colors">
+        <div class="tab-pane active" id="colors_pane">
             <h2>Colors</h2>
             <hr>
             <h4>Medicus</h4>
@@ -213,7 +207,7 @@
         <!-- Colors End -->
 
         <!-- Typography Start -->
-        <div class="tab-pane" id="typography">
+        <div class="tab-pane" id="typography_pane">
             <h2>Typography</h2>
             <div class="row">
                 <div class="col-xs-6 lato">
@@ -267,7 +261,7 @@
         <!-- Typography End -->
 
         <!-- Font Color Start -->
-        <div class="tab-pane" id="font_color">
+        <div class="tab-pane" id="font_color_pane">
             <h2>Font Colors</h2>
             <div class="row">
                 <div class="col-xs-6 text-white bg-light-blue">
@@ -305,7 +299,7 @@
         <!-- Font Color End -->
 
         <!-- Grid Start -->
-        <div class="tab-pane" id="grid">
+        <div class="tab-pane" id="grid_pane">
             <h2>Grid</h2>
             <div class="grids-content text-white">
                 <div class="row">
@@ -409,7 +403,7 @@
         <!-- Grid End -->
 
         <!-- Paragraphs Start -->
-        <div class="tab-pane" id="paragraphs">
+        <div class="tab-pane" id="paragraphs_pane">
             <h2>Paragraphs</h2>
             <div class="row">
                 <div class="col-md-12">
@@ -425,7 +419,7 @@
         <!-- Paragraphs End -->
 
         <!-- Button Start -->
-        <div class="tab-pane" id="buttons">
+        <div class="tab-pane" id="buttons_pane">
             <h2>Buttons</h2>
             <div class="row">
                 <div class="col-md-6">
@@ -532,7 +526,7 @@
                 <div class="col-md-6">
                     <label class="col-md-2 fldTitle">Radio2</label>
                     <div class="col-md-10 on_off fieldwrap">
-                        <input type="checkbox" checked="checked" id="on_off_on"/>
+                        <input title="" type="checkbox" checked="checked" id="on_off_on"/>
                     </div>
                 </div>
             </div>
@@ -543,67 +537,74 @@
                     To Top Button: please see the right-bottom corner.
                     <a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
                 </div>
+                <div class="col-md-6">
+                    <label class="col-md-2 fldTitle">Radio1</label>
+                    <div class="col-md-10 field switch fieldwrap">
+                        <label class="cb-enable selected"><span>Enable</span></label>
+                        <label class="cb-disable"><span>Disable</span></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="col-md-2 fldTitle">Radio2</label>
+                    <div class="col-md-10 on_off fieldwrap">
+                        <input title="" type="checkbox" checked="checked" id="on_off_on1"/>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Button End -->
 
         <!-- Text Box Start -->
-        <div class="tab-pane" id="text_boxes">
+        <div class="tab-pane" id="text_boxes_pane">
             <h2>Text Boxes</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <input type="text" class="text-rounded-border" name="ci_name" id="ci_name" placeholder="your name">
-                </div>
-                <div class="col-md-6">
-                    <input type="email" class="text-rounded-border" name="ci_email" id="ci_email" class="validate" placeholder="your email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <input type="text" class="text-rounded-border" name="arrive" id="arrive" class="datepicker hasDatepicker" placeholder="arrival">
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="text-rounded-border" name="depart" id="depart" class="datepicker hasDatepicker" placeholder="departure">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="wrapper-select">
-                        <select class="text-rounded-border">
+                    <p>
+                        <input type="text" name="ci_name" id="ci_name1" class="form-control" placeholder="your name">
+                    </p>
+                    <p>
+                        <input type="text" name="arrive" id="arrive1" class="form-control datepicker hasDatepicker" placeholder="arrival">
+                    </p>
+                    <p>
+                        <select class="form-control" title="">
                             <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="opel">Opel</option>
                             <option value="audi">Audi</option>
                         </select>
-                    </div>
+                    </p>
+                    <p>
+                        <textarea class="form-control" name="comments" id="ci_comments1" cols="30" rows="10" placeholder="comments"></textarea>
+                    </p>
                 </div>
                 <div class="col-md-6">
-                    <div class="wrapper-select">
-                        <select class="text-rounded-border">
+                    <p>
+                        <input type="email" name="ci_email" id="ci_email1" class="form-control validate" placeholder="your email"/>
+                    </p>
+                    <p>
+                        <input type="text" name="depart" id="depart1" class="form-control datepicker hasDatepicker" placeholder="departure">
+                    </p>
+                    <p>
+                        <select class="form-control" title="">
                             <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="opel">Opel</option>
                             <option value="audi">Audi</option>
                         </select>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <textarea class="text-rounded-border" name="comments" id="ci_comments" cols="30" rows="10" placeholder="comments"></textarea>
+                    </p>
                 </div>
             </div>
         </div>
         <!-- Text Box End -->
 
         <!-- Labels Start -->
-        <div class="tab-pane active" id="labels">
+        <div class="tab-pane" id="labels_pane">
             <h2>Labels</h2>
             <div class="row">
                 <form class="form-inline">
                     <div class="col-md-6 form-group">
                         <label for="input1" class="col-md-4">Left Label</label>
-                        <input type="text" id="input1" class="text-rounded-border col-md-8 form-control">
+                        <input type="text" id="input1" class=" col-md-8 form-control">
                     </div>
                 </form>
             </div>
@@ -612,21 +613,925 @@
                 <form class="form-group">
                     <div class="col-md-6 form-group">
                         <label for="input2">Top Label</label>
-                        <input type="text" id="input2" class="text-rounded-border form-control">
+                        <input type="text" id="input2" class=" form-control">
                     </div>
                 </form>
             </div>
         </div>
         <!-- Labels End -->
 
-        <!-- Grid Start -->
-        <div class="tab-pane" id="grid">
-            <h2>Grid</h2>
+        <!-- Forms Start -->
+        <div class="tab-pane" id="forms_pane">
+            <h2>Forms</h2>
+            <div class="row">
+                <form class="form-horizontal row-border" action="#">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="col-xs-2 col-sm-1 col-md-1">Category</th>
+                            <th class="col-xs-6 col-sm-11 col-md-11">Element/Component</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Full Size Inputs</td>
+                            <td>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Usual input field:</label>
+                                        <div class="col-md-10"><input title="" type="text" name="regular" class="form-control"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Password:</label>
+                                        <div class="col-md-10"><input title="" class="form-control" type="password" name="pass">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Read only field:</label>
+                                        <div class="col-md-10"><input title="" class="form-control" type="text" name="readonly"
+                                                                      readonly="" value="read only"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Disabled field:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" name="disabled" disabled="disabled" value="disabled"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Autocomplete (<a
+                                                href="http://twitter.github.io/typeahead.js/"
+                                                target="_blank">Typeahead.js</a>):</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" name="autocomplete" class="form-control" id="autocomplete-example">
+                                            <span class="help-block">Start typing e.g. New York</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Max 10 characters:</label>
+                                        <div class="col-md-10"><input type="text" name="regular" maxlength="10"
+                                                                      placeholder="max 10 characters" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Textarea:</label>
+                                        <div class="col-md-10"><textarea title="" rows="3" cols="5" name="textarea"
+                                                                         class="form-control"></textarea></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Elastic textarea:</label>
+                                        <div class="col-md-10">
+                                            <textarea title="" rows="3"
+                                                      cols="5" name="textarea"
+                                                      class="auto form-control"
+                                                      style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 68px;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">With character counter:</label>
+                                        <div class="col-md-10">
+                                        <textarea title="" rows="3" cols="5" name="use_this_name_as_id_below"
+                                                  class="limited form-control" data-limit="100"
+                                                  maxlength="100"></textarea>
+                                            <span class="help-block" id="limit-text-use_this_name_as_id_below">Field limited to 100 characters.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Tags:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" id="tags2" class="tags" value="these,are,sample,tags" style="display: none;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Tags with autocomplete:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" id="tags3" class="tags-autocomplete" value="tags,with,autocomplete" style="display: none;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Styled Form Elements</td>
+                            <td>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Multiselect:</label>
+                                        <div class="col-md-10">
+                                            <select title="" multiple="multiple" class="multiselect">
+                                                <option value="cheese" selected>Cheese</option>
+                                                <option value="tomatoes" selected>Tomatoes</option>
+                                                <option value="mozarella" selected>Mozzarella</option>
+                                                <option value="mushrooms">Mushrooms</option>
+                                                <option value="pepperoni">Pepperoni</option>
+                                                <option value="onions">Onions</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Select List</td>
+                            <td>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Basic Select:</label>
+                                        <div class="col-md-10">
+                                            <select title="" id="select2_sel1" class="select2 select2-select-00 col-md-12 full-width-fix select2-offscreen" multiple="" size="5" tabindex="-1">
+                                                <option>Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>Arkansas</option>
+                                                <option selected="">California</option>
+                                                <option>Colorado</option>
+                                                <option>Connecticut</option>
+                                                <option>Delaware</option>
+                                                <option>Florida</option>
+                                                <option>Georgia</option>
+                                                <option>Hawaii</option>
+                                                <option>Idaho</option>
+                                                <option>Illinois</option>
+                                                <option>Indiana</option>
+                                                <option>Iowa</option>
+                                                <option>Kansas</option>
+                                                <option selected="">Kentucky</option>
+                                                <option>Louisiana</option>
+                                                <option>Maine</option>
+                                                <option>Maryland</option>
+                                                <option>Massachusetts</option>
+                                                <option>Michigan</option>
+                                                <option>Minnesota</option>
+                                                <option>Mississippi</option>
+                                                <option>Missouri</option>
+                                                <option>Montana</option>
+                                                <option>Nebraska</option>
+                                                <option>Nevada</option>
+                                                <option>New Hampshire</option>
+                                                <option>New Jersey</option>
+                                                <option>New Mexico</option>
+                                                <option>New York</option>
+                                                <option>North Dakota</option>
+                                                <option>North Carolina</option>
+                                                <option>Ohio</option>
+                                                <option>Oklahoma</option>
+                                                <option>Oregon</option>
+                                                <option>Pennsylvania</option>
+                                                <option>Rhode Island</option>
+                                                <option>South Carolina</option>
+                                                <option>South Dakota</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Utah</option>
+                                                <option>Vermont</option>
+                                                <option>Virginia</option>
+                                                <option>Washington</option>
+                                                <option>West Virginia</option>
+                                                <option>Wisconsin</option>
+                                                <option>Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Multiple select:</label>
+                                        <div class="col-md-10">
+                                            <select title="" id="select2_sel2" class="select2 select2-select-00 col-md-12 full-width-fix select2-offscreen" multiple="multiple" size="5" tabindex="-1">
+                                                <option>Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>Arkansas</option>
+                                                <option selected="">California</option>
+                                                <option>Colorado</option>
+                                                <option>Connecticut</option>
+                                                <option>Delaware</option>
+                                                <option>Florida</option>
+                                                <option>Georgia</option>
+                                                <option>Hawaii</option>
+                                                <option>Idaho</option>
+                                                <option>Illinois</option>
+                                                <option>Indiana</option>
+                                                <option>Iowa</option>
+                                                <option>Kansas</option>
+                                                <option selected="">Kentucky</option>
+                                                <option>Louisiana</option>
+                                                <option>Maine</option>
+                                                <option>Maryland</option>
+                                                <option>Massachusetts</option>
+                                                <option>Michigan</option>
+                                                <option>Minnesota</option>
+                                                <option>Mississippi</option>
+                                                <option>Missouri</option>
+                                                <option>Montana</option>
+                                                <option>Nebraska</option>
+                                                <option>Nevada</option>
+                                                <option>New Hampshire</option>
+                                                <option>New Jersey</option>
+                                                <option>New Mexico</option>
+                                                <option>New York</option>
+                                                <option>North Dakota</option>
+                                                <option>North Carolina</option>
+                                                <option>Ohio</option>
+                                                <option>Oklahoma</option>
+                                                <option>Oregon</option>
+                                                <option>Pennsylvania</option>
+                                                <option>Rhode Island</option>
+                                                <option>South Carolina</option>
+                                                <option>South Dakota</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Utah</option>
+                                                <option>Vermont</option>
+                                                <option>Virginia</option>
+                                                <option>Washington</option>
+                                                <option>West Virginia</option>
+                                                <option>Wisconsin</option>
+                                                <option>Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">With Grouping:</label>
+                                        <div class="col-md-10">
+                                            <select title="" id="select2_sel3" class="select2 select2-select-00 col-md-12 full-width-fix">
+                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                </optgroup>
+                                                <optgroup label="Pacific Time Zone">
+                                                    <option value="CA">California</option>
+                                                    <option value="NV">Nevada</option>
+                                                    <option value="OR">Oregon</option>
+                                                    <option value="WA">Washington</option>
+                                                </optgroup>
+                                                <optgroup label="Mountain Time Zone">
+                                                    <option value="AZ">Arizona</option>
+                                                    <option value="CO">Colorado</option>
+                                                    <option value="ID">Idaho</option>
+                                                    <option value="MT">Montana</option>
+                                                    <option value="NE">Nebraska</option>
+                                                    <option value="NM">New Mexico</option>
+                                                    <option value="ND">North Dakota</option>
+                                                    <option value="UT">Utah</option>
+                                                    <option value="WY">Wyoming</option>
+                                                </optgroup>
+                                                <optgroup label="Central Time Zone">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="AR">Arkansas</option>
+                                                    <option value="IL">Illinois</option>
+                                                    <option value="IA">Iowa</option>
+                                                    <option value="KS">Kansas</option>
+                                                    <option value="KY">Kentucky</option>
+                                                    <option value="LA">Louisiana</option>
+                                                    <option value="MN">Minnesota</option>
+                                                    <option value="MS">Mississippi</option>
+                                                    <option value="MO">Missouri</option>
+                                                    <option value="OK">Oklahoma</option>
+                                                    <option value="SD">South Dakota</option>
+                                                    <option value="TX">Texas</option>
+                                                    <option value="TN">Tennessee</option>
+                                                    <option value="WI">Wisconsin</option>
+                                                </optgroup>
+                                                <optgroup label="Eastern Time Zone">
+                                                    <option value="CT">Connecticut</option>
+                                                    <option value="DE">Delaware</option>
+                                                    <option value="FL">Florida</option>
+                                                    <option value="GA">Georgia</option>
+                                                    <option value="IN">Indiana</option>
+                                                    <option value="ME">Maine</option>
+                                                    <option value="MD">Maryland</option>
+                                                    <option value="MA">Massachusetts</option>
+                                                    <option value="MI">Michigan</option>
+                                                    <option value="NH">New Hampshire</option>
+                                                    <option value="NJ">New Jersey</option>
+                                                    <option value="NY">New York</option>
+                                                    <option value="NC">North Carolina</option>
+                                                    <option value="OH">Ohio</option>
+                                                    <option value="PA">Pennsylvania</option>
+                                                    <option value="RI">Rhode Island</option>
+                                                    <option value="SC">South Carolina</option>
+                                                    <option value="VT">Vermont</option>
+                                                    <option value="VA">Virginia</option>
+                                                    <option value="WV">West Virginia</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">With Placeholder:</label>
+                                        <div class="col-md-10">
+                                            <select title="" id="select2_sel4" class="select2 select2-select-00 col-md-12 full-width-fix" multiple size="5" data-placeholder="Select a State">
+                                                <option>Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>Arkansas</option>
+                                                <option>California</option>
+                                                <option>Colorado</option>
+                                                <option>Connecticut</option>
+                                                <option>Delaware</option>
+                                                <option>Florida</option>
+                                                <option>Georgia</option>
+                                                <option>Hawaii</option>
+                                                <option>Idaho</option>
+                                                <option>Illinois</option>
+                                                <option>Indiana</option>
+                                                <option>Iowa</option>
+                                                <option>Kansas</option>
+                                                <option>Kentucky</option>
+                                                <option>Louisiana</option>
+                                                <option>Maine</option>
+                                                <option>Maryland</option>
+                                                <option>Massachusetts</option>
+                                                <option>Michigan</option>
+                                                <option>Minnesota</option>
+                                                <option>Mississippi</option>
+                                                <option>Missouri</option>
+                                                <option>Montana</option>
+                                                <option>Nebraska</option>
+                                                <option>Nevada</option>
+                                                <option>New Hampshire</option>
+                                                <option>New Jersey</option>
+                                                <option>New Mexico</option>
+                                                <option>New York</option>
+                                                <option>North Dakota</option>
+                                                <option>North Carolina</option>
+                                                <option>Ohio</option>
+                                                <option>Oklahoma</option>
+                                                <option>Oregon</option>
+                                                <option>Pennsylvania</option>
+                                                <option>Rhode Island</option>
+                                                <option>South Carolina</option>
+                                                <option>South Dakota</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Utah</option>
+                                                <option>Vermont</option>
+                                                <option>Virginia</option>
+                                                <option>Washington</option>
+                                                <option>West Virginia</option>
+                                                <option>Wisconsin</option>
+                                                <option>Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">With Minimum Input:</label>
+                                        <div class="col-md-10">
+                                            <select title="" id="select2_sel5" class="select2 select2-select-01 col-md-12 full-width-fix" multiple size="5" data-placeholder="Select a State">
+                                                <option>Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>Arizona</option>
+                                                <option>Arkansas</option>
+                                                <option>California</option>
+                                                <option>Colorado</option>
+                                                <option>Connecticut</option>
+                                                <option>Delaware</option>
+                                                <option>Florida</option>
+                                                <option>Georgia</option>
+                                                <option>Hawaii</option>
+                                                <option>Idaho</option>
+                                                <option>Illinois</option>
+                                                <option>Indiana</option>
+                                                <option>Iowa</option>
+                                                <option>Kansas</option>
+                                                <option>Kentucky</option>
+                                                <option>Louisiana</option>
+                                                <option>Maine</option>
+                                                <option>Maryland</option>
+                                                <option>Massachusetts</option>
+                                                <option>Michigan</option>
+                                                <option>Minnesota</option>
+                                                <option>Mississippi</option>
+                                                <option>Missouri</option>
+                                                <option>Montana</option>
+                                                <option>Nebraska</option>
+                                                <option>Nevada</option>
+                                                <option>New Hampshire</option>
+                                                <option>New Jersey</option>
+                                                <option>New Mexico</option>
+                                                <option>New York</option>
+                                                <option>North Dakota</option>
+                                                <option>North Carolina</option>
+                                                <option>Ohio</option>
+                                                <option>Oklahoma</option>
+                                                <option>Oregon</option>
+                                                <option>Pennsylvania</option>
+                                                <option>Rhode Island</option>
+                                                <option>South Carolina</option>
+                                                <option>South Dakota</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Utah</option>
+                                                <option>Vermont</option>
+                                                <option>Virginia</option>
+                                                <option>Washington</option>
+                                                <option>West Virginia</option>
+                                                <option>Wisconsin</option>
+                                                <option>Wyoming</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Tagging Support:</label>
+                                        <div class="col-md-10">
+                                            <input id="select2_sel6" class="select2-select-02 col-md-12 full-width-fix" multiple data-placeholder="Type to add a Tag" type="hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Masked Inputs</td>
+                            <td>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Date:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" class="form-control" data-mask="99/99/9999"><span class="help-block">99/99/9999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Phone:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" class="form-control" data-mask="(999) 999-9999"><span class="help-block">(999) 999-9999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Phone +Ext:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" class="form-control" data-mask="(999) 999-9999 x99999"><span class="help-block">(999) 999-9999 x99999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Int:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" class="form-control" data-mask="+39 999 999 999"><span class="help-block">+39 999 999 999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Tax ID:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" class="form-control" data-mask="99-9999999"><span class="help-block">99-9999999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">SSN:</label>
+                                        <div class="col-md-10">
+                                            <input title="" type="text" class="form-control" data-mask="999-99-9999"><span class="help-block">999-99-9999</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- Forms End -->
+
+        <!-- Special Forms Start -->
+        <div class="tab-pane" id="special_forms_pane">
+            <h2>Special Forms</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Date Picker</h4>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control"/>
+                            <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Special Forms End -->
+
+        <!-- Wizard Start -->
+        <div class="tab-pane" id="wizard_pane">
+            <h2>Wizard</h2>
+            <div class="row">
+                <div id="wizard" class="swMain">
+                    <ul class="wizard-steps">
+                        <li>
+                            <a href="#step-1" class="">
+                                <div class="wizard-step-number">1</div>
+                                <div class="wizard-step-label">Business Details</div>
+                                <div class="wizard-step-bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#step-2" class="">
+                                <div class="wizard-step-number">2</div>
+                                <div class="wizard-step-label">Profile Details</div>
+                                <div class="wizard-step-bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#step-3" class="">
+                                <div class="wizard-step-number">3</div>
+                                <div class="wizard-step-label">Contact Details</div>
+                                <div class="wizard-step-bar"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#step-4" class="">
+                                <div class="wizard-step-number">4</div>
+                                <div class="wizard-step-label">Finish Wizard</div>
+                                <div class="wizard-step-bar"></div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div id="step-1">
+                        <h3>Business Details:</h3>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="bizname">Business Name</label>
+                                    <div class="controls">
+                                        <input type="text" class="input-medium" id="bizname">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="bizemail">Business Email</label>
+                                    <div class="controls">
+                                        <input type="text" class="input-large" id="bizemail">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="bizindustry">Industry</label>
+                                    <div class="controls">
+                                        <select id="bizindustry">
+                                            <option>Retail</option>
+                                            <option>Technology</option>
+                                            <option>Entertainment</option>
+                                            <option>Automotive</option>
+                                            <option>Transportation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> <!-- /span6 -->
+                        </div> <!-- /row-fluid -->
+                    </div> <!-- /step -->
+
+                    <div id="step-2">
+                        <h3>Profile Details:</h3>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="userfirst">First Name</label>
+                                    <div class="controls">
+                                        <input class="input-medium" id="userfirst">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="userlast">Last Name</label>
+                                    <div class="controls">
+                                        <input class="input-large" id="userlast">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="userlanguage">Language</label>
+                                    <div class="controls">
+                                        <select id="userlanguage" name="userlanguage">
+                                            <option>Select Language...</option>
+                                            <option value="da">Danish - Dansk</option>
+                                            <option value="nl">Dutch - Nederlands</option>
+                                            <option value="en" selected="">English</option>
+                                            <option value="fil">Filipino - Filipino</option>
+                                            <option value="fi">Finnish - Suomi</option>
+                                            <option value="fr">French - francais</option>
+                                            <option value="de">German - Deutsch</option>
+                                            <option value="hu">Hungarian - Magyar</option>
+                                            <option value="id">Indonesian - Bahasa Indonesia</option>
+                                            <option value="it">Italian - Italiano</option>
+                                            <option value="msa">Malay - Bahasa Melayu</option>
+                                            <option value="no">Norwegian - Norsk</option>
+                                            <option value="pl">Polish - Polski</option>
+                                            <option value="pt">Portuguese - Português</option>
+                                            <option value="es">Spanish - Español</option>
+                                            <option value="sv">Swedish - Svenska</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="userbio">Bio</label>
+                                    <div class="controls">
+                                        <textarea class="input-large" id="userbio" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div> <!-- /span6 -->
+                        </div> <!-- /row-fluid -->
+                    </div> <!-- /step -->
+                    <div id="step-3">
+                        <h3>Contact Details:</h3>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="control-group">
+                                    <label class="control-label" for="contactname">Full Name</label>
+                                    <div class="controls">
+                                        <input type="text" class="input-medium" id="contactname">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="contactphone">Phone #</label>
+                                    <div class="controls">
+                                        <input type="text" class="input-medium" id="contactphone">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="contactfax">Fax #</label>
+                                    <div class="controls">
+                                        <input type="text" class="input-medium" id="contactfax">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="contactemail">Contact Email</label>
+                                    <div class="controls">
+                                        <input type="text" class="input-large" id="contactemail">
+                                    </div>
+                                </div>
+                            </div> <!-- /span6 -->
+                            <div class="span5 offset1">
+                                <div class="well" style="margin: 20px;">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div> <!-- /span6 -->
+                        </div> <!-- /row-fluid -->
+                    </div> <!-- /step -->
+                    <div id="step-4">
+                        <h3>Complete:</h3>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div> <!-- /span6 -->
+                        </div> <!-- /row-fluid -->
+                    </div> <!-- /step -->
+                </div> <!-- /wizard -->
+            </div>
+        </div>
+        <!-- Wizard End -->
+
+        <!-- Tooltip Start -->
+        <div class="tab-pane" id="tooltip_pane">
+            <h2>Tooltip</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> Tooltips</h4>
+                        </div>
+                        <div class="widget-content align-center">
+                            <p class="align-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                <button class="btn bs-tooltip btn-navy-blue btn-over-lightblue" data-placement="top" data-original-title="Tooltip at top">Top</button>
+                                <button class="btn bs-tooltip btn-navy-blue btn-over-lightblue" data-placement="left" data-original-title="Tooltip at left">Left</button>
+                                <button class="btn bs-tooltip btn-navy-blue btn-over-lightblue" data-placement="right" data-original-title="Tooltip at right">Right</button>
+                                <button class="btn bs-tooltip btn-navy-blue btn-over-lightblue" data-placement="bottom" data-original-title="Tooltip at bottom">Bottom</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Tooltips -->
+
+                <!--=== Popovers ===-->
+                <div class="col-md-6">
+                    <div class="widget box">
+                        <div class="widget-header">
+                            <h4><i class="icon-reorder"></i> Popovers</h4>
+                        </div>
+                        <div class="widget-content align-center">
+                            <p class="align-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                <button class="btn bs-popover btn-navy-blue btn-over-lightblue" data-trigger="hover" data-placement="top" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover at top">Top</button>
+                                <button class="btn bs-popover btn-navy-blue btn-over-lightblue" data-trigger="hover" data-placement="left" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover at left">Left</button>
+                                <button class="btn bs-popover btn-navy-blue btn-over-lightblue" data-trigger="hover" data-placement="right" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover at right">Right</button>
+                                <button class="btn bs-popover btn-navy-blue btn-over-lightblue" data-trigger="hover" data-placement="bottom" data-content="Popover body goes here! Popover body goes here!" data-original-title="Popover at bottom">Bottom</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tooltip End -->
+
+        <!-- Tables Start -->
+        <div class="tab-pane" id="tables_pane">
+            <h2>Tables</h2>
             <div class="row">
 
             </div>
         </div>
-        <!-- Grid End -->
+        <!-- Tables End -->
+
+        <!-- Pagination Start -->
+        <div class="tab-pane" id="pagination_pane">
+            <h2>Pagination</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Pagination End -->
+
+        <!-- Modals Start -->
+        <div class="tab-pane" id="modals_pane">
+            <h2>Modals</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Modals End -->
+
+        <!-- Breadcrumbs Start -->
+        <div class="tab-pane" id="breadcrumbs_pane">
+            <h2>Breadcrumbs</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Breadcrumbs End -->
+
+        <!-- Faq Start -->
+        <div class="tab-pane" id="faq_pane">
+            <h2>Faq</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Faq End -->
+
+        <!-- Notifications Start -->
+        <div class="tab-pane" id="notifications_pane">
+            <h2>Notifications</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Notifications End -->
+
+        <!-- Search Result Start -->
+        <div class="tab-pane" id="search_results_pane">
+            <h2>Search Result</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Search Result End -->
+
+        <!-- Progress Start -->
+        <div class="tab-pane" id="progress_pane">
+            <h2>Progress</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Progress End -->
+
+        <!-- Text Editor Start -->
+        <div class="tab-pane" id="text_editor_pane">
+            <h2>Text Editor</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Text Editor End -->
+
+        <!-- Ads Header Start -->
+        <div class="tab-pane" id="ads_pane">
+            <h2>Ads</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Ads End -->
+
+        <!-- Landing Header Start -->
+        <div class="tab-pane" id="landing_header_pane">
+            <h2>Landing Header</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Landing Header End -->
+
+        <!-- Landing Nav Start -->
+        <div class="tab-pane" id="landing_nav_pane">
+            <h2>Landing Nav</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Landing Nav End -->
+
+        <!-- Landing Buttons Start -->
+        <div class="tab-pane" id="landing_buttons_pane">
+            <h2>Landing Buttons</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Landing Buttons End -->
+
+        <!-- Registration Start -->
+        <div class="tab-pane" id="registration_pane">
+            <h2>Registration</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Registration End -->
+
+        <!-- Profile Header Start -->
+        <div class="tab-pane" id="profile_header_pane">
+            <h2>Profile Header</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Profile Header End -->
+
+        <!-- Profile Subheader Start -->
+        <div class="tab-pane" id="profile_subheader_pane">
+            <h2>Profile Subheader</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Profile Subheader End -->
+
+        <!-- Profile Side Nav Start -->
+        <div class="tab-pane" id="profile_side_nav_pane">
+            <h2>Profile Side Nav</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Profile Side Nav End -->
+
+        <!-- Profile Colors Start -->
+        <div class="tab-pane" id="profile_colors_pane">
+            <h2>Profile Colors</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Profile Colors End -->
+
+        <!-- Profile Avatars Start -->
+        <div class="tab-pane" id="profile_avatars_pane">
+            <h2>Profile Avatars</h2>
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- Profile Avatars End -->
 
     </div>
 
@@ -641,7 +1546,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
 
 
-<script src="../public/assets/js/vendor.js"></script>
+<script src="assets/js/vendor.js"></script>
 <script>
     $(document).ready(function () {
         // Start switch Checkboxes
@@ -666,6 +1571,32 @@
         $('.long_tiny :checkbox').iphoneStyle({checkedLabel: 'Very Long Text', uncheckedLabel: 'Tiny'});
         // End iPhone Checkboxes
 
+        // Start Smart Wizard
+        $('#wizard').smartWizard({transitionEffect: 'slideleft', enableFinishButton: false});
+        // End Smart Wizard
+
+        // Auto Complete Combobox Start
+//        $( "#combobox" ).combobox();
+        // Auto Complete Combobox End
+
+        // DatePicker Start
+        $('.datetimepicker1').datepicker();
+        // DatePicker End
+
+        // Tooltip Start
+        $.extend(true, $.fn.tooltip.defaults, {
+            container: 'body'
+        });
+        $('.bs-tooltip').tooltip({container: 'body'});
+        $('.bs-focus-tooltip').tooltip({
+            trigger: 'focus',
+            container: 'body'
+        });
+        // Tooltip End
+
+        // Popover Start
+//        $('[data-toggle="popover"]').popover();
+        // Popover End
 
         $('#autocomplete-example').typeahead({
             name: 'autocomplete-example',

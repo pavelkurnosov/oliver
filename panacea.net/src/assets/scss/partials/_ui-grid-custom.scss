@@ -1,0 +1,17 @@
+@import "../variables";
+
+.ui-grid {
+  .ui-grid-header-cell-row {
+    background: $navy-blue;
+    color: $white;
+    height: 40px;
+  }
+  &:focus {
+    outline: 0 !important;
+  }
+}
+
+.ui-grid .ui-grid-render-container-body .ui-grid-viewport {
+  overflow-x: auto !important;
+}
+

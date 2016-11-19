@@ -1,0 +1,45 @@
+<div class="tab-pane" id="tables_pane">
+    <h2>Tables</h2>
+    <h4>Table without sorting and menu icons</h4>
+    <div class="row">
+        <div ui-grid="vm.gridOptions" class="col-md-12" ui-grid-auto-resdize ui-grid-pagination></div>
+
+        <div class="buttons-div">
+            <!--<p>Current page: {{vm.currTablePage}} of {{ vm.gridApi.pagination.getTotalPages() }}</p>-->
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage <= 1" ng-click="vm.goToPage('first')">First</button>
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage <= 1" ng-click="vm.goToPage('previous')">Previous</button>
+
+            <button type="button" class="btn btn-over-lightblue"
+                    ng-click="vm.goToPage(b)"
+                    ng-repeat="b in [vm.currTablePage - 2, vm.currTablePage - 1, vm.currTablePage, vm.currTablePage + 1, vm.currTablePage + 2]"
+                    ng-if="b > 0 && b <= vm.gridApi.pagination.getTotalPages()"
+                    ng-class="{'active':b == vm.currTablePage}">
+                {{b}}
+            </button>
+
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage >= vm.gridApi.pagination.getTotalPages()" ng-click="vm.goToPage('next')">Next</button>
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage >= vm.gridApi.pagination.getTotalPages()" ng-click="vm.goToPage('last')">Last</button>
+        </div>
+    </div>
+    <h4>Table with sorting and menu icons</h4>
+    <div class="row">
+        <div ui-grid="vm.gridOptions2" class="col-md-12" ui-grid-auto-resdize ui-grid-pagination></div>
+
+        <div class="buttons-div">
+            <p>Current page: {{vm.currTablePage}} of {{ vm.gridApi2.pagination.getTotalPages() }}</p>
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage <= 1" ng-click="vm.goToPage('first')">First</button>
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage <= 1" ng-click="vm.goToPage('previous')">Previous</button>
+
+            <button type="button" class="btn btn-over-lightblue"
+                    ng-click="vm.goToPage(b)"
+                    ng-repeat="b in [vm.currTablePage - 2, vm.currTablePage - 1, vm.currTablePage, vm.currTablePage + 1, vm.currTablePage + 2]"
+                    ng-if="b > 0 && b <= vm.gridApi2.pagination.getTotalPages()"
+                    ng-class="{'active':b == vm.currTablePage}">
+                {{b}}
+            </button>
+
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage >= vm.gridApi2.pagination.getTotalPages()" ng-click="vm.goToPage('next')">Next</button>
+            <button type="button" class="btn btn-over-lightblue" ng-disabled="vm.currTablePage >= vm.gridApi2.pagination.getTotalPages()" ng-click="vm.goToPage('last')">Last</button>
+        </div>
+    </div>
+</div>

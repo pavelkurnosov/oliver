@@ -35,7 +35,12 @@ gulp.task('scripts', ['copy'], function(){
         './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
         './bower_components/angular/angular.js', 
         './bower_components/angular-route/angular-route.js',
+        './bower_components/angular-messages/angular-messages.js',
+        './bower_components/angular-bootstrap/ui-bootstrap.js',
         './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+        './bower_components/angular-ui-grid/ui-grid.min.js',        // added by Pavel.
+        './bower_components/lodash/dist/lodash.js',
+        './bower_components/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js',
         configFile
         ])
         .pipe(sourcemaps.init())
@@ -74,10 +79,14 @@ gulp.task('copy-app', function() {
 });
 
 // conat all css libraries into one file
-gulp.task('css-lib', function() {
-  return gulp.src('./src/assets/css/*.css')
-    .pipe(concat('lib.css'))
-    .pipe(gulp.dest('./public/assets/css'));
+gulp.task('css-lib', function () {
+    return gulp.src([
+        './src/assets/css/*.css',
+        './bower_components/angular-ui-grid/ui-grid.min.css',
+        'http://ui-grid.info/release/ui-grid-unstable.css'
+    ])
+        .pipe(concat('lib.css'))
+        .pipe(gulp.dest('./public/assets/css'));
 });
 
 gulp.task('scss', function() {

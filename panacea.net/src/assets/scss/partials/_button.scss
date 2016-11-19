@@ -1,11 +1,15 @@
 // ==========================================================================
 // Button
 // ==========================================================================
-@import "variables";
+@import "../variables";
 
 .btn {
-  font-family: "Open Sans";
-  border: 1px solid $light-grey2;
+  font-family: $base-font-size;
+  border: 1px solid $light-grey2 !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+
   background: $light-grey3;
   &:hover {
     background: $light-grey;
@@ -31,6 +35,12 @@
       background: $light-blue;
     }
   }
+  &.btn-over-navyblue {
+    &:hover {
+      background: $navy-blue;
+      color: $white;
+    }
+  }
   &.btn-over-green {
     &:hover {
       background: $green;
@@ -44,6 +54,11 @@
   &.btn-over-orange {
     &:hover {
       background: $orange;
+    }
+  }
+  &.btn-over-grey {
+    &:hover {
+      background: $light-grey2;
     }
   }
   &.btn-pill {
@@ -94,7 +109,7 @@ input[type="submit"],
   -moz-border-radius: 5px;
   border-radius: 5px;
   font-weight: $fontweightnormal;
-  font-family: $base;
+  font-family: $base-font-family;
 }
 
 .btn {
@@ -108,7 +123,7 @@ input[type="submit"],
   min-height: 15px;
   color: #fff;
   &.blue-orange {
-    background: $darkblue;
+    background: $dark-blue;
     font-weight: $fontweightheavy;
     &:hover {
       background: $orange;
@@ -116,10 +131,10 @@ input[type="submit"],
     }
   }
   &.blue-light {
-    background: $darkblue;
+    background: $dark-blue;
     font-weight: $fontweightheavy;
     &:hover {
-      background: $lightblue;
+      background: $light-blue;
       color: #fff;
     }
   }
@@ -127,7 +142,7 @@ input[type="submit"],
     background: $blue;
     font-weight: $fontweightheavy;
     &:hover {
-      background: $darkblue;
+      background: $dark-blue;
       color: #fff;
     }
   }
@@ -156,28 +171,28 @@ input[type="submit"],
   &.grey {
     background: $grey;
     &:hover {
-      background: $darkgrey;
+      background: $dark-grey;
       color: #fff;
     }
   }
   &.grey-light {
     background: $grey;
     &:hover {
-      background: $lightgrey;
+      background: $light-grey;
       color: #fff;
     }
   }
   &.green {
     background: $green;
     &:hover {
-      background: $darkgreen;
+      background: $dark-green;
       color: #fff;
     }
   }
   &.green-light {
     background: $green;
     &:hover {
-      background: $lightgreen;
+      background: $light-green;
       color: #fff;
     }
   }

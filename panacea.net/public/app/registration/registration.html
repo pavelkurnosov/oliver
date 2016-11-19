@@ -1,63 +1,66 @@
-<section id="landingMast" class="landing-masthead">
-    <form action="./" method="post" class="col-md-5 center well">
+<div class="modal-header">
+    <h1 class="logo text-center">Panacea Health</h1>
+</div>
 
-        <h1>Sign Up</h1>
-
-        <div class="col-md-12 center">
-            <div class="form-group" ng-if="vm.currentView === 'country'">
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <label>Select Country:</label>
-                        <select ng-model="vm.newAccount.countryCode" ng-options="c.code as c.name for c in vm.countries" ng-change="vm.countrySelected()"></select>
-                    </div>
-                    <i class="fa fa-spinner" aria-hidden="true" ng-if="vm.loadingCountry"></i>
-                </div>
-                <div class="col-md-4">
-                    <label ng-if="vm.newAccount.countryCode">
-                        Select State:
-                        <select ng-model="vm.newAccount.state" ng-options="s.abbreviation as s.name for s in vm.states"></select>
-                    </label>
+<div class="modal-body">
+    <p ng-if="vm.currentView === 'initialInfo'" class="pad-center p-label">
+        <strong>Welcome to Panacea Health.  Our platform and network are a part of the real world healthcare system, so please create your account based on your real life role and location.  All healthcare providers and healthcare organizations are authenticated for patient safety and security.</strong>
+    </p>
+    <form name="registrationForm">
+        <div ng-if="vm.currentView === 'initialInfo'">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <country-editor></country-editor>
                 </div>
             </div>
-            <div class="form-group" ng-if="vm.currentView === 'personDetails'">
-                <div class="row">
-                    <div class="col-md-5">
-                        <input type="text" name="ci_firstName" id="ci_firstName" placeholder="First Name" ng-model="vm.newAccount.firstName">
-                    </div>
-                    <div class="col-md-2">
-                        <input type="text" class="input-sm" name="ci_middleInitial" id="ci_middleInitial" placeholder="MI" ng-model="vm.newAccount.middleInitial">
-                    </div>
-                    <div class="col-md-3">
-                        <input type="text" name="ci_lastName" id="ci_lastName" placeholder="Last Name" ng-model="vm.newAccount.lastName">
-                    </div>
-                </div>
-                <br/>
-                <div class="row pad">
-                    <div class="col-sm-12">
-                        Gender:
-                        <label>Male: <input type="radio" name="gender" ng-model="vm.newAccount.gender" value="male"></label>
-                        <label>Female: <input type="radio" name="gender" ng-model="vm.newAccount.gender" value="female"></label>
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="email" name="ci_email" id="ci_email" class="validate" placeholder="Email" ng-model="vm.newAccount.emailAddress">
+            <p class="pad-center p-label">
+                <strong>Select your Role:</strong>  If you are a patient, parent, caregiver, active military, or veteran, please select Individual and we will help you set up an account with tools for your specific role.  If you are a physician or nurse, please select physician or nurse and we will set up your account so you can access and work with one or more medical practices, hospitals, and nursing homes.
+            </p>
+            <br/>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-3">
+                    <list-item-editor
+                            target-field="vm.newAccount.role"
+                            list-items="vm.roles"
+                            on-item-selected="vm.selectSignupType()"
+                            on-go-back="vm.clearRoleSelection()"
+                            single-select="true"></list-item-editor>
+                    <div ng-if="vm.selectAccountType">
+                        <list-item-editor
+                                header-text="Specify your Role with one or more selections"
+                                target-field="vm.newAccount.accountTypes"
+                                list-items="vm.accountTypes"
+                                single-select="false"></list-item-editor>
                     </div>
                 </div>
             </div>
-            <div class="login-actions cf">
-                <button ng-if="vm.currentView === 'personDetails'" class="button green submit" type="button" ng-click="vm.registerUser()">submit</button>
-                <div ng-if="vm.newAccount.state">
-                    <input type="checkbox" ng-checked="vm.agreedToToS">I agree to Terms of Service
-                    <button type="button" class="button white sign-in pull-right" ng-disabled="!vm.agreedToToS" ng-click="vm.enterPersonDetails()">Next</button>
+        </div>
+        <div ng-if="vm.currentView === 'registrationDetails'" ng-switch on="vm.newAccount.role">
+            <person-details ng-switch-when="Individual"></person-details>
+        </div>
+        <div ng-if="vm.currentView === 'physicianDetails'">
+            <h1>Physician signup</h1>
+            <p>Coming soon!</p>
+
+            <div class="row">
+                <div class="col-md-2 col-md-offset-4">
+                    <button type="button" class="button" ng-click="vm.startOver()">Previous</button>
                 </div>
             </div>
         </div>
     </form>
-</section>
-
-<div class="row col-md-5 center" ng-if="vm.newAccount.countryCode === 'US'">
-    <p>This is the panacea health terms of service</p>
 </div>
 
+<div class="modal-footer">
+    <button ng-if="vm.formValid() && vm.currentView === 'initialInfo'"
+            type="button" class="button" ng-click="vm.beginAccountRegistration()">Begin Registration</button>
+    <button ng-if="vm.currentView === 'registrationDetails'"
+            class="button pull-right"
+            type="button"
+            ng-click="vm.registerUser()"
+            ng-disabled="registrationForm.$invalid">Submit</button>
+</div>
+
+<script type="text/ng-template" id="rolesToolTip.html">
+    If you are a patient, parent, caregiver, active military, or veteran, please select Individual and we will help you set up an account with tools for your specific role.  If you are a physician or nurse, please select physician or nurse and we will set up your account so you can access and work with one or more medical practices, hospitals, and nursing homes.
+</script>

@@ -1,0 +1,162 @@
+<div class="center-force col-md-8">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-1"><strong>Welcome, {{vm.currentUser.firstName}}</strong></div>
+        <div class="col-md-4 col-md-offset-3"><strong>my Panacea Health Profile</strong></div>
+    </div>
+    <form class="well">
+        <div class="row">
+            <div id="breadcrumbDiv" class="col-md-9">
+                <ul id="breadcrumb">
+                    <li><a href ng-class="{'active': vm.currentTab === 'About Me'}">About Med</a></li>
+                    <li><a href ng-class="{'active': vm.currentTab === 'Contact Info'}">Contact Info</a></li>
+                    <li><a href ng-class="{'active': vm.currentTab === 'Health Info'}">Health Info</a></li>
+                    <li><a href ng-class="{'active': vm.currentTab === 'Photos'}">Photos</a></li>
+                    <li><a href ng-class="{'active': vm.currentTab === 'Settings'}">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <p class="pad-center p-label"><strong>Instructions</strong>: Please fill in the information below to create your Panacea Health Profile. If you wish to go back to a previous screen at any time, click on the Guide Bar and you will be brought back to that screen. Click Continue to save
+                changes and proceed where you were.</p>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-2">
+                <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-4">
+                <div class="p-label">First Name</div>
+                <input class="form-control" type="text" name="firstName" id="firstName" ng-model="vm.currentUser.firstName" required>
+            </div>
+            <div class="col-md-4">
+                <div>Last Name</div>
+                <input class="form-control" type="text" name="lastName" id="lastName" ng-model="vm.currentUser.lastName" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2">
+                <label class="p-label">Gender:</label>
+            </div>
+            <div class="col-md-6 pull-left-hard p-label">
+                <div class="col-md-3">
+                    <input type="radio" name="gender" ng-model="vm.currentUser.gender"/>
+                    Male
+                </div>
+                <div class="col-md-5">
+                    <input type="radio" name="gender" ng-model="vm.currentUser.gender"/>
+                    Female
+                </div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-offset-2">
+                <div class="col-md-2"><label class="p-label">Birthdate:</label></div>
+                <div class="col-md-6">
+                    <div class="col-md-4 birthSelect">
+                        <select
+                                ng-model="vm.birthMonth"
+                                ng-change="vm.birthDateChanged()"
+                                class="form-control"
+                                ng-options="m.value as m.name for m in vm.months"
+                                required>
+                        </select>
+                    </div>
+                    <div class="col-md-4 birthSelect">
+                        <select
+                                ng-model="vm.birthDay"
+                                ng-change="vm.birthDateChanged()"
+                                ng-options="d.value as d.name for d in vm.monthDays"
+                                class="form-control"
+                                required>
+                        </select>
+                    </div>
+                    <div class="col-md-4 birthSelect">
+                        <select
+                                class="form-control"
+                                ng-model="vm.birthYear"
+                                ng-change="vm.birthDateChanged()"
+                                ng-options="y for y in vm.birthYears"
+                                required>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-xs-2 pull-close col-md-offset-2">
+                <label class="p-label">Marital Status:</label>
+            </div>
+            <div class="col-xs-11 p-label marital-status-container">
+                <div class="col-xs-2 column1">
+                    <input type="radio" name="maritalStatus" value="single" ng-model="vm.currentUser.maritalStatus"/>
+                    Single
+                </div>
+                <div class="col-xs-2 column2">
+                    <input type="radio" name="maritalStatus" value="married" ng-model="vm.currentUser.maritalStatus"/>
+                    Married
+                </div>
+                <div class="col-xs-2 column3">
+                    <input type="radio" name="maritalStatus" value="divorced" ng-model="vm.currentUser.maritalStatus"/>
+                    Divorced
+                </div>
+                <div class="col-xs-2 column4">
+                    <input type="radio" name="maritalStatus" value="widowed" ng-model="vm.currentUser.maritalStatus"/>
+                    Widowed
+                </div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2">
+                <label class="p-label">Role: </label>
+            </div>
+            <div class="col-md-3">
+                <div
+                        ng-dropdown-multiselect=""
+                        options="vm.accountTypes"
+                        extra-settings="vm.multiselectOptions"
+                        selected-model="vm.currentUser.accountTypes"></div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2">
+                <label class="p-label">Looking To:</label>
+            </div>
+            <div class="col-md-4">
+                <div
+                        ng-dropdown-multiselect=""
+                        options="vm.lookingToTypes"
+                        extra-settings="vm.multiselectOptions"
+                        selected-model="vm.currentUser.lookingTos"></div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-2">
+                <label class="p-label">Languages:</label>
+            </div>
+            <div class="col-md-4">
+                <div
+                        ng-dropdown-multiselect=""
+                        options="vm.languages"
+                        extra-settings="vm.multiselectOptions"
+                        selected-model="vm.currentUser.languages"></div>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="col-xs-2">
+                    <label class="p-label">Schools:</label>
+                </div>
+                <div class="col-xs-4 pad-school">
+                    <input type="text" class="form-control pad-school" ng-model="vm.currentUser.schools"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

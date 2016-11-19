@@ -7,6 +7,7 @@ This is the port of the .NET version of halo.
 
 npm install
 
+bower install
 
 ## Running local server
 gulp

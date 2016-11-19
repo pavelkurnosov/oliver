@@ -1,8 +1,252 @@
+@import '../../assets/scss/partials/mixins';
+@import '../../assets/scss/partials/bootstrap-custom';
+
 #registrationMast {
 
   form {
     margin-top: $gutter*2;
+  }
+}
 
+div.signupHeader {
+  height: 50px;
+  background-color: $dark-blue;
+  color: white;
+
+  h1 {
+    margin-top: 5px;
+    line-height: 0px;
+    text-align: center;
+  }
+}
+
+div.roleToolTip {
+  margin-top: 20px;
+  margin-left: -60px;
+}
+
+hr.thick {
+  width: 80%;
+  color: darkgrey;
+  height: 1px;
+  background-color: darkgray;
+}
+
+div.birthSelect {
+  margin-right: -20px;
+}
+
+label.padLabel {
+  padding-top: 20px;
+}
+
+div.clickable { /* Containing div must have a position value */
+  position: relative;
+}
+
+div.clickable a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none; /* Makes sure the link   doesn't get underlined */
+  z-index: 10; /* raises anchor tag above everything else in div */
+  background-color: white; /*workaround to make clickable in IE */
+  opacity: 0; /*workaround to make clickable in IE */
+  filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+
+.help-block.dark {
+  color: darkred;
+}
+
+.no-pad-left {
+  padding-left: 0px;
+}
+
+.pad-left {
+  padding-left: 15px;
+}
+
+.pull-left-hard {
+  margin-left: -60px;
+}
+
+.p-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+.fa-asterisk {
+  color: red;
+}
+
+.modal-content {
+  background-color: #e3e3e3;
+  color: #323232;
+}
+
+.modal-header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 535px;
+  //top: -5px;
+  left: 30px;
+  border-bottom: 1px solid $dark-grey;
+}
+
+.modal-backdrop {
+  opacity: 0.8 !important;
+}
+
+.pad-center {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#breadcrumb {
+  list-style: none;
+  display: inline-block;
+
+  .icon {
+    font-size: 14px;
   }
 
+  li {
+    float: left;
+    a {
+      color: #FFF;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      height: 40px;
+      background: $light-blue;
+      line-height: 40px;
+      padding: 0 10px 0 5px;
+      text-align: center;
+      margin-right: 23px;
+    }
+    &:nth-child(even) {
+      a {
+
+        &:before {
+          border-color: $light-blue;
+          border-left-color: transparent;
+        }
+        &:after {
+          border-left-color: $light-blue;
+        }
+      }
+    }
+    &:first-child {
+      a {
+        padding-left: 15px;
+        //@include border-radius(4px 0 0 4px);
+        &:before {
+          border: none;
+        }
+      }
+    }
+    &:last-child {
+      a {
+        padding-right: 15px;
+        //@include border-radius(0 4px 4px 0);
+        &:after {
+          border: none;
+        }
+      }
+    }
+
+    a.active {
+      background-color: $blue;
+
+      &:before {
+        border-color: $blue;
+        border-left-color: transparent;
+      }
+      &:after {
+        border-left-color: $blue;
+      }
+    }
+    a {
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        border: 0 solid $light-blue;
+        border-width: 20px 10px;
+        width: 0;
+        height: 0;
+      }
+      &:before {
+        left: -20px;
+        border-left-color: transparent;
+      }
+      &:after {
+        left: 100%;
+        border-color: transparent;
+        border-left-color: $light-blue;
+      }
+      &:hover {
+        background-color: $green;
+
+        &:before {
+          border-color: $green;
+          border-left-color: transparent;
+        }
+        &:after {
+          border-left-color: $green;
+        }
+      }
+      &:active {
+        &:before {
+          border-color: $dark-green;
+          border-left-color: transparent;
+        }
+        &:after {
+          border-left-color: $dark-green;
+        }
+      }
+    }
+  }
 }
+
+.bump-left {
+  margin-left: -5px;
+}
+
+.pull-close {
+  margin-right: -20px;
+}
+
+.marital-status-container {
+  width: 60%;
+
+  .column1 {
+    width: 90px;
+  }
+
+  .column2 {
+    width: 100px;
+  }
+
+  .column3 {
+    width: 110px;
+  }
+
+  .column4 {
+    width: 110px;
+  }
+}
+
+div#breadcrumbDiv.col-md-9 {
+  margin-left: 12%;
+}
+
+div.col-xs-4.pad-school {
+  padding-left: 30px;
+}
+

@@ -1,96 +1,41 @@
-// ==========================================================================
-// Forms
-// ==========================================================================
-@import "variables";
+@import "../variables";
 
-input, textarea, select {
+.form-control, .tagsinput, .select2-choices {
   font-family: $font-family-base;
+  padding: 6px 6px 6px 12px;
+  border: 2px solid $medium-grey!important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 6px;
+}
+
+input, select, textarea {
   &:focus {
     outline: 0 !important;
   }
-  &.text-rounded-border {
-    padding: 6px 6px 6px 12px;
-    border: 2px solid $grey1;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 6px;
-    &:focus {
-      border-color: $blue2;
-    }
-  }
 }
+
+label{
+  color: $black;
+}
+
 
 form {
   label {
-    font-family: $lato;
+    font-family: "Lato";
     font-size: 15px;
+    color: $black;
   }
 
   &.form-inline {
     label {
-      padding: 6px 0 0 10px;
+      padding: 6px 0 0 10px !important;
     }
   }
   .form-group {
     margin-left: 10px;
     label {
       padding: 0 0 0 10px;
-    }
-  }
-}
-
-form input {
-  border: solid 2px #ccc;
-  height: $input-height-base;
-  padding: $gutter/2 $gutter;
-  border-radius: $border-radius-base;
-  background: none;
-  line-height: 1.5;
-  font-size: 14px;
-
-  &:focus {
-    background-color: $input-bg !important;
-  }
-
-  &.input-sm {
-    height: $input-height-base;
-    width: 50px;
-    margin-top: 0;
-  }
-
-}
-
-label input {
-  margin-left: $gutter/2;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-input[type="radio"], input[type="checkbox"] {
-  height: 1em;
-  margin-right: $gutter/2;
-}
-
-input:-webkit-autofill {
-  &::focus, &:hover {
-    background-color: $input-bg !important;
-  }
-
-}
-
-// INpout with icons
-input {
-  &.user {
-    position: relative;
-    &:before {
-      content: "-";
-      position: absolute;
-      height: 100%;
-      width: $gutter * 2;
-      left: 0;
-      background-color: #ececec;
     }
   }
 }

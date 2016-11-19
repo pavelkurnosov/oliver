@@ -4,7 +4,8 @@
   "description": "This is the port of the .NET version of halo.",
   "main": "index.js",
   "scripts": {
-    "start": "node server & gulp"
+    "start": "node server & gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

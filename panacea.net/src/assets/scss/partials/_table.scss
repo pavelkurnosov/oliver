@@ -6,3 +6,53 @@
     margin: 0;
   }
 }
+
+.ui-grid-canvas {
+  font-size: 12.09px;
+  forn-family: "Open Sans";
+}
+
+.ui-grid-row {
+  &:hover {
+    background-color: $white;
+  }
+  &:nth-child(even) .ui-grid-cell {
+    background-color: #ebebeb;
+    border-top: 1px solid #ccc;
+  }
+
+  &:nth-child(odd) .ui-grid-cell {
+    border-top: 1px solid #ccc;
+    background-color: #f2f2f2;
+  }
+}
+
+.ui-grid-cell {
+  padding-top: 4px;
+  img {
+    padding-top: 10px;
+  }
+  img {
+    padding-top: 10px;
+  }
+}
+
+.ui-grid-invisible {
+  display: none;
+}
+
+.ui-grid-cell-contents {
+  text-align: center;
+  padding-top: 11px;
+}
+
+div {
+  &:focus {
+    outline: 0 !important;
+  }
+}
+
+.ui-grid-render-container {
+  border: 2px solid $medium-grey;
+}
+

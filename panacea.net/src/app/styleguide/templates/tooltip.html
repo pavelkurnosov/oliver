@@ -1,0 +1,12 @@
+<div class="tab-pane" id="tooltip_pane">
+    <h2>Tooltip and Popover</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <button ng-click="tooltipIsOpen = !tooltipIsOpen">Toggle Tooltip</button>
+            <span uib-tooltip="This is tooltip example" tooltip-is-open="tooltipIsOpen" tooltip-placement="bottom">Mouse over here</span>
+        </div>
+        <div class="col-md-6">
+            <button uib-popover="This is Popover example" popover-trigger="'mouseenter'" type="button" class="btn btn-default btn-navy-blue btn-over-orange">Popover</button>
+        </div>
+    </div>
+</div>

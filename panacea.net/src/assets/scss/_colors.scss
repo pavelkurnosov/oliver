@@ -1,63 +1,43 @@
-// colors
-$navy-blue: #304770;
-$light-blue: #4eabf9;
-$darkest-blue: #22324f;
-$orange: #ff6b10;
-$light-grey: #efefef;
-$medium-grey: #aaaaaa;
-$light-green: #5cb85c;
-$dark-green: #357935;
-$red: #bb0000;
-$white: #ffffff;
-
-$grey-blue: #313942;
-$medium-grey2: #455a64;
-$light-grey2: #cfd8dc;
-$lightest-grey: #eceff1;
-
-$light-blue2: #1289d5;
-
-$dark-blue-grey1: #435061;
-$dark-blue-grey2: #343e4a;
-$light-grey3: #eff3f5;
-$orange: #ff551a;
-$light-blue3: #31a2e1;
-$medium-blue: #0e90d9;
-$pale-blue: #d8f1ff;
-$dark-grey: #323232;
-$grey: #6f6f6f;
-$blackish: #323232;
-$black: #000000;
+@import "variables";
 
 // CSS for background of the elements.
 // Medicus
 .bg-navy-blue {
   background-color: $navy-blue;
 }
+
 .bg-light-blue {
   background-color: $light-blue;
 }
+
 .bg-darkest-blue {
-  background-color: $darkest-blue;
+  background-color: $dark-blue;
 }
+
 .bg-orange {
   background-color: $orange;
 }
+
 .bg-light-grey {
   background-color: $light-grey;
 }
+
 .bg-medium-grey {
   background-color: $medium-grey;
 }
+
 .bg-light-green {
   background-color: $light-green;
 }
+
 .bg-dark-green {
   background-color: $dark-green;
 }
+
 .bg-red {
   background-color: $red;
 }
+
 .bg-white {
   background-color: $white;
 }
@@ -66,90 +46,80 @@ $black: #000000;
 .bg-grey-blue {
   background-color: $grey-blue;
 }
-.bg-medium-grey2{
+
+.bg-medium-grey2 {
   background-color: $medium-grey2;
 }
-.bg-light-grey2{
+
+.bg-light-grey2 {
   background-color: $light-grey2;
 }
-.bg-lightest-grey{
+
+.bg-lightest-grey {
   background-color: $lightest-grey;
 }
 
 // Santorini
-.bg-light-blue2{
+.bg-light-blue2 {
   background-color: $light-blue2;
 }
 
 // Residence
-.bg-dark-blue-grey1{
+.bg-dark-blue-grey1 {
   background-color: $dark-blue-grey1;
 }
-.bg-dark-blue-grey2{
+
+.bg-dark-blue-grey2 {
   background-color: $dark-blue-grey2;
 }
-.bg-light-grey3{
+
+.bg-light-grey3 {
   background-color: $light-grey3;
 }
-.bg-orange{
+
+.bg-orange {
   background-color: $orange;
 }
-.bg-light-blue3{
+
+.bg-light-blue3 {
   background-color: $light-blue3;
 }
-.bg-medium-blue{
+
+.bg-medium-blue {
   background-color: $medium-blue;
 }
-.bg-pale-blue{
+
+.bg-pale-blue {
   background-color: $pale-blue;
 }
 
-
 // CSS for text color
 .text-white {
-  color: $white;
+  h1, h2, h3, h4, h5, h6, div, table, td, span, p {
+    color: #eee;
+  }
 }
-.text-dark-grey {
-  color: $dark-grey;
-}
-.text-grey {
-  color: $grey;
-}
-.text-blackish {
-  color: $blackish;
-}
-.text-black {
-  color: $black;
-}
-// --------------
-$blue: #399FFE; // Blue
-$darkblue: #304770; // Dark Gray
-$lightblue: #4FC5FF; // Light Blue
-//
-$grey: #363636; // Grey
-$grey1: #c2c2c2; // Grey
-$darkgrey: #0D0D0D; // Dark Gray
-$lightgrey: #616161; // Light Gray
-//
-//
-//$grey-blue: #222d3f; // Grey Blue
-$dark-blue: #222d3f; // Dark Blue
-//
-//$orange: #ff6b10; // Orange
-$darkorange: #B24706; // Dark Orange
-$lightorange: #FF7B29; // Light Orange
-//
-$green: #5cb85c; // Green
-$darkgreen: #449d44; // Dark Green
-$lightgreen: #99FF99; // Light Green
-//
-//$white: #ffffff; // White
-//$red: #EF2B3E; // Red
 
-// new
-$blue2: #1289d5; // blue from Residence template
-//$light-blue: #31a2e1;
-//
-//// brand colors
-//// -----------------------------------------------
-$primary-color: $dark-blue;
+.text-dark-grey {
+  h1, h2, h3, h4, h5, h6, div, table, td, span, p {
+    color: $dark-grey;
+  }
+}
+
+.text-grey {
+  h1, h2, h3, h4, h5, h6, div, table, td, span, p {
+    color: $grey;
+  }
+}
+
+.text-blackish {
+  h1, h2, h3, h4, h5, h6, div, table, td, span, p {
+    color: $blackish;
+  }
+}
+
+.text-black {
+  h1, h2, h3, h4, h5, h6, div, table, td, span, p {
+    color: $black;
+  }
+}
