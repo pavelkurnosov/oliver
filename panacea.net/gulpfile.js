@@ -67,9 +67,13 @@ gulp.task('copy-fonts', function() {
 });
 
 gulp.task('copy', ['copy-app'],function() {
-    gulp.src(['./src/**/*.{html,jpg,gif,png}'])
-        .pipe(gulp.dest(devPath))
-        .pipe(browserSync.stream());
+
+     gulp.src(['./src/**/*.{html,jpg,gif,png}'])
+         .pipe(gulp.dest(devPath));
+         //.pipe(browserSync.stream());
+    //gulp.src('./src/**/*.{html,jpg,gif,png}', {base: 'src'})
+    //        .pipe(gulp.dest(devPath))
+    //        .pipe(browserSync.stream());
 });
 
 gulp.task('copy-app', function() {

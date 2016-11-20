@@ -12,7 +12,7 @@
     function styleguideController($uibModal) {
         vm = this;
 
-        vm.currPage = 'tooltip';
+        vm.currPage = 'wizard';
         vm.pages = [
             {id: 'colors', title: 'Colors'},
             {id: 'typography', title: 'Typography'},
@@ -213,7 +213,7 @@
         vm.gridOptions2.onRegisterApi = function (gridApi) {
             vm.gridApi2 = gridApi;
         };
-        vm.goToPage = function (flag) {
+        vm.goToPage2 = function (flag) {
             if (flag == 'first') {
                 vm.currTablePage = 1;
             } else if (flag == 'previous') {
@@ -270,6 +270,21 @@
             vm.popup2.opened = true;
         };
 
+        //---------------- Paginations -----------------------
+        vm.totalItems = 64;
+        vm.currentPage = 4;
+
+        vm.maxSize = 5;
+        vm.setPage = function (pageNo) {
+            vm.currentPage = pageNo;
+        };
+
+        vm.pageChanged = function() {
+            $log.log('Page changed to: ' + $scope.currentPage);
+        };
+
+        vm.bigTotalItems = 175;
+        vm.bigCurrentPage = 1;
     }
 
     function ModalInstanceController($uibModalInstance) {
