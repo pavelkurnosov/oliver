@@ -57,7 +57,7 @@
                 })
                 .when('/styleguide', {
                     templateUrl: 'app/styleguide/styleguide.html',
-                    controller: 'styleguideController',
+                    controller: 'StyleguideCtrl',
                     controllerAs: 'vm'
                 })
                 .otherwise({redirectTo: '/'});

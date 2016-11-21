@@ -106,48 +106,27 @@
         }
 
         //Model
-        vm.currentStep = 2;
+        vm.currentStep = 1;
         vm.steps = [
-            {
-                step: 1,
-                name: "About Me",
-                template: "about_me"
-            }, {
-                step: 2,
-                name: "Contact Info",
-                template: "contact_info"
-            }, {
-                step: 3,
-                name: "Health Info",
-                template: "health_info"
-            }, {
-                step: 4,
-                name: "Photos",
-                template: "photos"
-            },
-            {
-                step: 5,
-                name: "Settings",
-                template: "settings"
-            }
+            {name: "About Me", template: "about_me"},
+            {name: "Contact Info", template: "contact_info"},
+            {name: "Health Info", template: "health_info"},
+            {name: "Photos", template: "photos"},
+            {name: "Settings", template: "settings"}
         ];
         vm.user = {};
-
-        //Functions
+        vm.maxStep = vm.currentStep;
         vm.gotoStep = function (newStep) {
+            if (newStep >= vm.maxStep) vm.maxStep = newStep;
             vm.currentStep = newStep;
         };
 
         vm.getStepTemplate = function () {
-            for (var i = 0; i < vm.steps.length; i++) {
-                if (vm.currentStep == vm.steps[i].step) {
-                    return 'app/profileManagement/templates/' + vm.steps[i].template + '.html';
-                }
-            }
+            return 'app/profileManagement/templates/' + vm.steps[vm.currentStep].template + '.html';
         };
 
         vm.save = function () {
-            alert(vm.user.email);
+            alert('Success!!!');
         };
     }
 })();

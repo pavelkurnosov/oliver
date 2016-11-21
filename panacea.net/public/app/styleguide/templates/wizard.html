@@ -3,11 +3,11 @@
 </div>
 <div class="row">
     <div class="com-md-12">
-        <div id="wizard-container" ng-controller="wizardController as vm">
+        <div id="wizard-container" ng-controller="WizardCtrl as vm">
             <div id="wizard-step-container">
                 <ul class="nav nav-pills nav-justified">
                     <li ng-repeat="step in vm.steps"
-                        ng-class="{'active' : $index == vm.currentStep}">
+                        ng-class="{'active' : $index == vm.currentStep, 'passed' : $index <= vm.maxStep}">
                         <a ng-click="vm.gotoStep($index)" class="step-number" href="">
                             {{$index + 1}}
                         </a>

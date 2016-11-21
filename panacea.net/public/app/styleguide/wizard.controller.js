@@ -1,6 +1,6 @@
 (function () {
     // 'use strict';
-
+    /*
     angular.module('styleguide')
         .controller('wizardController', wizardController);
 
@@ -18,7 +18,7 @@
 
         vm.maxStep = vm.currentStep;
         vm.gotoStep = function (newStep) {
-            // if (newStep > vm.maxStep) vm.maxStep = newStep;
+            if (newStep >= vm.maxStep) vm.maxStep = newStep;
             vm.currentStep = newStep;
         };
 
@@ -29,5 +29,5 @@
         vm.save = function () {
             alert('Success!!!');
         };
-    }
+    }*/
 })();

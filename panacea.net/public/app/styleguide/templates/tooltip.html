@@ -1,12 +1,74 @@
 <div class="tab-pane" id="tooltip_pane">
     <h2>Tooltip and Popover</h2>
     <div class="row">
-        <div class="col-md-6">
-            <button ng-click="tooltipIsOpen = !tooltipIsOpen">Toggle Tooltip</button>
-            <span uib-tooltip="This is tooltip example" tooltip-is-open="tooltipIsOpen" tooltip-placement="bottom">Mouse over here</span>
+        <h4 class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">Click Event</h4>
+        <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-placement="left"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Left
+            </button>
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-placement="top"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Top
+            </button>
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-placement="right"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Right
+            </button>
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-placement="bottom"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Bottom
+            </button>
         </div>
-        <div class="col-md-6">
-            <button uib-popover="This is Popover example" popover-trigger="'mouseenter'" type="button" class="btn btn-default btn-navy-blue btn-over-orange">Popover</button>
+    </div>
+    <hr/>
+    <div class="row">
+        <h4 class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">Mouseover Event</h4>
+        <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-trigger="'mouseover'"
+                    popover-placement="left"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Left
+            </button>
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-trigger="'mouseover'"
+                    popover-placement="top"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Top
+            </button>
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-trigger="'mouseover'"
+                    popover-placement="right"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Right
+            </button>
+            <button popover-title="Title"
+                    uib-popover="Contents of the popover."
+                    popover-trigger="'mouseover'"
+                    popover-placement="bottom"
+                    type="button"
+                    class="btn btn-default btn-navy-blue btn-over-orange">
+                Bottom
+            </button>
         </div>
     </div>
 </div>

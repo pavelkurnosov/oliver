@@ -8,15 +8,18 @@
     <div id="wizard-container" ng-controller="profileManagementController as vm">
         <div id="wizard-step-container">
             <ul class="nav nav-pills nav-justified">
-                <li ng-repeat="step in vm.steps" ng-class="{'active':step.step == vm.currentStep}">
-                    <a ng-click="vm.gotoStep(step.step)" href="">
-                        <!--<i class="glyphicon glyphicon-arrow-left"></i>-->
+                <li ng-repeat="step in vm.steps"
+                    ng-class="{'active' : $index == vm.currentStep, 'passed' : $index <= vm.maxStep}">
+                    <a ng-click="vm.gotoStep($index)" class="step-number" href="">
+                        {{$index + 1}}
+                    </a>
+                    <hr class="step-dash"/>
+                    <a ng-click="vm.gotoStep($index)" class="step-title" href="">
                         {{step.name}}
                     </a>
                 </li>
             </ul>
         </div>
-
         <div id="wizard-content-container">
             <ng-include src="vm.getStepTemplate()"></ng-include>
         </div>

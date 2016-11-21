@@ -3,7 +3,7 @@
 .form-control, .tagsinput, .select2-choices {
   font-family: $font-family-base;
   padding: 6px 6px 6px 12px;
-  border: 2px solid $medium-grey!important;
+  border: 2px solid $medium-grey !important;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 6px;
@@ -15,27 +15,69 @@ input, select, textarea {
   }
 }
 
-label{
-  color: $black;
-}
-
-
-form {
+.form-group, .form-inline {
   label {
-    font-family: "Lato";
+    font-family: "Open Sans";
     font-size: 15px;
-    color: $black;
+    font-weight: bold;
   }
-
   &.form-inline {
     label {
-      padding: 6px 0 0 10px !important;
+      margin-right: 10px;
     }
   }
-  .form-group {
-    margin-left: 10px;
-    label {
-      padding: 0 0 0 10px;
+  padding-left: 10px;
+}
+
+.pagination {
+  li {
+    a {
+      color: $dark-grey !important;
+      font-weight: bold !important;
+      background: $light-grey3 !important;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+      margin-left: 3px !important;
+      &:hover {
+        background: $light-blue !important;
+      }
+
+    }
+    &.active {
+      a {
+        color: $white !important;
+        background: $navy-blue !important;
+      }
     }
   }
+}
+
+.shrirink {
+  display: flex;
+  .breadcrumb-item-wrapper {
+    max-width: 22px;
+    float: left;
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+    margin-right: 5px;
+    -webkit-transition: max-width 2s;
+    cursor: pointer;
+    &:hover {
+      max-width: 500px;
+    }
+  }
+  .breadcrumb-home {
+    max-width: 500px;
+  }
+  .breadcrumb-separator {
+    margin-right: 5px;
+  }
+}
+
+.ui-notification {
+  border-radius: 5px;
 }

@@ -22,6 +22,8 @@
     "angular-route": "^1.5.8",
     "angular-messages": "^1.5.8",
     "angularjs-dropdown-multiselect": "^1.5.2",
-    "angular-ui-grid": "^3.x.x"
+    "angular-ui-grid": "^3.x.x",
+    "angular-ui-notification": "^0.2.0",
+    "angular-growl-v2": "^0.7.9"
   }
 }

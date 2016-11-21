@@ -1,0 +1,66 @@
+<div class="content" id="tabs_pane">
+    <div class="row">
+        <h2>Tabs</h2>
+        <div class="col-md-12">
+            <ul class="nav nav-tabs" ng-init="activeTab = 'details'">
+                <li ng-class="{ active: activeTab === 'details' }">
+                    <a ng-click="activeTab = 'details'" href="">First</a>
+                </li>
+                <li ng-class="{ active: activeTab === 'options' }">
+                    <a ng-click="activeTab = 'options'" href="">Second</a>
+                </li>
+                <li ng-class="{ active: activeTab === 'other' }">
+                    <a ng-click="activeTab = 'other'" href="">Third</a>
+                </li>
+                <li ng-class="{ active: activeTab === 'other1' }">
+                    <a ng-click="activeTab = 'other1'" href="">Third</a>
+                </li>
+                <li ng-class="{ active: activeTab === 'other2' }">
+                    <a ng-click="activeTab = 'other2'" href="">Third</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane" ng-class="{ active: activeTab === 'details' }">First tab content.</div>
+                <div class="tab-pane" ng-class="{ active: activeTab === 'options' }">This is second one.</div>
+                <div class="tab-pane" ng-class="{ active: activeTab === 'other' }">Third Tab.</div>
+                <div class="tab-pane" ng-class="{ active: activeTab === 'other1' }">Fourth content</div>
+                <div class="tab-pane" ng-class="{ active: activeTab === 'other2' }">Last Tab</div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <h2>Letter Based Widgets</h2>
+        <div class="col-md-12">
+            <ul class="nav nav-tabs letter-based" ng-init="activeTab1 = 'widget1'">
+                <li ng-class="{ active: activeTab1 === 'all' }">
+                    <a ng-click="activeTab1 = 'all'" href="">All</a>
+                </li>
+                <li ng-class="{ active: activeTab1 === 'widget1' }">
+                    <a ng-click="activeTab1 = 'widget1'" href="">A</a>
+                </li>
+                <li ng-class="{ active: activeTab1 === 'widget2' }">
+                    <a ng-click="activeTab1 = 'widget2'" href="">B</a>
+                </li>
+                <li ng-class="{ active: activeTab1 === 'widget3' }">
+                    <a ng-click="activeTab1 = 'widget3'" href="">C</a>
+                </li>
+                <li ng-class="{ active: activeTab1 === 'widget4' }">
+                    <a ng-click="activeTab1 = 'widget4'" href="">D</a>
+                </li>
+                <li ng-class="{ active: activeTab1 === 'widget5' }">
+                    <a ng-click="activeTab1 = 'widget5'" href="">E</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane" ng-class="{ active: activeTab1 === 'widget1' || activeTab1 === 'all' }"><hr/>First widget content.</div>
+                <div class="tab-pane" ng-class="{ active: activeTab1 === 'widget2' || activeTab1 === 'all' }"><hr/>This is second one.</div>
+                <div class="tab-pane" ng-class="{ active: activeTab1 === 'widget3' || activeTab1 === 'all' }"><hr/>Third whdget.</div>
+                <div class="tab-pane" ng-class="{ active: activeTab1 === 'widget4' || activeTab1 === 'all' }"><hr/>Fourth content</div>
+                <div class="tab-pane" ng-class="{ active: activeTab1 === 'widget5' || activeTab1 === 'all' }"><hr/>Last widget</div>
+            </div>
+        </div>
+    </div>
+</div>

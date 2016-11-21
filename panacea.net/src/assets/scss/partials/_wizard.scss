@@ -13,64 +13,80 @@
   }
   #wizard-step-container {
     li {
-      &.active {
-        .step-number {
-          border-radius: 25px;
-          width: 50px;
-          height: 50px;
-          font-size: 20px;
-          margin: auto;
-          border: 2px solid $medium-blue;
-          background: $medium-blue;
-        }
-      }
-      .step-number {
-        border-radius: 25px;
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        margin: auto;
-        border: 2px solid $medium-blue;
-        background: $pale-blue;
-      }
       .step-title {
         font-size: 14px;
         background: none;
         color: $orange;
       }
-      .step-passed {
-        background: red;
-        border: 1px solid $light-blue3;
-        color: $white;
+      .step-number {
+        background: $light-grey2;
+        /*border: 1px solid $white;*/
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: auto;
       }
       hr {
-        border-top: 10px solid $medium-blue;
-        margin-top: -30px;
-        background: $medium-blue;
+        border-top-width: 6px;
+        border-style: solid;
+        border-color: $light-grey2;
+        background: $light-grey2;
+        margin-top: -28px;
       }
 
-    }
-    #address2 {
-      margin-top: 5px;
+      &.active {
+        .step-title {
+          color: $navy-blue !important;
+        }
+        .step-number {
+          background: $orange !important;
+        }
+        hr {
+          border-color: $orange !important;
+          background: $orange !important;
+        }
+      }
+      &.passed {
+        .step-title {
+          color: $navy-blue;
+        }
+        .step-number {
+          background: $navy-blue;
+          color: $white;
+        }
+        hr {
+          border-color: $navy-blue;
+          background: $medium-blue;
+        }
+      }
     }
   }
-  .margin-top-5 {
+  #address2 {
     margin-top: 5px;
   }
-  .margin-top-10 {
-    margin-top: 10px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.table-borderless {
+  td {
+    border: none !important;
   }
-  .margin-top-30 {
-    margin-top: 30px;
-  }
-  .table-borderless {
-    td {
-      border: none !important;
-    }
-  }
-  .controls-div {
-    .row {
-      padding-top: 20px;
-    }
+}
+
+.controls-div {
+  .row {
+    padding-top: 20px;
   }
 }

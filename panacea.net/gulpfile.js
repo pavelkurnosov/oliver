@@ -38,7 +38,9 @@ gulp.task('scripts', ['copy'], function(){
         './bower_components/angular-messages/angular-messages.js',
         './bower_components/angular-bootstrap/ui-bootstrap.js',
         './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-        './bower_components/angular-ui-grid/ui-grid.min.js',        // added by Pavel.
+        './bower_components/angular-ui-grid/ui-grid.min.js',                                // added by Pavel.
+        './bower_components/angular-ui-notification/dist/angular-ui-notification.min.js',   // added by Pavel.
+        './bower_components/angular-growl-v2/build/angular-growl.min.js',                   // added by Pavel.
         './bower_components/lodash/dist/lodash.js',
         './bower_components/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js',
         configFile
