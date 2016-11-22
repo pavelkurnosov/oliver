@@ -1,7 +1,17 @@
 (function () {
 
     /* global angular */
-    var styleguideModule = angular.module('styleguide', ['ui-notification', 'angular-growl', 'ui.bootstrap', 'ui.grid', 'ui.grid.pagination', 'ui.select', 'ngSanitize', 'angularjs-dropdown-multiselect']);
+    var styleguideModule = angular.module('styleguide', [
+        'ui-notification',
+        'angular-growl',
+        'ui.bootstrap',
+        'ui.grid',
+        'ui.grid.pagination',
+        'ui.select',
+        'ngSanitize',
+        'angularjs-dropdown-multiselect',
+        'ngTagsInput'
+    ]);
 
     styleguideModule.config(function (NotificationProvider) {
             NotificationProvider.setOptions({
@@ -57,6 +67,7 @@
             return out;
         };
     });
+
 
     StyleguideCtrl.$inject = ['$uibModal', 'Notification', 'growl'];
     ModalInstanceCtrl.$inject = ['$uibModalInstance'];
@@ -483,7 +494,7 @@
             {name: "December"}
         ];
 
-//---------------------------------------
+        //-------------------- Form Data -------------------
 
         vm.example8model = [];
         vm.example8data = [
@@ -495,7 +506,28 @@
             {id: 6, label: "Saturday"},
             {id: 7, label: "Sunday"}
         ];
-
+        vm.tagsInForm = [
+            {text: 'Tag1'},
+            {text: 'Tag2'}
+        ];
+        vm.tagsInForm1 = [
+            {text: 'Tag2'},
+            {text: 'Tag3'}
+        ];
+        vm.loadTags = function() {
+            return [
+                { "text": "Tag1" },
+                { "text": "Tag2" },
+                { "text": "Tag3" },
+                { "text": "Tag4" },
+                { "text": "Tag5" },
+                { "text": "Tag6" },
+                { "text": "Tag7" },
+                { "text": "Tag8" },
+                { "text": "Tag9" },
+                { "text": "Tag10" }
+            ];
+        };
 //---------------------------------------
 //---------------------------------------
     }

@@ -95,7 +95,7 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Tags:</label>
                                 <div class="col-md-10">
-                                    <input title="" type="text" id="tags2" class="tags" value="these,are,sample,tags" style="display: none;">
+                                    <tags-input ng-model="vm.tagsInForm"></tags-input>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,9 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Tags with autocomplete:</label>
                                 <div class="col-md-10">
-                                    <input title="" type="text" id="tags3" class="tags-autocomplete" value="tags,with,autocomplete" style="display: none;">
+                                    <tags-input ng-model="vm.tagsInForm1">
+                                        <auto-complete source="vm.loadTags()"></auto-complete>
+                                    </tags-input>
                                 </div>
                             </div>
                         </div>

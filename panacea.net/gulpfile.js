@@ -44,6 +44,7 @@ gulp.task('scripts', ['copy'], function () {
         './bower_components/angular-growl-v2/build/angular-growl.min.js',                   // added by Pavel.
         './bower_components/ng-tags-input/ng-tags-input.min.js',                   // added by Pavel.
         './bower_components/angular-ui-select/dist/select.min.js',                   // added by Pavel.
+        './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js',                   // added by Pavel.
         './bower_components/angularjs-dropdown-multiselect/dist/angularjs-dropdown-multiselect.min.js',                   // added by Pavel.
         './bower_components/lodash/dist/lodash.js',
         './bower_components/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js',
@@ -100,6 +101,7 @@ gulp.task('css-lib', function () {
         './bower_components/angular-ui-select/dist/select2.css',
         './bower_components/ng-tags-input/ng-tags-input.min.css',
         './bower_components/ng-tags-input/ng-tags-input.bootstrap.min.css',
+        './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.css',
         'http://ui-grid.info/release/ui-grid-unstable.css'
     ])
         .pipe(concat('lib.css'))

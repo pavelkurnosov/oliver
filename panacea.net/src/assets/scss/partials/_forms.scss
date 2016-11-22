@@ -1,6 +1,6 @@
 @import "../variables";
 
-.form-control, .tagsinput, .select2-choice {
+.form-control, .select2-choice, tags-input .tags {
   font-family: $font-family-base;
   padding: 6px 6px 6px 12px;
   border: 2px solid $medium-grey !important;
