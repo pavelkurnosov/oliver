@@ -284,6 +284,39 @@
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td>Validations</td>
+                    <td>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="email">Email</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control"
+                                           name="emailWatch"
+                                           ng-model="form.email"
+                                           validator="email"
+                                           email-error-message="Error Email"
+                                           email-success-message="Good Email"
+                                           message-id="emailWatch"
+                                           id="email"/>
+                                    <span id="emailWatch"></span>
+                                </div>
+                                <label class="col-md-2 control-label" for="number">Number</label>
+                                <div class="col-md-10" style="margin-top: 20px;">
+                                    <input type="text" class="form-control"
+                                           name="numberWatch"
+                                           ng-model="form.number"
+                                           validator="number"
+                                           email-error-message="Error Number"
+                                           email-success-message="Good Number" ,
+                                           message-id="numberWatch"
+                                           id="number"/>
+                                    <span id="numberWatch"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </form>

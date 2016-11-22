@@ -10,7 +10,9 @@
         'ui.select',
         'ngSanitize',
         'angularjs-dropdown-multiselect',
-        'ngTagsInput'
+        'ngTagsInput',
+        'validation',
+        'validation.rule'
     ]);
 
     styleguideModule.config(function (NotificationProvider) {
@@ -74,7 +76,7 @@
 
     function StyleguideCtrl($uibModal, Notification, growl) {
         var vm = this;
-        vm.currPage = 'forms';
+        vm.currPage = 'buttons';
 
         vm.pages = [
             {id: 'colors', title: 'Colors'},

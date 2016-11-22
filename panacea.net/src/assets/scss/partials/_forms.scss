@@ -149,3 +149,15 @@ input, select, textarea {
 .dropdown-menu-form {
   overflow: auto!important;
 }
+
+.validation-valid {
+  font-size: 14px;
+  padding-left:14px;
+  color: $dark-green;
+}
+
+.validation-invalid {
+  font-size: 14px;
+  padding-left:14px;
+  color: $red;
+}
