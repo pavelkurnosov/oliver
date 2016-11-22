@@ -9,6 +9,12 @@
   border-radius: 6px;
 }
 
+.input-group-addon {
+  border-left: 2px solid $medium-grey !important;
+  border-top: 2px solid $medium-grey !important;
+  border-bottom: 2px solid $medium-grey !important;
+}
+
 .select2-choice {
   height: 34px !important;
 }
