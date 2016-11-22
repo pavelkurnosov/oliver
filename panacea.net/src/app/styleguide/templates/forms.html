@@ -116,14 +116,7 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Multiselect:</label>
                                 <div class="col-md-10">
-                                    <select title="" multiple="multiple" class="multiselect">
-                                        <option value="cheese" selected>Cheese</option>
-                                        <option value="tomatoes" selected>Tomatoes</option>
-                                        <option value="mozarella" selected>Mozzarella</option>
-                                        <option value="mushrooms">Mushrooms</option>
-                                        <option value="pepperoni">Pepperoni</option>
-                                        <option value="onions">Onions</option>
-                                    </select>
+                                    <div ng-dropdown-multiselect="" options="vm.example8data" selected-model="vm.example8model" checkboxes="true"></div>
                                 </div>
                             </div>
                         </div>
@@ -136,58 +129,16 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Basic Select:</label>
                                 <div class="col-md-10">
-                                    <select title="" id="select2_sel1" class="select2 select2-select-00 col-md-12 full-width-fix select2-offscreen" multiple="" size="5" tabindex="-1">
-                                        <option>Alabama</option>
-                                        <option>Alaska</option>
-                                        <option>Arizona</option>
-                                        <option>Arkansas</option>
-                                        <option selected="">California</option>
-                                        <option>Colorado</option>
-                                        <option>Connecticut</option>
-                                        <option>Delaware</option>
-                                        <option>Florida</option>
-                                        <option>Georgia</option>
-                                        <option>Hawaii</option>
-                                        <option>Idaho</option>
-                                        <option>Illinois</option>
-                                        <option>Indiana</option>
-                                        <option>Iowa</option>
-                                        <option>Kansas</option>
-                                        <option selected="">Kentucky</option>
-                                        <option>Louisiana</option>
-                                        <option>Maine</option>
-                                        <option>Maryland</option>
-                                        <option>Massachusetts</option>
-                                        <option>Michigan</option>
-                                        <option>Minnesota</option>
-                                        <option>Mississippi</option>
-                                        <option>Missouri</option>
-                                        <option>Montana</option>
-                                        <option>Nebraska</option>
-                                        <option>Nevada</option>
-                                        <option>New Hampshire</option>
-                                        <option>New Jersey</option>
-                                        <option>New Mexico</option>
-                                        <option>New York</option>
-                                        <option>North Dakota</option>
-                                        <option>North Carolina</option>
-                                        <option>Ohio</option>
-                                        <option>Oklahoma</option>
-                                        <option>Oregon</option>
-                                        <option>Pennsylvania</option>
-                                        <option>Rhode Island</option>
-                                        <option>South Carolina</option>
-                                        <option>South Dakota</option>
-                                        <option>Tennessee</option>
-                                        <option>Texas</option>
-                                        <option>Utah</option>
-                                        <option>Vermont</option>
-                                        <option>Virginia</option>
-                                        <option>Washington</option>
-                                        <option>West Virginia</option>
-                                        <option>Wisconsin</option>
-                                        <option>Wyoming</option>
-                                    </select>
+                                    <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
+                                        <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
+                                        <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                            <small>
+                                                email: {{person.email}}
+                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                            </small>
+                                        </ui-select-choices>
+                                    </ui-select>
                                 </div>
                             </div>
                         </div>
@@ -195,58 +146,16 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Multiple select:</label>
                                 <div class="col-md-10">
-                                    <select title="" id="select2_sel2" class="select2 select2-select-00 col-md-12 full-width-fix select2-offscreen" multiple="multiple" size="5" tabindex="-1">
-                                        <option>Alabama</option>
-                                        <option>Alaska</option>
-                                        <option>Arizona</option>
-                                        <option>Arkansas</option>
-                                        <option selected="">California</option>
-                                        <option>Colorado</option>
-                                        <option>Connecticut</option>
-                                        <option>Delaware</option>
-                                        <option>Florida</option>
-                                        <option>Georgia</option>
-                                        <option>Hawaii</option>
-                                        <option>Idaho</option>
-                                        <option>Illinois</option>
-                                        <option>Indiana</option>
-                                        <option>Iowa</option>
-                                        <option>Kansas</option>
-                                        <option selected="">Kentucky</option>
-                                        <option>Louisiana</option>
-                                        <option>Maine</option>
-                                        <option>Maryland</option>
-                                        <option>Massachusetts</option>
-                                        <option>Michigan</option>
-                                        <option>Minnesota</option>
-                                        <option>Mississippi</option>
-                                        <option>Missouri</option>
-                                        <option>Montana</option>
-                                        <option>Nebraska</option>
-                                        <option>Nevada</option>
-                                        <option>New Hampshire</option>
-                                        <option>New Jersey</option>
-                                        <option>New Mexico</option>
-                                        <option>New York</option>
-                                        <option>North Dakota</option>
-                                        <option>North Carolina</option>
-                                        <option>Ohio</option>
-                                        <option>Oklahoma</option>
-                                        <option>Oregon</option>
-                                        <option>Pennsylvania</option>
-                                        <option>Rhode Island</option>
-                                        <option>South Carolina</option>
-                                        <option>South Dakota</option>
-                                        <option>Tennessee</option>
-                                        <option>Texas</option>
-                                        <option>Utah</option>
-                                        <option>Vermont</option>
-                                        <option>Virginia</option>
-                                        <option>Washington</option>
-                                        <option>West Virginia</option>
-                                        <option>Wisconsin</option>
-                                        <option>Wyoming</option>
-                                    </select>
+                                    <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
+                                        <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                                        <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                            <small>
+                                                email: {{person.email}}
+                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                            </small>
+                                        </ui-select-choices>
+                                    </ui-select>
                                 </div>
                             </div>
                         </div>
@@ -254,68 +163,16 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">With Grouping:</label>
                                 <div class="col-md-10">
-                                    <select title="" id="select2_sel3" class="select2 select2-select-00 col-md-12 full-width-fix">
-                                        <optgroup label="Alaskan/Hawaiian Time Zone">
-                                            <option value="AK">Alaska</option>
-                                            <option value="HI">Hawaii</option>
-                                        </optgroup>
-                                        <optgroup label="Pacific Time Zone">
-                                            <option value="CA">California</option>
-                                            <option value="NV">Nevada</option>
-                                            <option value="OR">Oregon</option>
-                                            <option value="WA">Washington</option>
-                                        </optgroup>
-                                        <optgroup label="Mountain Time Zone">
-                                            <option value="AZ">Arizona</option>
-                                            <option value="CO">Colorado</option>
-                                            <option value="ID">Idaho</option>
-                                            <option value="MT">Montana</option>
-                                            <option value="NE">Nebraska</option>
-                                            <option value="NM">New Mexico</option>
-                                            <option value="ND">North Dakota</option>
-                                            <option value="UT">Utah</option>
-                                            <option value="WY">Wyoming</option>
-                                        </optgroup>
-                                        <optgroup label="Central Time Zone">
-                                            <option value="AL">Alabama</option>
-                                            <option value="AR">Arkansas</option>
-                                            <option value="IL">Illinois</option>
-                                            <option value="IA">Iowa</option>
-                                            <option value="KS">Kansas</option>
-                                            <option value="KY">Kentucky</option>
-                                            <option value="LA">Louisiana</option>
-                                            <option value="MN">Minnesota</option>
-                                            <option value="MS">Mississippi</option>
-                                            <option value="MO">Missouri</option>
-                                            <option value="OK">Oklahoma</option>
-                                            <option value="SD">South Dakota</option>
-                                            <option value="TX">Texas</option>
-                                            <option value="TN">Tennessee</option>
-                                            <option value="WI">Wisconsin</option>
-                                        </optgroup>
-                                        <optgroup label="Eastern Time Zone">
-                                            <option value="CT">Connecticut</option>
-                                            <option value="DE">Delaware</option>
-                                            <option value="FL">Florida</option>
-                                            <option value="GA">Georgia</option>
-                                            <option value="IN">Indiana</option>
-                                            <option value="ME">Maine</option>
-                                            <option value="MD">Maryland</option>
-                                            <option value="MA">Massachusetts</option>
-                                            <option value="MI">Michigan</option>
-                                            <option value="NH">New Hampshire</option>
-                                            <option value="NJ">New Jersey</option>
-                                            <option value="NY">New York</option>
-                                            <option value="NC">North Carolina</option>
-                                            <option value="OH">Ohio</option>
-                                            <option value="PA">Pennsylvania</option>
-                                            <option value="RI">Rhode Island</option>
-                                            <option value="SC">South Carolina</option>
-                                            <option value="VT">Vermont</option>
-                                            <option value="VA">Virginia</option>
-                                            <option value="WV">West Virginia</option>
-                                        </optgroup>
-                                    </select>
+                                    <ui-select ng-model="vm.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
+                                        <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
+                                        <ui-select-choices group-by="'country'" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                            <small>
+                                                email: {{person.email}}
+                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                            </small>
+                                        </ui-select-choices>
+                                    </ui-select>
                                 </div>
                             </div>
                         </div>
@@ -323,58 +180,16 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">With Placeholder:</label>
                                 <div class="col-md-10">
-                                    <select title="" id="select2_sel4" class="select2 select2-select-00 col-md-12 full-width-fix" multiple size="5" data-placeholder="Select a State">
-                                        <option>Alabama</option>
-                                        <option>Alaska</option>
-                                        <option>Arizona</option>
-                                        <option>Arkansas</option>
-                                        <option>California</option>
-                                        <option>Colorado</option>
-                                        <option>Connecticut</option>
-                                        <option>Delaware</option>
-                                        <option>Florida</option>
-                                        <option>Georgia</option>
-                                        <option>Hawaii</option>
-                                        <option>Idaho</option>
-                                        <option>Illinois</option>
-                                        <option>Indiana</option>
-                                        <option>Iowa</option>
-                                        <option>Kansas</option>
-                                        <option>Kentucky</option>
-                                        <option>Louisiana</option>
-                                        <option>Maine</option>
-                                        <option>Maryland</option>
-                                        <option>Massachusetts</option>
-                                        <option>Michigan</option>
-                                        <option>Minnesota</option>
-                                        <option>Mississippi</option>
-                                        <option>Missouri</option>
-                                        <option>Montana</option>
-                                        <option>Nebraska</option>
-                                        <option>Nevada</option>
-                                        <option>New Hampshire</option>
-                                        <option>New Jersey</option>
-                                        <option>New Mexico</option>
-                                        <option>New York</option>
-                                        <option>North Dakota</option>
-                                        <option>North Carolina</option>
-                                        <option>Ohio</option>
-                                        <option>Oklahoma</option>
-                                        <option>Oregon</option>
-                                        <option>Pennsylvania</option>
-                                        <option>Rhode Island</option>
-                                        <option>South Carolina</option>
-                                        <option>South Dakota</option>
-                                        <option>Tennessee</option>
-                                        <option>Texas</option>
-                                        <option>Utah</option>
-                                        <option>Vermont</option>
-                                        <option>Virginia</option>
-                                        <option>Washington</option>
-                                        <option>West Virginia</option>
-                                        <option>Wisconsin</option>
-                                        <option>Wyoming</option>
-                                    </select>
+                                    <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
+                                        <ui-select-match placeholder="Custom placeholders...">{{$select.selected.name}}</ui-select-match>
+                                        <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                            <small>
+                                                email: {{person.email}}
+                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                            </small>
+                                        </ui-select-choices>
+                                    </ui-select>
                                 </div>
                             </div>
                         </div>
@@ -382,58 +197,16 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">With Minimum Input:</label>
                                 <div class="col-md-10">
-                                    <select title="" id="select2_sel5" class="select2 select2-select-01 col-md-12 full-width-fix" multiple size="5" data-placeholder="Select a State">
-                                        <option>Alabama</option>
-                                        <option>Alaska</option>
-                                        <option>Arizona</option>
-                                        <option>Arkansas</option>
-                                        <option>California</option>
-                                        <option>Colorado</option>
-                                        <option>Connecticut</option>
-                                        <option>Delaware</option>
-                                        <option>Florida</option>
-                                        <option>Georgia</option>
-                                        <option>Hawaii</option>
-                                        <option>Idaho</option>
-                                        <option>Illinois</option>
-                                        <option>Indiana</option>
-                                        <option>Iowa</option>
-                                        <option>Kansas</option>
-                                        <option>Kentucky</option>
-                                        <option>Louisiana</option>
-                                        <option>Maine</option>
-                                        <option>Maryland</option>
-                                        <option>Massachusetts</option>
-                                        <option>Michigan</option>
-                                        <option>Minnesota</option>
-                                        <option>Mississippi</option>
-                                        <option>Missouri</option>
-                                        <option>Montana</option>
-                                        <option>Nebraska</option>
-                                        <option>Nevada</option>
-                                        <option>New Hampshire</option>
-                                        <option>New Jersey</option>
-                                        <option>New Mexico</option>
-                                        <option>New York</option>
-                                        <option>North Dakota</option>
-                                        <option>North Carolina</option>
-                                        <option>Ohio</option>
-                                        <option>Oklahoma</option>
-                                        <option>Oregon</option>
-                                        <option>Pennsylvania</option>
-                                        <option>Rhode Island</option>
-                                        <option>South Carolina</option>
-                                        <option>South Dakota</option>
-                                        <option>Tennessee</option>
-                                        <option>Texas</option>
-                                        <option>Utah</option>
-                                        <option>Vermont</option>
-                                        <option>Virginia</option>
-                                        <option>Washington</option>
-                                        <option>West Virginia</option>
-                                        <option>Wisconsin</option>
-                                        <option>Wyoming</option>
-                                    </select>
+                                    <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
+                                        <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                                        <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                            <small>
+                                                email: {{person.email}}
+                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                            </small>
+                                        </ui-select-choices>
+                                    </ui-select>
                                 </div>
                             </div>
                         </div>
@@ -441,7 +214,16 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label">Tagging Support:</label>
                                 <div class="col-md-10">
-                                    <input id="select2_sel6" class="select2-select-02 col-md-12 full-width-fix" multiple data-placeholder="Type to add a Tag" type="hidden">
+                                    <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
+                                        <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                                        <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                            <small>
+                                                email: {{person.email}}
+                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                            </small>
+                                        </ui-select-choices>
+                                    </ui-select>
                                 </div>
                             </div>
                         </div>

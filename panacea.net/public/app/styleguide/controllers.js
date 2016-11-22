@@ -1,11 +1,11 @@
 (function () {
 
     /* global angular */
-    angular.module('styleguide', ['ui-notification', 'angular-growl']);
+    var styleguideModule = angular.module('styleguide', ['ui-notification', 'angular-growl', 'ui.bootstrap', 'ui.grid', 'ui.grid.pagination', 'ui.select', 'ngSanitize', 'angularjs-dropdown-multiselect']);
 
-    angular.module('styleguide').config(function (NotificationProvider) {
+    styleguideModule.config(function (NotificationProvider) {
             NotificationProvider.setOptions({
-                delay: 5000,
+                delay: 10000,
                 startTop: 20,
                 startRight: 10,
                 verticalSpacing: 20,
@@ -17,24 +17,53 @@
         }
     );
 
-    angular.module('styleguide').config(['growlProvider', function(growlProvider) {
+    styleguideModule.config(['growlProvider', function (growlProvider) {
         growlProvider.onlyUniqueMessages(false);
         growlProvider.globalTimeToLive({success: 1000, error: 2000, warning: 3000, info: 4000});
     }]);
 
-    angular.module('styleguide').controller('StyleguideCtrl', StyleguideCtrl)
+    styleguideModule.controller('StyleguideCtrl', StyleguideCtrl)
         .controller('ModalInstanceCtrl', ModalInstanceCtrl)
         .controller('WizardCtrl', WizardCtrl);
 
+    styleguideModule.filter('propsFilter', function () {
+        return function (items, props) {
+            var out = [];
 
+            if (angular.isArray(items)) {
+                var keys = Object.keys(props);
 
+                items.forEach(function (item) {
+                    var itemMatches = false;
+
+                    for (var i = 0; i < keys.length; i++) {
+                        var prop = keys[i];
+                        var text = props[prop].toLowerCase();
+                        if (item[prop].toString().toLowerCase().indexOf(text) !== -1) {
+                            itemMatches = true;
+                            break;
+                        }
+                    }
+
+                    if (itemMatches) {
+                        out.push(item);
+                    }
+                });
+            } else {
+                // Let the output be the input untouched
+                out = items;
+            }
+
+            return out;
+        };
+    });
 
     StyleguideCtrl.$inject = ['$uibModal', 'Notification', 'growl'];
     ModalInstanceCtrl.$inject = ['$uibModalInstance'];
 
     function StyleguideCtrl($uibModal, Notification, growl) {
         var vm = this;
-        vm.currPage = 'notifications';
+        vm.currPage = 'forms';
 
         vm.pages = [
             {id: 'colors', title: 'Colors'},
@@ -95,47 +124,49 @@
             enableColumnMenus: true,
             enableSorting: true,
             rowHeight: 47,
-            columnDefs: [{
-                field: 'Chk',
-                cellTemplate: '<input type="checkbox"/>',
-                cellClass: 'text-center',
-                width: "5%"
-            }, {
-                field: 'Edit',
-                cellTemplate: '<a href="#"><img src="app/styleguide/imgs/icon_options.png"></a>',
-                cellClass: 'text-center',
-                width: "10%",
-                textAlign: "center"
-            }, {
-                field: 'Rendering engine',
-                cellTemplate: '',
-                cellClass: 'text-center',
-                width: "20%"
-            }, {
-                field: 'Browser',
-                cellTemplate: '',
-                cellClass: 'text-center',
-                width: "15%"
-            }, {
-                field: 'Platform',
-                cellClass: 'text-center',
-                cellTemplate: '',
-                width: "15%"
-            }, {
-                field: 'Tags',
-                cellTemplate: '<span class="badge">High</span>',
-                cellClass: 'text-center',
-                width: "15%"
-            }, {
-                field: 'Actions',
-                cellTemplate: btns,
-                cellClass: 'text-center',
-                width: "20%"
-            }],
+            columnDefs: [
+                {
+                    field: 'Chk',
+                    cellTemplate: '<input type="checkbox"/>',
+                    cellClass: 'text-center',
+                    width: "5%"
+                }, {
+                    field: 'Edit',
+                    cellTemplate: '<a href="#"><img src="app/styleguide/imgs/icon_options.png"></a>',
+                    cellClass: 'text-center',
+                    width: "10%",
+                    textAlign: "center"
+                }, {
+                    field: 'Rendering engine',
+                    cellTemplate: '',
+                    cellClass: 'text-center',
+                    width: "20%"
+                }, {
+                    field: 'Browser',
+                    cellTemplate: '',
+                    cellClass: 'text-center',
+                    width: "15%"
+                }, {
+                    field: 'Platform',
+                    cellClass: 'text-center',
+                    cellTemplate: '',
+                    width: "15%"
+                }, {
+                    field: 'Tags',
+                    cellTemplate: '<span class="badge">High</span>',
+                    cellClass: 'text-center',
+                    width: "15%"
+                }, {
+                    field: 'Actions',
+                    cellTemplate: btns,
+                    cellClass: 'text-center',
+                    width: "20%"
+                }
+            ],
             data: [],
-            enablePaginationControls: false,
             paginationPageSize: 9,
             enableHorizontalScrollbar: 0,
+            enablePaginationControls: false,
             enableVerticalScrollbar: 0
         };
 
@@ -262,7 +293,7 @@
             $uibModal.open({
                 animation: false,
                 templateUrl: 'app/styleguide/templates/modal_template.html',
-                controller: 'ModalInstanceController as vm',
+                controller: 'ModalInstanceCtrl as vm',
                 size: size
             });
         };
@@ -275,9 +306,9 @@
 
         vm.dateOptions = {
             dateDisabled: disabled,
-            formatYear: 'yy',
-            maxDate: new Date(2020, 5, 22),
-            minDate: new Date(),
+            formatYear: 'yy', /*
+             maxDate: new Date(2020, 5, 22),
+             minDate: new Date(),*/
             startingDay: 1
         };
         // Disable weekend selection
@@ -301,7 +332,7 @@
         vm.maxSize = 5;
 
         vm.pageChanged = function () {
-            $log.log('Page changed to: ' + $scope.currentPage);
+            $log.log('Page changed to: ' + vm.currentPage);
         };
 
         vm.bigTotalItems = 175;
@@ -337,7 +368,7 @@
                 templateUrl: 'app/styleguide/templates/faq_template5.html'
             }
         ];
-        //---------------------------------------
+        //----------------- Notifications ----------------------
 
         vm.primary = function () {
             Notification('Primary notification');
@@ -360,27 +391,113 @@
         };
 
         // using growl
-        vm.showWarning = function () {
-            console.log(growl);
-            growl.warning('This is warning message.', {title: 'Warning!'});
+        /*vm.showWarning = function () {
+         console.log(growl);
+         growl.warning('This is warning message.', {title: 'Warning!'});
+         };
+         vm.showError = function () {
+         growl.error('This is error message.', {title: 'Error!'});
+         };
+         vm.showSuccess = function () {
+         growl.success('This is success message.', {title: 'Success!'});
+         };
+         vm.showInfo = function () {
+         growl.info('This is an info message.', {title: 'Info!'});
+         };
+         vm.showAll = function () {
+         growl.warning('This is warning message.', {title: 'Warning!'});
+         growl.error('This is error message.', {title: 'Error!'});
+         growl.success('This is success message.', {title: 'Success!'});
+         growl.info('This is an info message.', {title: 'Info!'});
+         };*/
+
+        //-------------- Progress Bars -------------------------
+        vm.max = 200;
+
+        vm.random = function () {
+            var value = Math.floor(Math.random() * 100 + 1);
+            var type;
+
+            if (value < 25) {
+                type = 'success';
+            } else if (value < 50) {
+                type = 'info';
+            } else if (value < 75) {
+                type = 'warning';
+            } else {
+                type = 'danger';
+            }
+
+            vm.showWarning = type === 'danger' || type === 'warning';
+
+            vm.dynamic = value;
+            vm.type = type;
         };
-        vm.showError = function () {
-            growl.error('This is error message.', {title: 'Error!'});
+
+        vm.random();
+
+        vm.randomStacked = function () {
+            vm.stacked = [];
+            var types = ['success', 'info', 'warning', 'danger'];
+            for (var i = 0, n = Math.floor(Math.random() * 4 + 1); i < n; i++) {
+                var index = Math.floor(Math.random() * 4);
+                vm.stacked.push({
+                    value: Math.floor(Math.random() * 30 + 1),
+                    type: types[index]
+                });
+            }
         };
-        vm.showSuccess = function () {
-            growl.success('This is success message.', {title: 'Success!'});
-        };
-        vm.showInfo = function () {
-            growl.info('This is an info message.', {title: 'Info!'});
-        };
-        vm.showAll = function () {
-            growl.warning('This is warning message.', {title: 'Warning!'});
-            growl.error('This is error message.', {title: 'Error!'});
-            growl.success('This is success message.', {title: 'Success!'});
-            growl.info('This is an info message.', {title: 'Info!'});
-        };
-        //---------------------------------------
-        //---------------------------------------
+
+        vm.randomStacked();
+
+        //--------------- Forms ------------------------
+
+        vm.people = [
+            {name: 'Adam', email: 'adam@email.com', age: 12, country: 'United States'},
+            {name: 'Amalie', email: 'amalie@email.com', age: 12, country: 'Argentina'},
+            {name: 'Estefanía', email: 'estefania@email.com', age: 21, country: 'Argentina'},
+            {name: 'Adrian', email: 'adrian@email.com', age: 21, country: 'Ecuador'},
+            {name: 'Wladimir', email: 'wladimir@email.com', age: 30, country: 'Ecuador'},
+            {name: 'Samantha', email: 'samantha@email.com', age: 30, country: 'United States'},
+            {name: 'Nicole', email: 'nicole@email.com', age: 43, country: 'Colombia'},
+            {name: 'Natasha', email: 'natasha@email.com', age: 54, country: 'Ecuador'},
+            {name: 'Michael', email: 'michael@email.com', age: 15, country: 'Colombia'},
+            {name: 'Nicolás', email: 'nicolas@email.com', age: 43, country: 'Colombia'}
+        ];
+
+
+        //--------------- Special Forms ------------------------
+
+        vm.employees = [
+            {name: "January"},
+            {name: "February"},
+            {name: "March"},
+            {name: "April"},
+            {name: "May"},
+            {name: "June"},
+            {name: "July"},
+            {name: "August"},
+            {name: "September"},
+            {name: "October"},
+            {name: "November"},
+            {name: "December"}
+        ];
+
+//---------------------------------------
+
+        vm.example8model = [];
+        vm.example8data = [
+            {id: 1, label: "Monday"},
+            {id: 2, label: "Tuesday"},
+            {id: 3, label: "Wednesday"},
+            {id: 4, label: "Thursday"},
+            {id: 5, label: "Friday"},
+            {id: 6, label: "Saturday"},
+            {id: 7, label: "Sunday"}
+        ];
+
+//---------------------------------------
+//---------------------------------------
     }
 
     function ModalInstanceCtrl($uibModalInstance) {
@@ -416,4 +533,5 @@
             alert('Success!!!');
         };
     }
-})();
+})
+();

@@ -1,1 +1,58 @@
- 
+<div id="progressbar_pane">
+    <h2>Progress Bars</h2>
+    <div class="row">
+        <h4>Default Progress Bars</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <uib-progressbar value="75"></uib-progressbar>
+            </div>
+            <div class="col-sm-4">
+                <uib-progressbar class="progress-striped" value="45" type="warning">45%</uib-progressbar>
+            </div>
+            <div class="col-sm-4">
+                <uib-progressbar class="progress-striped active" max="50" value="35" type="vm.danger"><i>35 / 50</i></uib-progressbar>
+            </div>
+        </div>
+
+        <hr/>
+    </div>
+    <div class="row">
+        <h4>Dynamic
+            <button type="button" class="btn btn-sm btn-primary" ng-click="vm.random()">Randomize</button>
+        </h4>
+        <uib-progressbar max="vm.max" value="vm.dynamic"><span style="color:white; white-space:nowrap;">{{vm.dynamic}} / {{vm.max}}</span></uib-progressbar>
+
+        <small><em>No animation</em></small>
+        <uib-progressbar animate="false" value="dynamic" type="success"><b>{{vm.dynamic}}%</b></uib-progressbar>
+
+        <small><em>Object (changes type based on value)</em></small>
+        <uib-progressbar class="progress-striped active" value="dynamic" type="{{vm.type}}">{{vm.type}} <i ng-show="vm.showWarning">!!! Watch out !!!</i></uib-progressbar>
+
+        <hr/>
+
+    </div>
+    <div class="row">
+        <h4>Stacked
+            <button type="button" class="btn btn-sm btn-primary" ng-click="vm.randomStacked()">Randomize</button>
+        </h4>
+        <uib-progress>
+            <uib-bar ng-repeat="bar in stacked track by $index" value="vm.bar.value" type="{{vm.bar.type}}"><span ng-hide="vm.bar.value < 5">{{vm.bar.value}}%</span></uib-bar>
+        </uib-progress>
+    </div>
+    <div class="row">
+        <h4>Others</h4>
+        <div class="col-md-12">
+            <img src="app/styleguide/imgs/1.gif"/>
+            <img src="app/styleguide/imgs/2.gif"/>
+            <img src="app/styleguide/imgs/3.gif"/>
+            <img src="app/styleguide/imgs/4.gif"/>
+            <img src="app/styleguide/imgs/5.gif"/>
+            <img src="app/styleguide/imgs/6.gif"/>
+            <img src="app/styleguide/imgs/7.gif"/>
+            <img src="app/styleguide/imgs/8.gif"/>
+            <img src="app/styleguide/imgs/9.gif"/>
+            <img src="app/styleguide/imgs/10.gif"/>
+            <img src="app/styleguide/imgs/11.gif"/>
+        </div>
+    </div>
+</div>

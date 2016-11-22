@@ -2,6 +2,17 @@
     <h2>Special Forms</h2>
     <div class="row">
         <div class="col-md-6">
+            <h4>Autocomplete Box</h4>
+            <p class="input-group">
+                <input type="text" class="form-control" list="names" placeholder="Pick a Month">
+                <datalist id="names">
+                    <option data-ng-repeat="item in vm.employees" value="{{item.name}}">
+                </datalist>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
             <h4>Date Picker</h4>
             <p class="input-group">
                 <input type="text" class="form-control"
@@ -10,12 +21,42 @@
                        is-open="vm.popup2.opened"
                        datepicker-options="vm.dateOptions"
                        ng-required="true"
+                       show-button-bar="false"
                        close-text="Close"/>
                 <span class="input-group-btn">
                     <button type="button" class="btn btn-default btn-open-calendar" ng-click="vm.open2()">
                         <i class="glyphicon glyphicon-calendar"></i>
                     </button>
                 </span>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Textboxes with Icons</h4>
+            <p>
+            <div class="left-inner-addon">
+                <i class="glyphicon glyphicon-home"></i>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Address"/>
+            </div>
+            </p>
+            <p>
+            <div class="left-inner-addon">
+                <i class="glyphicon glyphicon-user"></i>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Username"/>
+            </div>
+            </p>
+            <p>
+            <div class="left-inner-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Search"/>
+            </div>
             </p>
         </div>
     </div>

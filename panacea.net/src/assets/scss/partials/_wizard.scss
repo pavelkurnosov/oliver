@@ -16,16 +16,17 @@
       .step-title {
         font-size: 14px;
         background: none;
-        color: $orange;
+        color: $dark-grey;
+        font-weight: bold;
       }
       .step-number {
         background: $light-grey2;
-        /*border: 1px solid $white;*/
         border-radius: 25px;
         width: 50px;
         height: 50px;
         font-size: 20px;
         margin: auto;
+        color: $dark-grey;
       }
       hr {
         border-top-width: 6px;
