@@ -516,21 +516,28 @@
             {text: 'Tag2'},
             {text: 'Tag3'}
         ];
-        vm.loadTags = function() {
+        vm.loadTags = function () {
             return [
-                { "text": "Tag1" },
-                { "text": "Tag2" },
-                { "text": "Tag3" },
-                { "text": "Tag4" },
-                { "text": "Tag5" },
-                { "text": "Tag6" },
-                { "text": "Tag7" },
-                { "text": "Tag8" },
-                { "text": "Tag9" },
-                { "text": "Tag10" }
+                {"text": "Tag1"},
+                {"text": "Tag2"},
+                {"text": "Tag3"},
+                {"text": "Tag4"},
+                {"text": "Tag5"},
+                {"text": "Tag6"},
+                {"text": "Tag7"},
+                {"text": "Tag8"},
+                {"text": "Tag9"},
+                {"text": "Tag10"}
             ];
         };
 //---------------------------------------
+
+        angular.element(document).ready(function () {
+            $('#toggle_chk').css('border: 1px solid red').bootstrapToggle();
+
+
+        });
+
 //---------------------------------------
     }
 

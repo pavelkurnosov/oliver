@@ -24,8 +24,8 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
+            <state relative-caret-position="570">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -41,16 +41,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styleguide/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+            <state relative-caret-position="243">
+              <caret line="507" column="39" selection-start-line="507" selection-start-column="39" selection-end-line="507" selection-end-column="39" />
               <folding>
-                <element signature="e#20931#21044#0" expanded="false" />
-                <element signature="e#21141#21920#0" expanded="false" />
-                <marker date="1479782344097" expanded="true" signature="4788:4805" ph="..." />
-                <marker date="1479782344097" expanded="true" signature="4903:4920" ph="..." />
+                <element signature="e#21059#21172#0" expanded="false" />
+                <element signature="e#21269#22048#0" expanded="false" />
+                <marker date="1479819883376" expanded="true" signature="4788:4805" ph="..." />
+                <marker date="1479819883376" expanded="true" signature="4903:4920" ph="..." />
               </folding>
             </state>
           </provider>
@@ -59,22 +59,12 @@
       <file leaf-file-name="buttons.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styleguide/templates/buttons.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="99" column="58" selection-start-line="99" selection-start-column="58" selection-end-line="99" selection-end-column="58" />
+            <state relative-caret-position="625">
+              <caret line="119" column="49" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="49" />
               <folding>
-                <marker date="1479782755652" expanded="false" signature="4805:4821" ph="..." />
-                <marker date="1479782755652" expanded="false" signature="4852:4863" ph="..." />
+                <marker date="1479819582884" expanded="false" signature="4812:4828" ph="..." />
+                <marker date="1479819582884" expanded="false" signature="4859:4870" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="special_forms.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/styleguide/templates/special_forms.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,11 +133,11 @@
         <option value="$PROJECT_DIR$/app/styleguide/templates/tooltip.html" />
         <option value="$PROJECT_DIR$/app/styleguide/styleguide.scss" />
         <option value="$PROJECT_DIR$/app/styleguide/templates/forms.html" />
-        <option value="$PROJECT_DIR$/../gulpfile.js" />
-        <option value="$PROJECT_DIR$/app/styleguide/controllers.js" />
-        <option value="$PROJECT_DIR$/app/styleguide/templates/buttons.html" />
         <option value="$PROJECT_DIR$/assets/scss/partials/_forms.scss" />
         <option value="$PROJECT_DIR$/app/styleguide/templates/special_forms.html" />
+        <option value="$PROJECT_DIR$/../gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/styleguide/templates/buttons.html" />
+        <option value="$PROJECT_DIR$/app/styleguide/controllers.js" />
       </list>
     </option>
   </component>
@@ -175,7 +165,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -188,18 +178,12 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="form&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;special&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/special_forms.html&#10;buttons&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/buttons.html&#10;gu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/gulpfile.js&#10;_formsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;gul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/gulpfile.js&#10;forms&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/forms.html&#10;specia&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/special_forms.html&#10;styleguide&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.scss&#10;speci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/special_forms.html&#10;fom&#9;null&#9;null&#10;tooltip&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tooltip.html&#10;pa&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/pagination.html&#10;search&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/search_results.html&#10;button&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_button.scss&#10;modal&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/modals.html&#10;bread&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/breadcrumbs.html&#10;for&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;wizardsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_wizard.scss&#10;tabs&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tabs.html&#10;template&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template1.html&#10;modal.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/modals.html&#10;modaltem&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/modal_template.html&#10;table.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tables.html&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/app.js&#10;progres&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/progress.html&#10;_form&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;regist.sc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/registration/registration.scss&#10;wizardh&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/wizard.html&#10;app.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/app.js&#10;notifi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/notifications.html&#10;style&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.scss&#10;stylescs&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.scss&#10;control&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/controllers.js&#10;tabs.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tabs.html&#10;f5&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template5.html&#10;ft4&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template4.html&#10;ft3&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template3.html&#10;fat2&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template2.html&#10;ft1&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template1.html&#10;faqht&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template2.html&#10;inde&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/index.html&#10;styleg&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.html&#10;ap.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/app.js&#10;controllers.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/controllers.js&#10;index.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/index.html&#10;index.ht&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/index.html&#10;wizardcon&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/wizard.controller.js&#10;ft2&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template2.html&#10;fh2&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="buttons&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/buttons.html&#10;form&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;special&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/special_forms.html&#10;gu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/gulpfile.js&#10;_formsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;gul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/gulpfile.js&#10;forms&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/forms.html&#10;specia&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/special_forms.html&#10;styleguide&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.scss&#10;speci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/special_forms.html&#10;fom&#9;null&#9;null&#10;tooltip&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tooltip.html&#10;pa&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/pagination.html&#10;search&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/search_results.html&#10;button&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_button.scss&#10;modal&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/modals.html&#10;bread&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/breadcrumbs.html&#10;for&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;wizardsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_wizard.scss&#10;tabs&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tabs.html&#10;template&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template1.html&#10;modal.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/modals.html&#10;modaltem&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/modal_template.html&#10;table.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tables.html&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/app.js&#10;progres&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/progress.html&#10;_form&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/assets/scss/partials/_forms.scss&#10;regist.sc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/registration/registration.scss&#10;wizardh&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/wizard.html&#10;app.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/app.js&#10;notifi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/notifications.html&#10;style&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.scss&#10;stylescs&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.scss&#10;control&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/controllers.js&#10;tabs.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/tabs.html&#10;f5&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template5.html&#10;ft4&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template4.html&#10;ft3&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template3.html&#10;fat2&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template2.html&#10;ft1&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template1.html&#10;faqht&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template2.html&#10;inde&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/index.html&#10;styleg&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/styleguide.html&#10;ap.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/app.js&#10;controllers.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/controllers.js&#10;index.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/index.html&#10;index.ht&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/index.html&#10;wizardcon&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/wizard.controller.js&#10;ft2&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/oliver/oliver/panacea.net/src/app/styleguide/templates/faq_template2.html&#10;fh2&#9;null&#9;null" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -271,12 +255,12 @@
       <workItem from="1479676955956" duration="33772000" />
       <workItem from="1479727245605" duration="12705000" />
       <workItem from="1479749005261" duration="14327000" />
-      <workItem from="1479812384603" duration="515000" />
+      <workItem from="1479812384603" duration="2776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74366000" />
+    <option name="totallyTimeSpent" value="76627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -286,6 +270,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5258103" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -296,7 +281,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5258103" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -624,38 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="46" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styleguide/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-          <folding>
-            <element signature="e#20931#21044#0" expanded="false" />
-            <element signature="e#21141#21920#0" expanded="false" />
-            <marker date="1479782344097" expanded="true" signature="4788:4805" ph="..." />
-            <marker date="1479782344097" expanded="true" signature="4903:4920" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styleguide/templates/buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="99" column="58" selection-start-line="99" selection-start-column="58" selection-end-line="99" selection-end-column="58" />
-          <folding>
-            <marker date="1479782755652" expanded="false" signature="4805:4821" ph="..." />
-            <marker date="1479782755652" expanded="false" signature="4852:4863" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styleguide/styleguide.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2941">
@@ -672,11 +624,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/styleguide/templates/special_forms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        <state relative-caret-position="591">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styleguide/templates/buttons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="119" column="49" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="49" />
+          <folding>
+            <marker date="1479819582884" expanded="false" signature="4812:4828" ph="..." />
+            <marker date="1479819582884" expanded="false" signature="4859:4870" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styleguide/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="507" column="39" selection-start-line="507" selection-start-column="39" selection-end-line="507" selection-end-column="39" />
+          <folding>
+            <element signature="e#21059#21172#0" expanded="false" />
+            <element signature="e#21269#22048#0" expanded="false" />
+            <marker date="1479819883376" expanded="true" signature="4788:4805" ph="..." />
+            <marker date="1479819883376" expanded="true" signature="4903:4920" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

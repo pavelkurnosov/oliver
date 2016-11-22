@@ -34,6 +34,7 @@ gulp.task('scripts', ['copy'], function () {
         srcPath + 'assets/**/*.js',
         './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
         './bower_components/angular/angular.js',
+        './bower_components/bootstrap/dist/js/bootstrap.min.js',
         './bower_components/angular-route/angular-route.js',
         './bower_components/angular-messages/angular-messages.js',
         './bower_components/angular-bootstrap/ui-bootstrap.js',
