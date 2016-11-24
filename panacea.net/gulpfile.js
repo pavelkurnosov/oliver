@@ -106,7 +106,7 @@ gulp.task('css-lib', function () {
         './bower_components/ng-tags-input/ng-tags-input.min.css',
         './bower_components/ng-tags-input/ng-tags-input.bootstrap.min.css',
         './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.css',
-        './bower_components/bootstrap-toggle/js/bootstrap-toggle.min.css',
+        './bower_components/bootstrap-toggle/css/bootstrap-toggle.min.css',
         'http://ui-grid.info/release/ui-grid-unstable.css'
     ])
         .pipe(concat('lib.css'))
