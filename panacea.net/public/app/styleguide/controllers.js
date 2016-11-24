@@ -533,9 +533,9 @@
 //---------------------------------------
 
         angular.element(document).ready(function () {
-            setTimeout(function () {
-                $("[data-toggle='toggle']").bootstrapToggle();
-            }, 10);
+            $('#toggle_chk').css('border: 1px solid red').bootstrapToggle();
+
+
         });
 
 //---------------------------------------
