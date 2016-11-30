@@ -71,12 +71,12 @@
     });
 
 
-    StyleguideCtrl.$inject = ['$uibModal', 'Notification', 'growl'];
+    StyleguideCtrl.$inject = ['$uibModal', 'Notification', 'growl', '$window'];
     ModalInstanceCtrl.$inject = ['$uibModalInstance'];
 
-    function StyleguideCtrl($uibModal, Notification, growl) {
+    function StyleguideCtrl($uibModal, Notification, growl, $window) {
         var vm = this;
-        vm.currPage = 'buttons';
+        vm.currPage = 'typography';
 
         vm.pages = [
             {id: 'colors', title: 'Colors'},
@@ -123,7 +123,54 @@
 
         vm.setPage = function (pageId) {
             vm.currPage = pageId;
+            $window.scrollTo(0, 0);
         };
+
+
+        //------------- For Colors Panel ----------------------------
+
+        vm.colorAry = [{
+            title: 'Medicus Colors',
+            colors: [
+                { className: 'bg-navy-blue', colorValue: '#304770'},
+                { className: 'bg-light-blue', colorValue: '#4eabf9'},
+                { className: 'bg-darkest-blue', colorValue: '#22324f'},
+                { className: 'bg-orange', colorValue: '#ff6b10'},
+                { className: 'bg-light-grey', colorValue: '#efefef'},
+                { className: 'bg-medium-grey', colorValue: '#aaaaaa'},
+                { className: 'bg-light-green', colorValue: '#5cb85c'},
+                { className: 'bg-dark-green', colorValue: '#357935'},
+                { className: 'bg-red', colorValue: '#bb0000'},
+                { className: 'bg-white', colorValue: '#ffffff'},
+            ]
+        },{
+            title: 'Alrux Colors',
+            colors: [
+                { className: 'bg-grey-blue', colorValue: '#313942'},
+                { className: 'bg-medium-grey2', colorValue: '#455a64'},
+                { className: 'bg-light-grey2', colorValue: '#cfd8dc'},
+                { className: 'bg-lightest-grey', colorValue: '#eceff1'}
+            ]
+        },{
+            title: 'Santorini Color',
+            colors: [
+                { className: 'bg-light-blue2', colorValue: '#1289d5'}
+            ]
+        },{
+            title: 'Residence Colors',
+            colors: [
+                { className: 'bg-dark-blue-grey1', colorValue: '#435061'},
+                { className: 'bg-dark-blue-grey2', colorValue: '#343e4a'},
+                { className: 'bg-light-grey3', colorValue: '#eff3f5'},
+                { className: 'bg-orange', colorValue: '#ff551a'},
+                { className: 'bg-light-blue', colorValue: '#31a2e1'},
+                { className: 'bg-medium-blue', colorValue: '#0e90d9'},
+                { className: 'bg-pale-blue', colorValue: '#d8f1ff'}
+            ]
+        }];
+
+
+
 
         //-------------------- For Tables ----------------------------
         btns = '<a href="#"><img src="app/styleguide/imgs/page_white_find.png"></a>';
@@ -533,9 +580,8 @@
 //---------------------------------------
 
         angular.element(document).ready(function () {
-            setTimeout(function () {
-                $("[data-toggle='toggle']").bootstrapToggle();
-            }, 10);
+            $('#toggle_chk').css('border: 1px solid red').bootstrapToggle();
+
 
         });
 
