@@ -2,7 +2,7 @@
     <h2>Colors</h2>
     <div ng-repeat="colorObj in vm.colorAry">
         <hr>
-        <h4 class="section-header">{{colorObj.title}}</h4>
+        <h4 class="sub-section">{{colorObj.title}}</h4>
         <div class="row text-center">
             <div ng-repeat="colorItem in colorObj.colors" class="col-xs-6 col-sm-4 col-md-3 col-lg-2 color-item">
                 <div class="color-item-content {{colorItem.className}}" ng-style="colorItem.className === 'bg-white' && {'border':'1px solid grey'}"></div>

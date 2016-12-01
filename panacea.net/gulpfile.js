@@ -39,19 +39,22 @@ gulp.task('scripts', ['copy'], function () {
         './bower_components/angular-messages/angular-messages.js',
         './bower_components/angular-bootstrap/ui-bootstrap.js',
         './bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-        './bower_components/angular-sanitize/angular-sanitize.min.js',                      // added by Pavel.
-        './bower_components/angular-ui-grid/ui-grid.min.js',                                // added by Pavel.
-        './bower_components/angular-ui-notification/dist/angular-ui-notification.min.js',   // added by Pavel.
-        './bower_components/angular-growl-v2/build/angular-growl.min.js',                   // added by Pavel.
-        './bower_components/ng-tags-input/ng-tags-input.min.js',                   // added by Pavel.
-        './bower_components/angular-ui-select/dist/select.min.js',                   // added by Pavel.
-        './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js',                   // added by Pavel.
-        './bower_components/angular-validation/dist/angular-validation.min.js',                   // added by Pavel.
-        './bower_components/angular-validation/dist/angular-validation-rule.min.js',                   // added by Pavel.
-        './bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js',                   // added by Pavel.
-        './bower_components/angularjs-dropdown-multiselect/dist/angularjs-dropdown-multiselect.min.js',                   // added by Pavel.
+        './bower_components/angular-sanitize/angular-sanitize.min.js',                                      // added by Pavel.
+        './bower_components/angular-ui-grid/ui-grid.min.js',                                                // added by Pavel.
+        './bower_components/angular-ui-notification/dist/angular-ui-notification.min.js',                   // added by Pavel.
+        './bower_components/angular-growl-v2/build/angular-growl.min.js',                                   // added by Pavel.
+        './bower_components/ng-tags-input/ng-tags-input.min.js',                                            // added by Pavel.
+        './bower_components/angular-ui-select/dist/select.min.js',                                          // added by Pavel.
+        './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js',                                // added by Pavel.
+        './bower_components/angular-validation/dist/angular-validation.min.js',                             // added by Pavel.
+        './bower_components/angular-validation/dist/angular-validation-rule.min.js',                        // added by Pavel.
+        './bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js',                                   // added by Pavel.
+        './bower_components/angularjs-dropdown-multiselect/dist/angularjs-dropdown-multiselect.min.js',     // added by Pavel.
+        './bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.js',                         // added by Pavel.
+        './bower_components/angular-elastic/elastic.js',                                                    // added by Pavel.
         './bower_components/lodash/dist/lodash.js',
         './bower_components/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js',
+        './bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.min.js',
         configFile
     ])
         .pipe(sourcemaps.init())
@@ -107,6 +110,8 @@ gulp.task('css-lib', function () {
         './bower_components/ng-tags-input/ng-tags-input.bootstrap.min.css',
         './bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.css',
         './bower_components/bootstrap-toggle/css/bootstrap-toggle.min.css',
+        './bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css',
+        './bower_components/angular-ui-bootstrap-datetimepicker/datetimepicker.css',
         'http://ui-grid.info/release/ui-grid-unstable.css'
     ])
         .pipe(concat('lib.css'))

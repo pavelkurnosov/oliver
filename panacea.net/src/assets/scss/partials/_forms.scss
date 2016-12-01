@@ -7,6 +7,10 @@
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 6px;
+
+  &:focus {
+    border-color: $medium-blue !important; // $light-blue2 !important;
+  }
 }
 
 .input-group-addon {
@@ -17,6 +21,10 @@
 
 .select2-choice {
   height: 34px !important;
+}
+
+.dropdown-toggle {
+  border: 2px solid $medium-grey !important;
 }
 
 .ui-select-multiple .ui-select-match-item {
@@ -32,9 +40,10 @@ input, select, textarea {
 
 .form-group, .form-inline {
   label {
-    font-family: "Open Sans";
+    font-family: $base-font-family;
     font-size: 15px;
     font-weight: bold;
+    padding-top: 6px !important;
   }
   &.form-inline {
     label {
@@ -151,19 +160,59 @@ input, select, textarea {
   pointer-events: none;
 }
 
-
 .dropdown-menu-form {
-  overflow: auto!important;
+  overflow: auto !important;
 }
 
 .validation-valid {
   font-size: 14px;
-  padding-left:14px;
+  padding-left: 14px;
   color: $dark-green;
 }
 
 .validation-invalid {
   font-size: 14px;
-  padding-left:14px;
+  padding-left: 14px;
   color: $red;
+}
+
+.form-group {
+  label {
+    &.radio:hover {
+      cursor: pointer;
+    }
+    &.checkbox:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+tags-input .tags .tag-item {
+  background: $light-green;
+  border-color: $light-green;
+  .remove-button:hover {
+    color: $red;
+  }
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: $medium-blue !important;
+}
+
+.select2-results .select2-highlighted {
+  background: $medium-blue;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match-item {
+  background: $light-green;
+  color: $white;
+  &:hover {
+    background: $dark-green;
+  }
+  .close {
+    &:hover {
+      color: $red;
+      opacity: 1;
+    }
+  }
 }

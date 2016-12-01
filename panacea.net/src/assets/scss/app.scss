@@ -20,9 +20,10 @@
 body {
   background-color: $white;
   color: $dark-grey !important;
+  font-family: $base-font-family !important;
 
   &.landing {
-    background-color: $grey-blue;
+    //background-color: $grey-blue;
     //color: #fff;
   }
 
@@ -108,117 +109,6 @@ form {
   padding: 0;
 }
 
-/*
-.style-guide11 {
-  background: $white !important;
-
-  .span6 {
-    padding: 20px;
-  }
-  .navbar-top {
-    background-color: $navy-blue;
-    border-color: $navy-blue;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    li > a {
-      color: $white;
-    }
-    .navbar-brand {
-      color: $white;
-      font-family: "Glasgow";
-      font-weight: bolder;
-      font-size: x-large;
-    }
-  }
-
-  #typography_pane {
-    .block {
-      background-color: $dark-blue;
-      color: $white;
-      margin: 0 0 0 -6px;
-      padding: 10px;
-    }
-  }
-  #labels {
-    .row {
-      margin-left: 0;
-    }
-  }
-  #text_boxes, #forms {
-    .row {
-      padding-top: 10px;
-    }
-  }
-
-  label {
-    font-weight: normal;
-  }
-  .fldTitle {
-    padding-top: 4px;
-  }
-  .grids-content {
-    .row {
-      div {
-        text-align: center;
-        border: 1px solid white;
-        padding: 20px 0 20px 0;
-        background: $light-grey2;
-        color: $black;
-        font-weight: bold;
-        div {
-          border: 0;
-        }
-      }
-    }
-  }
-
-
-
-  .section {
-    margin-bottom: $gutter*2;
-  }
-
-  .buttons-div {
-    margin-top: 10px;
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-    .btn {
-      //box-shadow: 0 1px 2px #bfbfbf;
-      //background: $light-grey3;
-      font-weight: bold;
-      margin-left: 3px;
-      padding-left: 10px;
-      padding-right: 10px;
-      &.active {
-        background: $navy-blue;
-        color: $white;
-      }
-    }
-  }
-  .badge {
-    display: inline-block;
-    background: $medium-grey;
-    padding: 1px 12px;
-    margin-top: 9px;
-    color: $white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-  }
-
-  .modal-content {
-    border: 15px solid $medium-grey;
-  }
-  .modal-header:after {
-    border-bottom: 0;
-  }
-  .modal-backdrop {
-    opacity: 0.9 !important;
-  }
-  .modal-dialog {
-    margin-top: 20%;
-  }
-}*/
+.modal-content {
+  border:15px solid $dark-grey;
+}

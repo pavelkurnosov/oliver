@@ -1,26 +1,20 @@
-@import "variables";
+@import "../variables";
 // Paragraph addons
 
-//p {
 p {
-  color: $black;
-}
-  .p-line-30 {
+  line-height: 22px;
+
+  &.h1, &.h2, &.h3, &.h4, &.h5, &.h6 {
     line-height: 30px;
   }
-  .p-line-22 {
-    line-height: 22px;
-  }
-  .p-padding-5 {
+
+  &.p-padding {
     padding: 5px;
   }
-  .p-padding {
-    padding: 10px;
+  &.p-margin {
+    margin: 5px;
   }
-  .p-margin {
-    margin: 10px;
+  &.p-border {
+    border: 1px solid $black;
   }
-  .p-border {
-    border: 1px solid black;
-  }
-//}
+}

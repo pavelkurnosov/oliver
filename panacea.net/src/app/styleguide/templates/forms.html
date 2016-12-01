@@ -1,324 +1,322 @@
 <div class="tab-pane" id="forms_pane">
     <h2>Forms</h2>
-    <div class="row">
-        <form class="form-horizontal row-border" action="#">
-            <table class="table table-bordered">
-                <thead>
-                <tr>
-                    <th class="col-xs-2 col-sm-1 col-md-1">Category</th>
-                    <th class="col-xs-6 col-sm-11 col-md-11">Element/Component</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Full Size Inputs</td>
-                    <td>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Usual input field:</label>
-                                <div class="col-md-10"><input title="" type="text" name="regular" class="form-control"></div>
-                            </div>
+    <hr/>
+    <form class="form-horizontal row-border" action="#">
+        <h3 class="text-dark-grey">Full Size Inputs</h3><br/>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Usual input field:</label>
+                        <div class="col-md-10"><input title="" type="text" name="regular" class="form-control"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Password:</label>
+                        <div class="col-md-10"><input title="" class="form-control" type="password" name="pass">
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Password:</label>
-                                <div class="col-md-10"><input title="" class="form-control" type="password" name="pass">
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Read only field:</label>
+                        <div class="col-md-10"><input title="" class="form-control" type="text" name="readonly"
+                                                      readonly="" value="read only"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Disabled field:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" name="disabled" disabled="disabled" value="disabled"
+                                   class="form-control">
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Read only field:</label>
-                                <div class="col-md-10"><input title="" class="form-control" type="text" name="readonly"
-                                                              readonly="" value="read only"></div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Autocomplete (<a
+                                href="http://twitter.github.io/typeahead.js/"
+                                target="_blank">Typeahead.js</a>):</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" name="autocomplete" class="form-control" id="autocomplete-example">
+                            <span class="help-block">Start typing e.g. New York</span>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Disabled field:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" name="disabled" disabled="disabled" value="disabled"
-                                           class="form-control">
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Max 10 characters:</label>
+                        <div class="col-md-10"><input type="text" name="regular" maxlength="10"
+                                                      placeholder="max 10 characters" class="form-control">
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Autocomplete (<a
-                                        href="http://twitter.github.io/typeahead.js/"
-                                        target="_blank">Typeahead.js</a>):</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" name="autocomplete" class="form-control" id="autocomplete-example">
-                                    <span class="help-block">Start typing e.g. New York</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Max 10 characters:</label>
-                                <div class="col-md-10"><input type="text" name="regular" maxlength="10"
-                                                              placeholder="max 10 characters" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Textarea:</label>
-                                <div class="col-md-10"><textarea title="" rows="3" cols="5" name="textarea"
-                                                                 class="form-control"></textarea></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Elastic textarea:</label>
-                                <div class="col-md-10">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Textarea:</label>
+                        <div class="col-md-10"><textarea title="" rows="3" cols="5" name="textarea"
+                                                         class="form-control"></textarea></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Elastic textarea:</label>
+                        <div class="col-md-10">
                                             <textarea title="" rows="3"
                                                       cols="5" name="textarea"
                                                       class="auto form-control"
+                                                      msd-elastic ng-model="vm.elasticText"
                                                       style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 68px;"></textarea>
-                                </div>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">With character counter:</label>
-                                <div class="col-md-10">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">With character counter:</label>
+                        <div class="col-md-10">
                                         <textarea title="" rows="3" cols="5" name="use_this_name_as_id_below"
                                                   class="limited form-control" data-limit="100"
                                                   maxlength="100"></textarea>
-                                    <span class="help-block" id="limit-text-use_this_name_as_id_below">Field limited to 100 characters.</span>
-                                </div>
-                            </div>
+                            <span class="help-block" id="limit-text-use_this_name_as_id_below">Field limited to 100 characters.</span>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Tags:</label>
+                        <div class="col-md-10">
+                            <tags-input ng-model="vm.tagsInForm"></tags-input>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Tags:</label>
-                                <div class="col-md-10">
-                                    <tags-input ng-model="vm.tagsInForm"></tags-input>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Tags with autocomplete:</label>
+                        <div class="col-md-10">
+                            <tags-input ng-model="vm.tagsInForm1">
+                                <auto-complete source="vm.loadTags()"></auto-complete>
+                            </tags-input>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Tags with autocomplete:</label>
-                                <div class="col-md-10">
-                                    <tags-input ng-model="vm.tagsInForm1">
-                                        <auto-complete source="vm.loadTags()"></auto-complete>
-                                    </tags-input>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+
+        <h3 class="text-dark-grey">Styled Form Elements</h3><br/>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Multiselect:</label>
+                        <div class="col-md-10">
+                            <div ng-dropdown-multiselect="" options="vm.example8data" selected-model="vm.example8model" checkboxes="true"></div>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Styled Form Elements</td>
-                    <td>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Multiselect:</label>
-                                <div class="col-md-10">
-                                    <div ng-dropdown-multiselect="" options="vm.example8data" selected-model="vm.example8model" checkboxes="true"></div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+
+        <h3 class="text-dark-grey">Advanced Select List</h3><br/>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Basic Select:</label>
+                        <div class="col-md-10">
+                            <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
+                                <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
+                                <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                    <small>
+                                        email: {{person.email}}
+                                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                    </small>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Advanced Select List</td>
-                    <td>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Basic Select:</label>
-                                <div class="col-md-10">
-                                    <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
-                                        <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
-                                        <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
-                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
-                                            <small>
-                                                email: {{person.email}}
-                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
-                                            </small>
-                                        </ui-select-choices>
-                                    </ui-select>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Multiple select:</label>
+                        <div class="col-md-10">
+                            <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
+                                <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                                <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                    <small>
+                                        email: {{person.email}}
+                                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                    </small>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Multiple select:</label>
-                                <div class="col-md-10">
-                                    <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
-                                        <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
-                                        <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
-                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
-                                            <small>
-                                                email: {{person.email}}
-                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
-                                            </small>
-                                        </ui-select-choices>
-                                    </ui-select>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">With Grouping:</label>
+                        <div class="col-md-10">
+                            <ui-select ng-model="vm.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
+                                <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
+                                <ui-select-choices group-by="'country'" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                    <small>
+                                        email: {{person.email}}
+                                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                    </small>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">With Grouping:</label>
-                                <div class="col-md-10">
-                                    <ui-select ng-model="vm.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
-                                        <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
-                                        <ui-select-choices group-by="'country'" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
-                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
-                                            <small>
-                                                email: {{person.email}}
-                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
-                                            </small>
-                                        </ui-select-choices>
-                                    </ui-select>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">With Placeholder:</label>
+                        <div class="col-md-10">
+                            <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
+                                <ui-select-match placeholder="Custom placeholders...">{{$select.selected.name}}</ui-select-match>
+                                <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                    <small>
+                                        email: {{person.email}}
+                                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                    </small>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">With Placeholder:</label>
-                                <div class="col-md-10">
-                                    <ui-select ng-model="ctrl.person.selected" theme="select2" ng-disabled="vm.disabled" style="min-width: 300px;" title="Choose a person">
-                                        <ui-select-match placeholder="Custom placeholders...">{{$select.selected.name}}</ui-select-match>
-                                        <ui-select-choices repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
-                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
-                                            <small>
-                                                email: {{person.email}}
-                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
-                                            </small>
-                                        </ui-select-choices>
-                                    </ui-select>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">With Minimum Input:</label>
+                        <div class="col-md-10">
+                            <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
+                                <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                                <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                    <small>
+                                        email: {{person.email}}
+                                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                    </small>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">With Minimum Input:</label>
-                                <div class="col-md-10">
-                                    <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
-                                        <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
-                                        <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
-                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
-                                            <small>
-                                                email: {{person.email}}
-                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
-                                            </small>
-                                        </ui-select-choices>
-                                    </ui-select>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Tagging Support:</label>
+                        <div class="col-md-10">
+                            <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
+                                <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+                                <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
+                                    <div ng-bind-html="person.name | highlight: $select.search"></div>
+                                    <small>
+                                        email: {{person.email}}
+                                        age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+                                    </small>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Tagging Support:</label>
-                                <div class="col-md-10">
-                                    <ui-select multiple ng-model="vm.multipleDemo.selectedPeopleWithGroupBy" theme="bootstrap" ng-disabled="false" close-on-select="false" style="width: 800px;" title="Choose a person">
-                                        <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
-                                        <ui-select-choices group-by="vm.someGroupFn" repeat="person in vm.people | propsFilter: {name: $select.search, age: $select.search}">
-                                            <div ng-bind-html="person.name | highlight: $select.search"></div>
-                                            <small>
-                                                email: {{person.email}}
-                                                age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
-                                            </small>
-                                        </ui-select-choices>
-                                    </ui-select>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+
+        <h3 class="text-dark-grey">Masked Inputs</h3><br/>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Date:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" class="form-control" data-mask="99/99/9999"><span class="help-block">99/99/9999</span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Masked Inputs</td>
-                    <td>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Date:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" class="form-control" data-mask="99/99/9999"><span class="help-block">99/99/9999</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Phone:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" class="form-control" data-mask="(999) 999-9999"><span class="help-block">(999) 999-9999</span>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Phone:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" class="form-control" data-mask="(999) 999-9999"><span class="help-block">(999) 999-9999</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Phone +Ext:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" class="form-control" data-mask="(999) 999-9999 x99999"><span class="help-block">(999) 999-9999 x99999</span>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Phone +Ext:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" class="form-control" data-mask="(999) 999-9999 x99999"><span class="help-block">(999) 999-9999 x99999</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Int:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" class="form-control" data-mask="+39 999 999 999"><span class="help-block">+39 999 999 999</span>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Int:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" class="form-control" data-mask="+39 999 999 999"><span class="help-block">+39 999 999 999</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Tax ID:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" class="form-control" data-mask="99-9999999"><span class="help-block">99-9999999</span>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">Tax ID:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" class="form-control" data-mask="99-9999999"><span class="help-block">99-9999999</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">SSN:</label>
+                        <div class="col-md-10">
+                            <input title="" type="text" class="form-control" data-mask="999-99-9999"><span class="help-block">999-99-9999</span>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label">SSN:</label>
-                                <div class="col-md-10">
-                                    <input title="" type="text" class="form-control" data-mask="999-99-9999"><span class="help-block">999-99-9999</span>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+
+        <h3 class="text-dark-grey">Validations</h3><br/>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="email">Email</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control"
+                                   name="emailWatch"
+                                   ng-model="form.email"
+                                   validator="email"
+                                   email-error-message="Please enter a valid email address."
+                                   email-success-message="Good Email"
+                                   message-id="emailWatch"
+                                   id="email"/>
+                            <span id="emailWatch"></span>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Validations</td>
-                    <td>
-                        <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-2 control-label" for="email">Email</label>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control"
-                                           name="emailWatch"
-                                           ng-model="form.email"
-                                           validator="email"
-                                           email-error-message="Error Email"
-                                           email-success-message="Good Email"
-                                           message-id="emailWatch"
-                                           id="email"/>
-                                    <span id="emailWatch"></span>
-                                </div>
-                                <label class="col-md-2 control-label" for="number">Number</label>
-                                <div class="col-md-10" style="margin-top: 20px;">
-                                    <input type="text" class="form-control"
-                                           name="numberWatch"
-                                           ng-model="form.number"
-                                           validator="number"
-                                           email-error-message="Error Number"
-                                           email-success-message="Good Number" ,
-                                           message-id="numberWatch"
-                                           id="number"/>
-                                    <span id="numberWatch"></span>
-                                </div>
-                            </div>
+                        <label class="col-md-2 control-label" for="number">Number</label>
+                        <div class="col-md-10" style="margin-top: 20px;">
+                            <input type="text" class="form-control"
+                                   name="numberWatch"
+                                   ng-model="form.number"
+                                   validator="number"
+                                   email-error-message="Please enter the numbers only."
+                                   email-success-message=" " ,
+                                   message-id="numberWatch"
+                                   id="number"/>
+                            <span id="numberWatch"></span>
                         </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </form>
-    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>

@@ -82,10 +82,10 @@ div.clickable a {
   color: red;
 }
 
-.modal-content {
+/*.modal-content {
   background-color: #e3e3e3;
   color: #323232;
-}
+}*/
 
 .modal-header:after {
   content: '';
@@ -94,7 +94,7 @@ div.clickable a {
   width: 535px;
   //top: -5px;
   left: 30px;
-  border-bottom: 1px solid $dark-grey;
+  //border-bottom: 1px solid $dark-grey;
 }
 
 .modal-backdrop {

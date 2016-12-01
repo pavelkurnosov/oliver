@@ -3,7 +3,6 @@
 .style-guide-container {
   background: $white;
 
-
   //------- start sidebar -----------------
   .item {
     margin-top: 0;
@@ -47,18 +46,39 @@
       margin-bottom: 50px;
 
     }
-    .section-header {
-      font-family: Raleway;
-      color: $dark-grey;
-    }
+  }
 
+  #forms_pane {
+    .row {
+      //margin-bottom: 20px;
+    }
+  }
+
+  .sub-section {
+    font-family: Raleway;
+    color: $dark-grey;
   }
 
   hr {
-    border-top: 2px solid $grey;
+    border-top: 2px solid $light-grey;
     margin-top: 0;
   }
-  //------- start colors -----------------
+
+  .grids-content {
+    .row {
+      div {
+        text-align: center;
+        border: 1px solid white;
+        padding: 20px 0 20px 0;
+        background: $light-grey2;
+        color: $black;
+        font-weight: bold;
+        div {
+          border: 0;
+        }
+      }
+    }
+  }
 }
 
 /*
