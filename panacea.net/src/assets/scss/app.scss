@@ -110,5 +110,45 @@ form {
 }
 
 .modal-content {
-  border:15px solid $dark-grey;
+  border: 15px solid $dark-grey;
+}
+
+uib-accordion {
+  .panel-heading {
+    a {
+      &:hover {
+        color: $navy-blue;
+        text-decoration: none;
+      }
+      &:focus {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #0e90d9;
+
+  a {
+    border: 1px solid $light-grey2;
+  }
+
+  &.letter-based {
+    border: 0;
+    a {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+  }
+}
+
+
+.btn-open-calendar {
+  height: 37px;
+  padding: 6px;
+  border: 2px solid $medium-grey !important;
+  border-radius: 0 !important;
+  border-left: 0 !important;
 }

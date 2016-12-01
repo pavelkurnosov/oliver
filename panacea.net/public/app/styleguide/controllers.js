@@ -191,7 +191,7 @@
             enableColumnResizing: true,
             enableColumnMenus: true,
             enableSorting: true,
-            // rowHeight: 47,
+            rowHeight: 47,
             columnDefs: [
                 {
                     field: 'Chk',
@@ -443,7 +443,8 @@
         };
 
         vm.error = function () {
-            Notification.error('Error notification');
+            // Notification.error('Error notification');
+            Notification.error({message: 'Message Content', title: 'Title'});
         };
 
         vm.success = function () {

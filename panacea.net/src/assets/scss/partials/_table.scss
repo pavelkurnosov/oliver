@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 // Table addons
 
 .table {
@@ -44,6 +44,7 @@
 .ui-grid-cell-contents {
   text-align: center;
   padding-top: 11px;
+  font-family: $base-font-family;
 }
 
 div {

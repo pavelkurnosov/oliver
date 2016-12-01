@@ -37,6 +37,11 @@
       background: $light-blue;
     }
   }
+  &.btn-over-mediumblue {
+    &:hover {
+      background: $medium-blue;
+    }
+  }
   &.btn-over-navyblue {
     &:hover {
       background: $navy-blue;
