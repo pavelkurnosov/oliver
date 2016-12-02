@@ -136,7 +136,7 @@
             colors: [
                 {className: 'bg-navy-blue', colorValue: '#304770'},
                 {className: 'bg-light-blue', colorValue: '#4eabf9'},
-                {className: 'bg-darkest-blue', colorValue: '#22324f'},
+                {className: 'bg-grey-blue', colorValue: '#22324f'},
                 {className: 'bg-orange', colorValue: '#ff6b10'},
                 {className: 'bg-light-grey', colorValue: '#efefef'},
                 {className: 'bg-medium-grey', colorValue: '#aaaaaa'},
@@ -371,20 +371,12 @@
         };
 
         // ------------------- Date Picker Modals -------------------------------
-
+        vm.dt = new Date();
         vm.dateOptions = {
-            dateDisabled: disabled,
-            formatYear: 'yy', /*
-             maxDate: new Date(2020, 5, 22),
-             minDate: new Date(),*/
+            formatYear: 'yy',
+            showWeeks :false,
             startingDay: 1
         };
-        // Disable weekend selection
-        function disabled(data) {
-            var date = data.date,
-                mode = data.mode;
-            return mode === 'day' && (date.getDay() === 0 || date.getDay() === 6);
-        }
 
         vm.popup2 = {
             opened: false
@@ -513,7 +505,7 @@
             {name: 'Nicolás', email: 'nicolas@email.com', age: 43, country: 'Colombia'}
         ];
 
-        vm.elasticText = 'This is Elastic Text';
+        vm.elasticText = '';
 
         //--------------- Special Forms ------------------------
 

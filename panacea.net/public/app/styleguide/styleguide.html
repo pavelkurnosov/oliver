@@ -1,4 +1,4 @@
-<div class="container-fluid style-guide-container">
+<div class="container style-guide-container">
     <ul class="items nav nav-pills nav-stacked col-xs-12 col-sm-3 col-md-2 col-lg-2">
         <li class="item" ng-repeat="p in vm.pages">
             <a data-toggle="pill" ng-click="vm.setPage(p.id)" href="" ng-class="{'active-item' : (p.id == vm.currPage)}">{{p.title}}</a>

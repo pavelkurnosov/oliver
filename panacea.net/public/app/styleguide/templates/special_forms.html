@@ -15,15 +15,17 @@
     <div class="row">
         <div class="col-md-3">
             <h4>Date Picker</h4>
-            <p class="input-group">
-                <input type="text" class="form-control"
+            <p class="input-group">{{vm.disabled}}
+                <input type="text"
+                       class="form-control"
                        uib-datepicker-popup
-                       ng-model="dt"
+                       ng-model="vm.dt"
                        is-open="vm.popup2.opened"
                        datepicker-options="vm.dateOptions"
+                       min="vm.minDate" max="'2015-06-22'"
                        ng-required="true"
                        show-button-bar="false"
-                       close-text="Close"/>
+                       ng-click="vm.open2()"/>
                 <span class="input-group-btn">
                     <button type="button" class="btn btn-default btn-open-calendar" ng-click="vm.open2()">
                         <i class="glyphicon glyphicon-calendar"></i>

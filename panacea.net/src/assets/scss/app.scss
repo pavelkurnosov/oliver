@@ -31,6 +31,8 @@ body {
 
 .logo-text {
   color: $white;
+  //font-family: 'Glasgow';
+  font-weight: bolder;
 }
 
 .main_menu {
@@ -144,11 +146,18 @@ uib-accordion {
   }
 }
 
-
 .btn-open-calendar {
   height: 37px;
   padding: 6px;
   border: 2px solid $medium-grey !important;
   border-radius: 0 !important;
   border-left: 0 !important;
+}
+
+
+.text-muted {
+  color: transparent;
+  //border: 1px solid red;
+  display: none;
+  //height:0;
 }

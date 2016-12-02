@@ -6,10 +6,13 @@
   border: 2px solid $medium-grey !important;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  border-radius: 6px;
+  border-radius: 0 !important;
 
   &:focus {
     border-color: $medium-blue !important; // $light-blue2 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 
@@ -17,6 +20,9 @@
   border-left: 2px solid $medium-grey !important;
   border-top: 2px solid $medium-grey !important;
   border-bottom: 2px solid $medium-grey !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .select2-choice {
@@ -25,6 +31,7 @@
 
 .dropdown-toggle {
   border: 2px solid $medium-grey !important;
+  border-radius: 0 !important;
 }
 
 .ui-select-multiple .ui-select-match-item {
@@ -151,6 +158,11 @@ input, select, textarea {
   th {
     font-weight: inherit;
     height: 30px;
+  }
+  .uib-day {
+    .btn {
+      border: 0 !important;
+    }
   }
 }
 
